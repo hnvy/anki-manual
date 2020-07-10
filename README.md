@@ -1,8 +1,11 @@
-Best viewed on the website: https://docs.ankiweb.net
+<div dir="rtl">
 
-This manual is licensed under the CC BY-SA 4 license:
+لقراءة الدليل: https://anh25.github.io/anki-manual/
+
+الدليل مرخص تحت رخصة CC BY-SA 4:
 
 https://creativecommons.org/licenses/by-sa/4.0/
 
-Pull requests are welcome. Unless you state otherwise, any pull requests you
-submit will be licensed under the above license.
+الـ Pull requests مرحب بها. سترخص مساهماتك تحت الرخصة المذكورة أعلاه إلا إذا اخترت رخصة أخرى.
+
+</div>
