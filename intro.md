@@ -1,13 +1,14 @@
-# Introduction
+<div dir="rtl">
 
-## Quickstart
+# مقدمة
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+## بداية سريعة
 
-## Translations
+في عجلة من أمرك؟ انظر [البدء](getting-started.md).
 
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
+## ترجمات
+
+ساهم متطوعون بترجمات لهذا الدليل. قد لا تكون هذه الترجمات على وفاق مع آخر إصدار.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
 
@@ -23,11 +24,14 @@ translations may not always be up to date.
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
+- [العربية](https://anh25.github.io/anki-manual/)
+
 - [فارسى](http://ankidroid.ir/anki.pdf)
 
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
 
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/#/anki/manual).
+إذا كنت ترغب في المساهمة بترجمة الدليل إلى لغة أخرى، انظر [وثائق الترجمة](https://translating.ankiweb.net/#/anki/manual).
+
+</div>
