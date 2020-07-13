@@ -1,145 +1,134 @@
-# Background
+<div dir="rtl">
 
-Anki is a program which makes remembering things easy. Because it is a
-lot more efficient than traditional study methods, you can either
-greatly decrease your time spent studying, or greatly increase the
-amount you learn.
+# خلفية
 
-Anyone who needs to remember things in their daily life can benefit from
-Anki. Since it is content-agnostic and supports images, audio, videos
-and scientific markup (via LaTeX), the possibilities are endless. For
-example:
+أنكي هو برنامج لتسهيل التذكر. لأنه أكثر فعالية بكثير من طرق الدراسة التقليدية،
+تستطيع إما تقليص الوقت الذي تستغرقه في الدراسة لدرجة كبيرة،
+أو زيادة الكمية التي تتعلمها كثيرًا.
 
--   learning a language
+يستطيع أي أحد بحاجة تذكر أشياء في حياته اليومية الاستفادة من أنكي.
+حيث إنه لا يعتمد على نوع المحتوى، ويدعم الصور، والتسجيلات الصوتية،
+والفيديو، والترميز العلمي (من خلال LaTeX)، فطرق استخدامه لانهائية.
+مثلًا:
 
--   studying for medical and law exams
+- تعلم لغة
 
--   memorizing people’s names and faces
+- المذاكرة للامتحانات الطبية والقانونية
 
--   brushing up on geography
+- حفظ أسماء الناس ووجوههم
 
--   mastering long poems
+- تحسين معلوماتك الجغرافية
 
--   even practicing guitar chords!
+- حفظ قصائد طويلة عن ظهر قلب
 
-There are two simple concepts behind Anki: 'active recall testing' and
-'spaced repetition'. They are not known to most learners, despite having
-been written about in the scientific literature for many years.
-Understanding how they work will make you a more effective learner.
+- التمرن على أوتار الغيتار حتى!
 
-Active Recall Testing
----------------------
+هناك مفهومان بسيطان خلف أنكي: “اختبار الاستحضار الفعال” و “التكرار المتباعد”.
+لا يعرف معظم المتعلمين هذين المفهومين، رغم أنه كُتِب عنهما في المؤلفات العلمية منذ سنين كثيرة.
+سجعلك فهم كيفية عمل هذين المفهومين متعلمًا أكثر فعالية.
 
-'Active recall testing' means being asked a question and trying to
-remember the answer. This is in contrast to 'passive study', where we
-read, watch or listen to something without pausing to consider if we
-know the answer. Research has shown that active recall testing is far
-more effective at building strong memories than passive study. There are
-two reasons for this:
+اختبار الاستحضار الفعال
+----------------
 
--   The act of recalling something 'strengthens' the memory, increasing
-    the chances we’ll be able to remember it again.
+يعني “اختبار الاستحضار الفعال” أن تُسأل سؤالًا ويطلب منك تذكر الجواب.
+هذا بعكس “الدراسة السلبية”، حيث نقرأ، أو نشاهد، أو نستمع إلى شيء
+بدون التوقف للتفكير في ما إذا كنا نعلم الجواب.
+أظهرت الأبحاث أن اختبار الاستحضار الفعال هو أكثر فعالية بكثير
+من الدراسة السلبية لبناء الذكريات القوية.
+هناك سببان لهذا:
 
--   When we’re unable to answer a question, it tells us we need to
-    return to the material to review or relearn it.
+-    عملية استحضار شيء “تقوي” الذاكرة، ما يرفع فرص تذكرك لهذا الشيء مجددًا.
 
-You have probably encountered active recall testing in your school years
-without even realizing it. When good teachers give you a series of
-questions to answer after reading an article, or make you take weekly
-progress-check tests, they are not doing it simply to see if you
-understood the material or not. By testing you, they are increasing the
-chances you will be able to remember the material in the future.
+-    عندما نعجز عن إجابة سؤال، فذلك يدل على ضرورة العودة إلى المادة
+ومراجعتها أو تعلمها مجددًا.
 
-A good way to integrate active recall testing into your own studies is
-to use 'flashcards'. With traditional paper flashcards, you write a
-question on one side of a card, and the answer on the other side. By not
-turning the card over until you’ve thought about the answer, you can
-learn things more effectively than passive observation allows.
+إنك على الأغلب قد صادفت اختبار الاستحضار الفعال في سنواتك المدرسية دون أن تلحظ ذلك. عندما يعطيك المعلومون الجيدون مجموعة أسئلة لتجيب عنها بعد قراءة
+مقالة، أو يخضعونك لامتحانات أسبوعية لفحص تقدمك، فإنهم لا يفعلون ذلك
+للتحقق مما إذا كنت قد فهمت المادة أم لا فحسب. إنهم يرفعون فرص تذكرك للمادة
+في المستقبل عن طريق فحصك.
 
-Use It or Lose It
------------------
+استخدام “بطاقات الاستذكار” هو طريقة جيدة لتضمين اختبار الاستحضار الفعال في دراستك.
+في بطاقات الاستذكار الورقية التقليدية، تكتب سؤالًا في جانب، وجوابه في الجانب الآخر.
+عن طريق عدم قلب البطاقة إلى حين تفكيرك بالجواب، فإن باستطاعتك التعلم بشكل أكثر فعالية
+مما تسمح به الملاحظة السلبية.
 
-Our brains are efficient machines, and they rapidly discard information
-that doesn’t seem useful. Chances are that you don’t remember what you
-had for dinner on Monday two weeks ago, because this information is not
-usually useful. If you went to a fantastic restaurant that day and spent
-the last two weeks telling people about how great it was, however,
-you’re likely to still remember in vivid detail.
+استعملها أو اخسرها
+-------------
 
-The brain’s “use it or lose it” policy applies to everything we learn.
-If you spend an afternoon memorizing some science terms, and then don’t
-think about that material for two weeks, you’ll probably have forgotten
-most of it. In fact, studies show we forget about 75% of material learnt
-within a 48 hour period. This can seem pretty depressing when you need
-to learn a lot of information.
+أدمغتنا آلات فعالة، تتخلص من المعلومات التي لا تبدو مفيدة بسرعة.
+من المرجح أنك لا تتذكر ما تناولت على العشاء يوم الإثنين منذ أسبوعين،
+لأن هذه المعلومات ليست مفيدة غالبًا. بينما إذا ذهبت إلى مطعم مذهل ذاك اليوم
+وظللت طيلة الأسبوعين الأخيرين تخبر الناس كم كان ذلك عظيمًا، ففي الغالب ستتذكر ذلك
+إلى أدق التفاصيل.
 
-The solution is simple, however: 'review'. By reviewing newly-learnt
-information, we can greatly reduce forgetting.
+تسري سياسة “استعملها أو اخسرها” الخاصة بالدماغ على كل شيء نتعلمه.
+إذا قضيت فترة بعد الظهيرة تستذكر بعض المصطلحات العلمية، ولم تفكر بها
+بعد ذلك لمدة أسبوعين، فستكون قد نسيت معظمها على الأغلب.
+في الحقيقة، تظهر الدراسات أننا ننسى 75% مما نتعلمه في غضون 48 ساعة.
+قد يبدو هذا محبطًا عندما تحتاج إلى تعلم كثير من المعلومات.
 
-The only problem is that traditionally review was not very practical. If
-you are using paper flashcards, it’s easy to flick through all of them
-if you only have 30 of them to review, but as the number grows to 300 or
-3000, it quickly becomes unwieldy.
+الحل بسيط مع ذلك: “راجعْ”. نستطيع التقليل من النسيان إلى حد كبير
+بمراجعة ما تعلمناه حديثًا.
 
-Spaced Repetition
------------------
+المشكلة الوحيدة هي أن طرق المراجعة التقليدية ليست عملية جدًا.
+إذا كنت تستخدم بطاقات الاستذكار الورقية، فمن السهل أن تراجع كل الأوراق بسرعة
+إذا كان لديك 30 ورقة فقط. لكن مع ازدياد الرقم إلى 300 أو 3000،
+تصبح العملية مستعصية جدًا.
 
-The 'spacing effect' was reported by a German psychologist in 1885. He
-observed that we tend to remember things more effectively if we spread
-reviews out over time, instead of studying multiple times in one
-session. Since the 1930s there have been a number of proposals for
-utilizing the spacing effect to improve learning, in what has come to be
-called 'spaced repetition'.
+التكرار المتباعد
+----------
 
-One example is in 1972, when a German scientist called Sebastian Leitner
-popularized a method of spaced repetition with paper flashcards. By
-separating the paper cards up into a series of boxes, and moving the
-cards to a different box on each successful or unsuccessful review, it
-was possible to see at a glance a rough estimate of how well a card was
-known and when it should be reviewed again. This was a great improvement
-over a single box of cards, and it has been widely adopted by
-computerized flashcard software. It is a rather rough approach however,
-as it can’t give you an exact date on which you should review something
-again, and it doesn’t cope very well with material of varying
-difficulty.
+اُكتشف “تأثير التباعد” من قبل عالم نفس ألماني سنة 1885.
+لقد لاحظ أننا نميل إلى تذكر المعلومات بفعالية أكبر إذا باعدنا بين المراجعات،
+بدلًا من الدراسة عدة مرات في جلسة واحدة.
+منذ سنة 1930، كان هناك عدد من المقترحات للاستفادة من تأثير التباعد لتحسين التعلم،
+فيما سُمِّي لاحقًا بـ“التكرار المتباعد”.
 
-The biggest developments in the last 30 years have come from the authors
-of SuperMemo, a commercial flashcard program that implements spaced
-repetition. SuperMemo pioneered the concept of a system that keeps track
-of the ideal time to review material and optimizes itself based on the
-performance of the user.
+مثال عن هذه المقترحات هو في سنة 1972، حيث نشر عالم ألماني
+يدعى سباستيان ليتنر (Sebastian Leitner) طريقة للتكرار المتباعد
+باستخدام بطاقات استذكار ورقية. عن طريق فصل البطاقات ووضعها في سلسة من الصناديق،
+ونقل البطاقات إلى صندوق مختلف عند كل مراجعة ناجحة أو فاشلة،
+بات من الممكن تقدير مدى معرفة كل بطاقة ومتى تجب مراجعتها في لمحة.
+كانت هذه الطريقة تقدمًا عظيمًا على طريقة صندوق البطاقات الواحد، واُستخدمت بشكل واسع
+من قبل برامج بطاقات الاستذكار الحاسوبية.
+لكنها طريقة تقريبية على أي حال، حيث لا يمكنها إخبارك بتاريخ محدد
+لمراجعة المعلومة مجددًا، ولا يمكنها التعامل بشكل جيد مع المواد ذات الصعوبات المتنوعة.
 
-In SuperMemo’s spaced repetition system, every time you answer a
-question, you tell the program how well you were able to remember it –
-whether you forgot completely, made a small mistake, remembered with
-trouble, remembered easily, etc. The program uses this feedback to
-decide the optimal time to show you the question again. Since a memory
-gets stronger each time you successfully recall it, the time between
-reviews gets bigger and bigger – so you may see a question for the first
-time, then 3 days later, 15 days later, 45 days later, and so on.
+جاءت أكبر التطورات في آخر 30 سنة من مؤلفي سوبرميمو (SuperMemo)،
+وهو برنامج تجاري لبطاقات الاستذكار عن طريق التكرار المتباعد.
+كان سوبرميمو أول برنامج يطبق مفهوم النظام الذي يتتبع الوقت المثالي لمراجعة
+المواد ويحسّن نفسه بناءً على أداء المستخدم.
 
-This was a revolution in learning, as it meant material could be learnt
-and retained with the absolute minimum amount of effort necessary.
-SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
-about forgetting'.
+في نظام سوبرميمو للتكرار المتباعد، كل مرة تجيب عن سؤال،
+فإنك تخبر النظام بمدى استطاعتك تذكر الجواب – ما إذا نسيت تمامًا،
+أو ارتكبت خطأً صغيرًا، أو تذكرت بصعوبة، أو تذكرت بسهولة، إلخ.
+يستخدم البرنامج هذه المعلومات لحساب الوقت المثالي لكي يظهر السؤال مجددًا.
+حيث  إن الذكريات تصبح أقوى في كل مرة تستحضرها بنجاح، يصبح الوقت بين المراجعات
+أكبر وأكبر – لذلك قد ترى سؤالًا للمرة الأولى، ثم تراه بعد 3 أيام، ثم بعد 15 يومًا،
+ثم بعد 45 يومًا، وهكذا.
 
-Why Anki?
----------
+كان هذا ثورة في التعلم، حيث عنى أنه يمكن تعلم المواد
+وحفظها بأقل جهد ممكن.
+يختصر شعار سوبرميمو ذلك كالتالي: عن طريق التكرار المتباعد،
+يمكنك “أن تنسى أمر النسيان”.
 
-While there is no denying the huge impact SuperMemo has had on the
-field, it is not without its problems. The program is often criticized
-for being buggy and difficult to navigate. It only runs on Windows
-computers. It’s proprietary software, meaning end-users can’t extend it
-or access the raw data. And while very old versions are made available
-for free, they are quite limited for modern use.
+لماذا أنكي؟
+--------
 
-Anki addresses these issues. There are free clients for Anki available
-on many platforms, so struggling students and teachers with budgetary
-constraints are not left out. It’s open source, with an already
-flourishing library of add-ons contributed by end-users. It’s
-multi-platform, running on Windows, Mac OSX, Linux/FreeBSD, and some
-mobile devices. And it’s considerably easier to use than SuperMemo.
+حيث لا يمكن إنكار الأثر العظيم لسوبرميمو في هذا المجال،
+فإنه ليس خاليًا من المشاكل. كثيرًا ما يُنتقَد البرنامج لكثرة الأعطال وصعوبة الاستخدام.
+إنه يعمل على ويندوز فقط، وهو مغلق المصدر، بمعنى أن المستخدمين لا يستطيعون
+تعديله والوصول إلى البيانات الخام. مع أن إصداراته القديمة جدًا متوفرة مجانًا،
+إلا أنها محدودة جدًا للاستخدام المعاصر.
 
-Anki’s spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](faqs.md).
+يحل أنكي هذه المشاكل. هناك نسخ مجانية لأنكي على منصات عديدة،
+لذلك الطلاب والمعلمون محدودو الدخل مأخوذون في عين الاعتبار أيضًا.
+إنه مفتوح المصدر، مع مكتبة متضخمة من الإضافات المشاركة من قبل المستخدمين.
+إنه يعمل على عدة منصات: ويندوز، وماك أو إس إكس، ولينكس/فري بي ‌إس ‌دي،
+وبعض الأجهزة المحمولة. كما أن استخدامه أسهل بكثير من استخدام سوبرميمو.
 
+نظام التكرار المتباعد الخاص بأنكي مبني على إصدار قديم من خوارزمية سوبرميمو،
+تدعى [SM-2](faqs.md).
+
+
+</div>

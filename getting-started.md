@@ -1,298 +1,231 @@
-# Getting Started
+<div dir="rtl">
 
-## Videos
+# البدء
 
-For a quick way to dive into Anki, please have a look at these intro
-videos. They were made with a previous Anki version, but the concepts
-are the same.
+## فيديوهات
 
--   [Shared Decks and Review
-    Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+للبدء باستخدام أنكي بسرعة، ألقِ نظرة على هذه الفيديوهات الافتتاحية. الفيديوهات معدة لإصدار قديم من أنكي، لكن المفاهيم لم تتغير.
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+-   [الرزم المشتركة وأساسيات المراجعة](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+-   [تغيير ترتيب البطاقات](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+-   [تنسيق البطاقات](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the
-videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
+-   [إدخال الجواب](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
+إذا لم يكن يوتيوب متوفرًا في بلدك، بإمكانك [تنزيل الفيديوهات](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/).
 
-## Key Concepts
+## مفاهيم أساسية
 
-### Cards
+### بطاقات
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+يدعى زوج ثنائي السؤال والجواب «بطاقة».
+هذا مبني على البطاقات الورقية التي تحوي سؤالًا في جانب وجوابه في الجانب الآخر.
+في أنكي، لا تبدو البطاقة كبطاقة روقية، وعندما تُظهر الجواب يبقى السؤال مرئيًا بشكل افتراضي.
+مثلًا، إذا كنت تدرس الكيمياء الأساسية، قد ترى سؤالًا كالتالي:
 
-    Q: Chemical symbol for oxygen?
+    س: الرمز الكيميائي للأوكسجين؟
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+بعد أن تفكر وتجد أن الجواب هو O، اضغظ زر إظهار الجواب، وأنكي سيظهر لك التالي:
 
-    Q: Chemical symbol for oxygen?
-    A: O
+    س: الرمز الكيميائي للأوكسجين؟
+    ج: O
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+بعد التأكد من أنك على صواب، تستطيع إخبار أنكي بمدى صعوبة السؤال، وأنكي سيختار الوقت التالي لإظهار السؤال مجددًا.
 
-### Decks
+### رُزَم
 
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+الرزمة هي مجموعة بطاقات. تستطيع وضع بطاقات في رزم مختلفة لدراسة أقسام من مجموعة بطاقاتك بدلًا من دراسة كل شيء في الوقت نفسه.
+لكل رزمة إعدادات مختلفة، مثل عدد البطاقات الجديدة التي تريد دراستها كل يوم، أو المدة الزمنية إلى حين إظهار البطاقات مجددًا.
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
+يمكن أن تحتوي الرزم على رزم أخرى، ما يسمح لك بتنظيم الرزم على شكل شجرة.
+يستخدم أنكي “::” لإظهار المستويات المختلفة.
+رزمة باسم “Chinese::Hanzi” تدل على رزمة اسمها “Hanzi”، التي هي جزء من رزمة اسمها “Chinese”.
+إذا اخترت رزمة “Hanzi”، فتسظهر البطاقات من هذه الرزمة فقط؛ بينما إذا اخترت “Chinese”، ستظهر كل البطاقات داخل “Chinese”، بما فيها بطاقات “Hanzi”.
 
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+لتنظيم الرزم بشكل شجرة، تستطيع وضع “::” بين كل مستوى، أو سحب الرزم وإسقاطها من قائمة الرزم. الرزم المُضمَّنة داخل رزمة أخرى (بمعنى آخر، هناك ظهور واحد لـ “::” في أسمائها) تدعى رزم فرعية، وتُدعى الرزم العلوية الرزم الأصل.
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+يبدأ أنكي برزمة اسمها “افتراضية”؛ أي بطاقة فُصلت عن الرزم الأخرى بطريقة أو أخرى تذهب إلى هذه الرزمة. يخفي أنكي الرزمة الافتراضية إذا كانت لا تحوي أي بطاقة وكان لديك رزم أخرى،
+كما بإمكانك إعادة تسمية هذه الرزمة واستخدامها لبطاقات أخرى.
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+من المفضل استخدام الرزم لاحتواء بطاقات تشمل مواضيع واسعة، بدلًا من مواضيع محددة مثل “أفعال الطعام” أو “الدرس الأول”. لمزيد من المعلومات، انظر قسم [استخدام الرزم بشكل صحيح](editing.md#using-decks-appropriately).
 
-For information on how decks affect the order cards are displayed in,
-please see the [display order](studying.md#display-order) section.
+لمزيد من المعلومات حول تأثير الرزم على ترتيب عرض البطاقات، انظر قسم [ترتيب العرض](studying.md#display-order).
 
-### Notes & Fields
+### الملحوظات والحقول
 
-When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
+عند صنع بطاقات، من المرغوب فيه صنع أكثر من بطاقة حول معلومة ما.
+مثلًا، إذا كنت تتعلم الفرنسية، وتعلمت أن كلمة “bonjour” تعني “مرحبًا”،
+قد ترغب في صنع بطاقة تظهر لك “bonjour” وتطلب منك تذكر “مرحبًا”،
+وبطاقة أخرى تظهر لك “مرحبًا” وتطلب منك تذكر “bonjour”.
+تختبر بطاقة قدرتك على التعرف على الكلمة الفرنسية، بينما تختبر الأخرى قدرتك على استحضار هذه الكلمة.
 
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some computer flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
+عند استخدام بطاقات الاستذكار الورقية، خيارك الوحيد في هذه الحالة هو أن تكتب المعلومات مجددًا، مرة لكل بطاقة.
+بعض برامج بطاقات الاستذكار الحاسوبية تسهل الأمر عن طريق توفير ميزة لقلب الجانبين الأمامي والخلفي. يعد هذا تقدمًا على البطاقات الورقية، لكن له جانبين سلبيين رئيسيين:
 
--   Because such programs don’t track your performance of recognition
-    and production separately, cards will tend not to be shown to you at
-    the optimum time, meaning you forget more than you’d like, or you
-    study more than is necessary.
+-    لأنه هذه البرامج لا تتبع أداءك في التعرف والاستحضار بشكل منفصل، تميل البطاقات إلى عدم الظهور في الوقت المثالي، بمعنى أنك ستنسى أكثر مما كنت تتمنى، أو ستدرس أكثر من اللازم.
 
--   Reversing the question and answer only works when you want exactly
-    the same content on each side. This means it’s not possible to
-    display extra info on the back of each card for example.
-
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
-
-Imagine we want to study French vocabulary, and we want to include the
-page number on the back of each card. We want our cards to look like
-this:
-
-    Q: Bonjour
-    A: Hello
-       Page #12
-
-And:
-
-    Q: Hello
-    A: Bonjour
-       Page #12
-
-In this example, we have three pieces of related information: a French
-word, an English meaning, and a page number. If we put them together,
-they’d look like this:
-
-    French: Bonjour
-    English: Hello
-    Page: 12
-
-In Anki, this related information is called a 'note', and each piece of
-information is called a 'field'. So we can say that this type of note
-has three fields: French, English, and Page.
-
-To add and edit fields, click the “Fields…​” button while adding or
-editing notes. For more information on fields, please see the
-[Customizing Fields](editing.md#customizing-fields) section.
-
-### Card Types
-
-In order for Anki to create cards based on our notes, we need to give it
-a blueprint that says which fields should be displayed on the front or
-back of each card. This blueprint is called a 'card type'. Each type of
-note can have one or more card types; when you add a note, Anki will
-create one card for each card type.
-
-Each card type has two 'templates', one for the question and one for the
-answer. In the above French example, we wanted the recognition card to
-look like this:
-
-    Q: Bonjour
-    A: Hello
-       Page #12
-
-To do this, we can set the question and answer templates to:
-
-    Q: {{French}}
-    A: {{English}}<br>
-       Page #{{Page}}
-
-By surrounding a field name in double curly brackets, we tell Anki to
-replace that section with the actual information in the field. Anything
-not surrounded by curly brackets remains the same on each card. (For
-instance, we don’t have to type “Page \#” into the Page field when
-adding material – it’s added automatically to every card.) &lt;br&gt; is
-a special code that tells Anki to move to the next line; more details
-are available in the [templates](templates/intro.md) section.
-
-The production card templates work in a similar way:
-
-    Q: {{English}}
-    A: {{French}}<br>
-       Page #{{Page}}
-
-Once a card type has been created, every time you add a new note, a card
-will be created based on that card type. Card types make it easy to keep
-the formatting of your cards consistent and can greatly reduce the
-amount of effort involved in adding information. They also mean Anki can
-ensure related cards don’t appear too close to each other, and they
-allow you to fix a typing mistake or factual error once and have all the
-related cards updated at once.
-
-To add and edit card types, click the “Cards…​” button while adding or
-editing notes. For more information on card types, please see the [Cards
-and Templates](templates/intro.md) section.
-
-### Note Types
-
-Anki allows you to create different types of notes for different
-material. Each type of note has its own set of fields and card types.
-It’s a good idea to create a separate note type for each broad topic
-you’re studying. In the above French example, we might create a note
-type called “French” for that. If we wanted to learn capital cities, we
-could create a separate note type for that as well, with fields such as
-“Country” and “Capital City”.
-
-When Anki checks for duplicates, it only compares other notes of the
-same type. Thus if you add a capital city called “Orange” using the
-capital city note type, you won’t see a duplicate message when it comes
-time to learn how to say “orange” in French.
-
-When you create a new collection, Anki automatically adds some standard
-note types to it. These note types are provided to make Anki easier for
-new users, but in the long run it’s recommended you define your own note
-types for the content you are learning. The standard note types are as
-follows:
-
-Basic  
-Has Front and Back fields, and will create one card. Text you enter in
-Front will appear on the front of the card, and text you enter in Back
-will appear on the back of the card.
-
-Basic (and reversed card)  
-Like Basic, but creates two cards for the text you enter: one from
-front→back and one from back→front.
-
-Basic (optional reversed card)  
-This is a front→back card, and optionally a back→front card. To do this,
-it has a third field called “Add Reverse.” If you enter any text into
-that field, a reverse card will be created. More information about this
-is available in the [Cards and Templates](templates/intro.md) section.
-
-Cloze  
-A note type which makes it easy to select text and turn it into a cloze
-deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
-moon in 1969”). More information is available in the [cloze
-deletion](editing.md#cloze-deletion) section.
-
-To add your own note types and modify existing ones, you can use Tools →
-Manage Note Types from the main Anki window.
-
-Notes and note types are common to your whole collection rather than
-limited to an individual deck. This means you can use many different
-types of notes in a particular deck, or have different cards generated
-from a particular note in different decks. When you add notes using the
-Add window, you can select what note type to use and what deck to use,
-and these choices are completely independent of each other. You can also
-change the note type of some notes [after you’ve already created
-them](browsing.md).
-
-### Collection
-
-Your 'collection' is all the material stored in Anki – your cards,
-notes, decks, note types, deck options, and so on.
-
-## Shared Decks
-
-You can watch [a video about Shared Decks and Review
-Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
-
-The easiest way to get started with Anki is to download a deck of cards
-someone has shared:
-
-1.  Click the “Get Shared” button at the bottom of the deck list.
-
-2.  When you’ve found a deck you’re interested in, click the “Download”
-    button to download a deck package.
-
-3.  Double-click on the downloaded package to load it into Anki, or
-    File→Import it.
-
-Please note that it’s not currently possible to add shared decks
-directly to your AnkiWeb account. You need to import them with the
-desktop program, then synchronize to upload them to AnkiWeb.
-
-Creating your own deck is the most effective way to learn a complex
-subject. Subjects like languages and the sciences can’t be understood
-simply by memorizing facts — they require explanation and context to
-learn effectively. Furthermore, inputting the information yourself
-forces you to decide what the key points are, leading to a better
-understanding.
-
-If you are a language learner, you may be tempted to download a long
-list of words and their translations, but this won’t teach you a
-language any more than memorizing scientific equations will teach you
-astrophysics. To learn properly, you need textbooks, teachers, or
-exposure to real-world sentences.
-
-    Do not learn if you do not understand.
-    --SuperMemo
-
-Most shared decks are created by people who are learning material
-outside of Anki – from textbooks, classes, TV, etc. They select the
-interesting points from what they learn and put them into Anki. They
-make no effort to add background information or explanations to the
-cards, because they already understand the material. So when someone
-else downloads their deck and tries to use it, they’ll find it very
-difficult as the background information and explanations are missing.
-
-That is not to say shared decks are useless – simply that for complex
-subjects, they should be used as a 'supplement' to external material,
-not as a 'replacement' for it. If you’re studying textbook ABC and
-someone has shared a deck of ideas from ABC, that’s a great way to save
-some time. And for simple subjects that are basically a list of facts,
-such as capital city names or pub quiz trivia, you probably don’t need
-external material. But if you attempt to study complex subjects without
-external material, you will probably meet with disappointing results.
+-    ينجح قلب جانبي السؤال والجواب فقط في حالة كنت تريد المحتوى نفسه في كل جانب.
+يعني هذا أنه ليس من الممكن عرض معلومات إضافية خلف كل بطاقة مثلًا.
 
+يحل أنكي هذه المشاكل عن طريق السماح بفصل محتوى البطاقات إلى أقسام منفصلة.
+تستطيع عندها إخبار أنكي بالمعلومات التي تريدها في كل بطاقة، وسيتكفل أنكي بإنشاء
+البطاقات وتحديثها إذا أجريت أي تعديل في المستقبل.
+
+لنفرض أننا نريد تعلم مفردات فرنسية، ونريد أن نضمن رقم الصفحة خلف كل بطاقة.
+نريد أن تبدو بطاقاتنا على الشكل التالي:
+
+    س: Bonjour
+    ج: Hello
+         صفحة #12
+
+و:
+
+    س: Hello
+    ج: Bonjour
+         صفحة #12
+
+في هذا المثال، لدينا ثلاث معلومات: كلمة فرنسية، والمعنى المقابل في الإنكليزية، ورقم الصفحة.
+
+لإضافة الحقول وتعديلها، انقر زر “حقول...” عند إضافة الملحوظات أو تعديلها.
+لمزيد من المعلومات عن الحقول، انظر قسم [تخصيص الحقول](editing.md#customizing-fields).
+
+### أنواع البطاقات
+
+لكي ينشئ أنكي بطاقات بناءً على ملحوظاتك،
+علينا إعطاؤه مخططًا يحدد ما الحقول التي يجب إظهارها في أمام البطاقة أو خلفها.
+يدعى هذا المخطط “نوع البطاقة”. يمكن أن يكون لكل نوع ملحوظة نوع بطاقة واحد أو أكثر؛
+عند إضافة ملحوظة، ينشئ أنكي بطاقة لكل نوع بطاقة.
+
+لكل نوع بطاقة “قالبين”، واحد للسؤال والآخر للجواب.
+في مثال الفرنسية في الأعلى، أردنا أن تكون بطاقة التعرف كالتالي:
+
+    س: Bonjour
+    ج: Hello
+         صفحة #12
+
+لتحقيق ذلك، يمكننا إعداد قالبي السؤال والجواب كالتالي:
+
+    س: {{French}}
+    ج: {{English}}<br>
+         صفحة #{{Page}}
+
+عن طريق إحاطة اسم الحقل بزوجي أقواس مجعدة،
+نستطيع إخبار أنكي باستبدال ذلك القسم بالمعلومات الموجودة في الحقل.
+يبقى أي شيء غير محاط بأقواس مجعدة كما هو.
+(مثلًا، ليس علينا كتابة “صفحة #\” في كل حقول الصفحات عند إضافة مواد –
+إنها مضافة لكل بطاقة تلقائيًا.)
+&lt;br&gt; هو رزم خاص لإخبار أنكي بالتحرك إلى السطر التالي؛
+مزيد من التفاصيل متوفر في قسم [القوالب](templates/intro.md).
+
+تعمل قوالب بطاقة الاستحضار بشكل مماثل:
+
+    س: {{English}}
+    ج: {{French}}<br>
+         صفحة #{{Page}}
+
+بعد أن تنشئ نوع بطاقة، في كل مرة تضيف ملحوظة جديدة،
+ستُضاف بطاقة مبنية على نوع البطاقة ذاك.
+تسهل أنواع البطاقات إبقاء صيغة بطاقاتك متناسقة وتقلل من كمية الجهد
+اللازم لإضافة المعلومات. يعني هذا أيضًا أن بإمكان أنكي التحقق من عدم ظهور
+البطاقات ذات الصلة متقاربة جدًا من بعضها البعض، كما يصبح بإمكانك أن تصلح
+خطأً كتابيًا أو تقريريًا مرة واحدة فقط لتُحدَّث كل البطاقات ذات الصلة في الوقت نفسه.
+
+لإضافة أنواع البطاقات وتعديلها، اضغط زر “بطاقات...” عند إضافة الملحوظات وتحريرها.
+لمزيد من المعلومات عن أنواع البطاقات، انظر قسم [البطاقات والقوالب](templates/intro.md).
+
+### أنواع الملحوظات
+
+يسمح لك أنكي بإنشاء أنواع ملحوظات مختلفة لمواد مختلفة.
+لكل نوع ملحوظة مجموعة حقول وأنواع بطاقات خاصة به.
+يُفضل إنشاء نوع ملحوظة واحد لكل موضوع شامل تدرسه.
+في مثال الفرنسية في الأعلى، قد ننشئ نوع ملحوظة باسم “فرنسي” لذلك.
+إذا أردنا تعلم عواصم الدول، نستطيع إنشاء نوع ملحوظة يحوي حقولًا مثل “دولة” و “عاصمة” لذلك.
+
+يقارن أنكي ملحوظات من نوع الملحوظة نفسه فقط عندما يتحقق من وجود ملحوظات مكررة.
+بالتالي، عندما تضيف عاصمة تدعى “برتقالي” باستخدام نوع ملحوظة العواصم،
+لن ترى تنبيه تكرار عندما تضيف بطاقة باسم “برتقالي” في نوع ملحوظة الفرنسية.
+
+يضيف أنكي بعض أنواع الملحوظات الأساسية عندما تنشئ مجموعة جديدة تلقائيًا.
+أنواع الملحوظات هذه موفرة لتسهيل استخدام أنكي للمستخدمين الجدد،
+لكن على المدى الطويل، يُفضل أن تنشئ أنواع ملحوظات خاصة بك للمحتوى الذي تدرسه.
+أنواع الملحوظات الأساسية هي كالتالي:
+
+أساسي  
+له حقل أمامي وحقل خلفي، وينشئ بطاقة واحدة.
+سيظهر النص المدخل في الحقل الأمامي في الجانب الأمامي من البطاقة،
+والنص المدخل في الحقل الخلفي في الجانب الخلفي من البطاقة.
+
+أساسي (وبطاقة معكوسة)  
+مثل أساسي، لكنه ينشئ بطاقتين للنص المدخل: 
+أمامي←خلفي، وخلفي←أمامي.
+
+أساسي (وبطاقة معكوسة اختيارية)  
+بطاقة أمامي←خلفي، وبطاقة خلفي←أمامي عند الرغبة.
+لتحقيق ذلك، لهذا النوع حقل ثالث باسم “إضافة بطاقة معكوسة”.
+إذا أدخلت أي نص في هذا الحقل، ستُنشأ بطاقة معكوسة.
+انظر قسم [البطاقات والقوالب](templates/intro.md) لمزيد من المعلومات.
+
+ملء فراغات  
+نوع ملحوظة لتسهيل إنشاء أسئلة ملء فراغات (مثال: “صعد الإنسان سطح القمر سنة \[…​\]” ← “صعد الإنسان سطح القمر سنة 1969”).
+انظر قسم [عبارات ملء الفراغات](editing.md#cloze-deletion) لمزيد من المعلومات.
+
+لإضافة أنواع ملحوظات خاصة بك وتعديل الأنواع الموجودة، بإمكانك استخدام
+أدوات ← إدارة أنواع الملحوظات من خلال نافذة أنكي الرئيسية.
+
+الملحوظات وأنواع الملحوظات هي خاصة بمجموعتك كاملة وليست محصورة برزمة محددة.
+ما يعني أن بإمكانك استخدام أنواع ملحوظات مختلفة في رزمة واحدة،
+أو وضع بطاقات منشأة من ملحوظة محددة في رزم مختلفة.
+عندما تضيف ملحوظات من خلال نافذة الإضافة، تستطيع تحديد
+نوع الملحوظة والرزمة التي تود استخدامها، وهذه الخيارات مستقلة عن بعضها البعض.
+كما تستطيع تغيير نوع الملحوظة الخاص ببعض الملحوظات بعد [إنشائها](browsing.md).
+
+### المجموعة
+
+مجموعتك هي كل المواد المخزنة في أنكي – البطاقات، والملحوظات، والرزم،
+وأنواع الملحوظات، وخيارات الرزم، وما إلى ذلك.
+
+## الرزم المشتركة
+
+تستطيع مشاهدة [فيديو عن البطاقات المشتركة وأساسيات المراجعة](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) في يوتيوب.
+
+الطريقة الأسهل للبدء باستخدام أنكي هي تنزيل رزمة بطاقات شاركها أحد ما:
+
+1. اضغط زر “ابدأ” في أسفل قائمة الرزم.
+
+2. بعد أن تجد رزمة تهمك، اضغط زر "تنزيل" لتنزيل حزمة الرزمة.
+
+3. افتح الحزمة المنزلة لتنصيبها في أنكي، أو استخدم ملف←استيراد.
+
+لاحظ أنه لا يمكن حاليًا إضافة الرزم المشتركة إلى حساب أنكي ويب مباشرةً.
+عليك أولًا استيرادها من خلال برنامج سطح المكتب، ثم مزامنتها إلى أنكي ويب.
+
+صنع رزمتك الخاصة هو الطريقة الأمثل لتعلم المواضيع المعقدة.
+لا يمكن فهم مواضيع مثل اللغات والعلوم من خلال حفظ الحقائق ببساطة
+— يتطلب تعلم مثل هذه المواضيع شرحًا وسياقًا. كما أن إدخال المعلومات
+بنفسك يجبرك على تحديد النقاط المهمة، ما يؤدي إلى فهم أفضل.
+
+إذا كنت متعلم لغات، قد ترغب في تنزيل قائمة طويلة من الكلمات وترجماتها،
+لكن هذا لن يعلمك لغة مثلما أن حفظ المعادلات العلمية لن يعلمك الفيزياء الفلكية.
+للتعلم بشكل صحيح، تحتاج كتبًا دراسية، أو معلمين، أو التعرض إلى جمل مستخدمة في الواقع.
+
+    لا تتعلم بدون فهم.
+    SuperMemo --
+
+معظم الرزم المشتركة مصنوعة من قبل أناس يدرسون المواد خارج أنكي – من الكتب الدراسية،
+أو الصفوف الدراسية، أو التلفاز، إلخ. إنهم يحددون النقاط المثيرة للاهتمام مما يدرسون
+ويضيفونها إلى أنكي. إنهم لا يبذلون جهدًا لإضافة معلومات توضيحية أو شروحات إلى البطاقات،
+لأنهم يفهمون المادة أصلًا. لذا، عندما ينزل شخص ما رزمتهم ويحاول استخدامها،
+سيجدها صعبة جدًا لغياب المعلومات التوضيحية والشروحات.
+
+لا يعني هذا أن الرزم المشتركة لا فائدة منها – ببساطة، في سياق المواضيع المعقدة،
+يجب استخدام الرزم المشتركة كمُكمِّل للمواد التعليمية الخارجية وليس بديلًا لها.
+إذا كنت تدرس من الكتاب الفلاني وشارك شخص ما رزمة أفكار من هذا الكتاب،
+فاستخدام هذه الزرمة هو طريقة ممتازة لتوفير بعض الوقت.
+وفي سياق المواضيع البسيطة التي هي عبارة عن مجموعة من الحقائق،
+مثل أسماء عواصم البلدان، أو أسئلة المسابقات، فالأرجح أنك لا تحتاج إلى
+مواد خارجية. لكن إذا حاولت دراسة مواضيع معقدة بدون مواد خارجية،
+فلن تحصل على نتائج مُرضية غالبًا.
+
+</div>

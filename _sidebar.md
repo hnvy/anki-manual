@@ -1,6 +1,6 @@
 - [مقدمة](/)
-- [Background](background.md)
-- [Getting Started](getting-started.md)
+- [خلفية](background.md)
+- [البدء](getting-started.md)
 - [Studying](studying.md)
 - [Adding/Editing](editing.md)
 - [Card Templates](templates/intro.md)
