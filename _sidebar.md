@@ -1,7 +1,7 @@
 - [مقدمة](/)
 - [خلفية](background.md)
 - [البدء](getting-started.md)
-- [Studying](studying.md)
+- [دراسة](studying.md)
 - [Adding/Editing](editing.md)
 - [Card Templates](templates/intro.md)
  - [Field Replacements](templates/fields.md)
