@@ -2,7 +2,7 @@
 - [خلفية](background.md)
 - [البدء](getting-started.md)
 - [دراسة](studying.md)
-- [Adding/Editing](editing.md)
+- [إضافة/تحرير](editing.md)
 - [Card Templates](templates/intro.md)
  - [Field Replacements](templates/fields.md)
  - [Card Generation](templates/generation.md)
