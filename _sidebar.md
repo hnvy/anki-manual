@@ -3,7 +3,7 @@
 - [البدء](getting-started.md)
 - [دراسة](studying.md)
 - [إضافة/تحرير](editing.md)
-- [Card Templates](templates/intro.md)
+- [قوالب البطاقات](templates/intro.md)
  - [Field Replacements](templates/fields.md)
  - [Card Generation](templates/generation.md)
  - [Styling & HTML](templates/styling.md)

@@ -1,56 +1,50 @@
-# Card Templates
+﻿<div dir="rtl">
 
-Card templates tell Anki which fields should appear on the front and back of your card,
-and control which cards will be generated when certain fields have text in them.
-By adjusting your card templates, you can alter the design and styling of many of your
-cards at once.
+# قوالب البطاقات
 
-Card templates are covered in some of the intro videos:
+تحدد قوالب البطاقات الحقول التي يجب أن تظهر في الجانبين الأمامي والخلفي
+من البطاقة، وتحدد البطاقات التي سُتنشأ عندما تكون حقول ما غير فارغة.
+بإمكانك تغيير تصميم عديد من بطاقاتك وتنسيقها في الوقت نفسه عن طريق ضبط
+قوالب بطاقاتك.
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+قُدِّمت قوالب البطاقات في بعض الفيديوهات التعريفية:
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+-    [تغيير ترتيب البطاقات](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+-    [تنسيق البطاقات](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-## The Templates Screen {docsify-ignore}
+-    [إدخال الجواب](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-You can modify card templates by clicking the "Cards..." button inside the
-editing screen.
+## نافذة القوالب {docsify-ignore}
 
-On the top left is the front template, on the bottom left is the back
-template, and in between them is the card styling section.
+تستطيع تعديل قوالب البطاقات بالضغط على زر «بطاقات...» في نافذة التحرير.
 
-In Anki, templates are written in HTML, which is the language that web
-pages are written in. The styling section is CSS, which is the language
-used for styling web pages.
+في أعلى اليسار هناك القالب الأمامي، وفي أسفل اليسار هناك القالب السفلي،
+وبينهما هناك قسم تنسيق البطاقة.
 
-On the right is a preview of the front and back of the currently
-selected card. If you opened the window while adding notes, the preview
-will be based on the text you had typed into the Add Notes window. If
-you opened the window while editing a note, the preview will be based on
-the content of that note. If you opened the window from Tools → Manage
-Note Types, Anki will display each field’s name in parentheses in place
-of content.
+تكتب القوالب في أنكي بلغة HTML، وهي اللغة التي تكتب بها صفحات الويب.
+يكتب قسم التنسيق بلغة CSS، وهي اللغة المستخدمة لتنسيق صفحات الويب.
 
-At the top right of the window is an Options button that gives you
-options to rename or reorder the cards, as well as the following two
-options:
+هناك على اليمين معاينة للجانبين الأمامي والخلفي للبطاقة المحددة. إذا فتحت
+النافذة عند إضافة بطاقات، ستكون المعاينة مبنية على النص الذي أدخلته في نافذة
+إضافة ملحوظات. إذا فتحت النافذة عند تحرير ملحوظة، ستكون المعاينة مبنية على
+محتوى تلك الملحوظة. إذا فتحت النافذة من خلال أدوات ← إدارة أنواع الملحوظات،
+سيظهر اسم كل حقل بين قوسين في مكان المحتوى.
 
--   The 'Deck Override' option allows you to change the deck that cards
-    generated from the current card type will be placed into. By
-    default, cards are placed into the deck you provide in the Add Notes
-    window. If you set a deck here, that card type will be placed into
-    the deck you specified, instead of the deck listed in the Add Notes
-    window. This can be useful if you want to separate cards into
-    different decks (for instance, when studying a language, to put
-    production cards in one deck and recognition cards in another). You
-    can check which deck the cards are currently going to by choosing
-    Deck Override again.
+في أعلى يمين النافذة هناك زر خيارات لإعادة تسمية البطاقات أو تغيير ترتيبها،
+بالإضافة إلى الخيارين التاليين:
 
--   The 'Browser Appearance' option allows you to set different (perhaps
-    simplified) templates for display in the Question and Answer columns
-    of the browser; see [browser appearance](templates/styling.md#browser-appearance) for more
-    information.
+-    يسمح لك خيار «الرزمة المهيمنة» بتغيير الرزمة التي ستوضع فيها البطاقات
+     المنشأة من نوع الملحوظة الحالي. توضع البطاقات في الرزمة التي تختارها في
+     نافذة إضافة ملحوظات بشكل افتراضي. إذا حددت رزمة هنا، سيوضع نوع البطاقة ذاك
+     في هذه الرزمة بدلًا من الرزمة المحددة في نافذة إضافة ملحوظات. هذه الميزة
+     مفيدة إذا كنت تريد فصل البطاقات إلى رزم مختلفة (مثلًا، عند دراسة لغة،
+     لوضع بطاقات الاستحضار في زرمة وبطاقات التعرف في أخرى). تستطيع معرفة
+     الرزمة التي ستذهب إليها البطاقات حاليًا باختيار خيار الرزمة المهيمنة مجددًا.
+
+-    يسمح لك خيار «مظهر المتصفح» بإعداد قوالب مختلفة (مُبسَّطة ربما) للعرض
+     في عمودي السؤال والجواب في المتصفح؛ انظر
+     [مظهر المتصفح](templates/styling.md#browser-appearance)
+     لمزيد من المعلومات.
+
+</div>
