@@ -1,180 +1,164 @@
-# Field Replacements
+﻿<div dir="rtl">
 
-## Basic Replacements
+# استبدالات الحقول
 
-The most basic template looks something like this:
+## استبدالات أساسية
+
+يبدو القالب الأكثر بساطة كالتالي:
 
     {{Front}}
 
-When you place text within curly brackets, Anki looks for a field by
-that name, and replaces the text with the actual content of the field.
+عندما تدخل نصًا بين قوسين مجعدين، يبحث أنكي عن حقل بذلك الاسم،
+ويستبدل النص بالمحتوى الفعلي للحقل.
 
-Field names are case sensitive. If you have a field named `Front`,
-writing `{{front}}` will not work properly.
+أسماء الحقول مُميِّزة لحالة الأحرف. إذا كان لديك حقل باسم 'Front'،  فكتابة
+`{{front}}` لن تطابق هذا الحقل.
 
-Your templates are not limited to a list of fields. You can also include
-arbitrary text on your templates. For example, if you’re studying
-capital cities, and you’ve created a note type with a “Country” field,
-you might create a front template like this:
+ليست قوالبك محصورة بقائمة حقول. تستطيع تضمين نصوص اعتباطية. مثلًا،
+إذا كنت تدرس عواصم البلدان، وأنشأت نوع ملحوظة بحقل يسمى «بلد»،
+قد تنشئ قالبًا أماميًا كالتالي:
 
-    What's the capital city of {{Country}}?
+   ما عاصمة {{بلد}}؟
 
-The default back template will look something like this:
+يبدو القالب الخلفي الافتراضي كالتالي:
 
     {{FrontSide}}
 
     <hr id=answer>
 
-    {{Back}}
+    {{خلف}}
 
-This means “show me the text that’s on the front side, then a divider
-line, and then the Back field”.
+يعنى هذا إظهار النص في الجانب الأمامي، ثم خط تقسيم، ثم حقل الخلف.
 
-The 'id=answer' part tells Anki where the divider is between the
-question and the answer. This allows Anki to automatically scroll to the
-spot where the answer starts when you press 'show answer' on a long card
-(especially useful on mobile devices with small screens). If you don’t
-want a horizontal line at the beginning of the answer, you can use
-another HTML element such as a paragraph or div instead.
+يخبر قسم 'id=answer' أنكي بموقع الخط الفاصل بين السؤال والجواب.
+يسمح هذا لأنكي بنقلك تلقائيًا إلى بداية الجواب عندما تضغط «إظهار الجواب»
+في بطاقة طويلة (مفيد للأجهزة المحمولة ذات الشاشات الصغيرة خصوصًا).
+إذا كنت لا تريد خطًا في بداية الجواب، تستطيع استخدام عنصر HTML آخر
+مثل عنصر الفقرة أو عنصر div بدلًا من ذلك.
 
-## Newlines
+## أسطر جديدة
 
-Card templates are like web pages, which means a special command is required
-to create a new line. For example, if you wrote the following in the template:
+إن قوالب البطاقات مثل صفحات الويب، ما يعني أنه يلزم أمر خاص لإدخال سطر جديد.
+مثلًا، إذا كتبت التالي في القالب:
 
-    one
-    two
+    واحد
+    اثنان
 
-In the preview, you’d actually see:
+في قسم المعاينة سترى:
 
-    one two
+    واحد اثنان
 
-To add a new line, you need to add a &lt;br&gt; code to the end of a
-line, like so:
+لإضافة سطر جديد، عليك إضافة رمز &lt;br&gt; إلى نهاية السطر:
 
-    one<br>
-    two
+    واحد<br>
+    اثنان
 
-The br code stands for "(line) br(eak)".
+رمز br هو اختصار لـ "(line) br(eak)".
 
-The same applies for fields. If you want to display two fields, one on
-each line, you would use
+ينطبق الأمر نفسه على الحقول. إذا كنت تريد عرض حقلين في سطرين مختلفين، فستكتب:
 
-    {{Field 1}}<br>
-    {{Field 2}}
+    {{حقل 1}}<br>
+    {{حقل 2}}
 
-## Text to Speech
+## تحويل النص إلى كلام
 
-This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
-not currently support this method.
+تتطلب هذه الميزة أنكي 2.1.20، أو أنكي موبيل 2.0.56.
+لا يدعم أنكي درويد هذه الميزة حاليًا.
 
-To have Anki read the Front field in a US English voice, you can place
-the following in your card template:
+لجعل أنكي يقرأ الحقل الأمامي بالنطق الإنكليزي الأمريكي، تستطيع وضع التالي
+في قالب البطاقة:
 
-    {{tts en_US:Front}}
+    {{tts en_US:أمامي}}
 
-On Windows, MacOS, and iOS, Anki will use the OS’s built in voices. On
-Linux, no voices are built in, but voices can be provided by add-ons,
-such as [this one](https://ankiweb.net/shared/info/391644525).
+في ويندوز، وماك أوس، وآي أو إس، يستخدم أنكي الأصوات المبنية في النطام.
+ليس هناك أصوات مبنية في لينكس، لكن يمكن توفيرها من خلال الإضافات، مثل
+[هذه](https://ankiweb.net/shared/info/391644525).
 
-To see a list of all available languages/voices, place the following on
-your card template:
+لرؤية قائمة باللغات/الأصوات المتاحة، ضع التالي في قالب البطاقة:
 
     {{tts-voices:}}
 
-If there are multiple voices that support your chosen language, you can
-specify desired voices in a list, and Anki will choose the first
-available voice. For example:
+إذا كانت هناك عدة أصوات تدعم لغتك، تستطيع تحديد الأصوات التي تريدها في قائمة،
+وسيختار أنكي الصوت المتاح الأول. مثلًا:
 
     {{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Field}}
 
-This would use Otoya when on an Apple device, and Haruka when on a
-Windows PC.
+سيستخدم هذا صوت Otoya في أجهزة أبل، وصوت Haruka في أجهزة ويندوز.
 
-Specifing a different speed is possible in some TTS implementations:
+تُدعم خاصية تحديد سرعة مختلفة في بعض تطبيقات تحويل النص إلى كلام:
 
     {{tts fr_FR speed=0.8:SomeField}}
 
-Both speed and voices are optional, but the language must be included.
+السرعة والأصوات اختيارية، لكن يجب تحديد اللغة.
 
-On a Mac, you can customize the available voices:
+تستطيع تخصيص الأصوات المتاحة في ماك:
 
-- Open the System Preferences screen.
+- افتح نافذة «تفضيلات النظام»
 
-- Click on Accessibility.
+- اضغط على «إمكانية الوصول»
 
-- Click on Speech.
+- اضغط على «النص»
 
-- Click on the system voice dropdown, and choose Customize.
+- اضغط على نافذة الأصوات المنسدلة، واختر «تخصيص».
 
-Some voices sound better than others, so experiment to choose the one
-you prefer. Please note that the Siri voice can only be used by Apple
-apps. Once you’ve installed new voices, you’ll need to restart Anki for
-the new voices to become available.
+بعض الأصوات أفضل من الأخرى، لذلك جرب أصوات مختلفة لاختيار الصوت التي تفضله.
+لاحظ أن صوت سيري يمكن استخدامه من قبل تطبيقات أبل فقط. تحتاج إلى إعادة تشغيل أنكي
+بعد تنصيب أصوات جديدة لكي تصبح متاحة.
 
-On Windows, some voices like Cortana can not be selected, as Microsoft
-does not make those voices available to other applications.
+في ويندوز، لا يمكن اختيار أصوات مل صوت كورتانا لأن مايكروسوفت لا توفر هذه الأصوات
+للتطبيقات الأخرى.
 
-## Special Fields
+## حقول خاصة
 
-There are some special fields you can include in your templates:
+هناك حقول خاصة يمكنك تضمينها في القوالب:
 
-    The note's tags: {{Tags}}
+    سمات الملحوظة: {{Tags}}
 
-    The type of note: {{Type}}
+    نوع الملحوظة: {{Type}}
 
-    The card's deck: {{Deck}}
+    رزمة البطاقة: {{Deck}}
 
-    The card's subdeck: {{Subdeck}}
+    رزمة البطاقة الفرعية: {{Subdeck}}
 
-    The type of card ("Forward", etc): {{Card}}
+    نوع البطاقة ("أمامي"، إلخ): {{Card}}
 
-    The content of the front template
-    (only valid in back template): {{FrontSide}}
+    محتوى القالب الأمامي (صالح في الرزمة الخلفية فقط): {{FrontSide}}
 
-FrontSide will not automatically play any audio that was on the front side
-of the card. If you wish to have the same audio play automatically on both
-the front and back of the card, you’ll need to manually include the audio
-fields on the back as well.
+لن يتسبب FrontSide بتشغيل التسجيل الصوتي الذي كان في الجانب الأمامي تلقائيًا.
+إذا كنت تريد أن يُشغل التسجيل الصوتي تلقائيًا في كلا الجانبين، عليك تضمين
+حقول التسجيل الصوتي في الجانب الخلفي أيضًا.
 
-As with other fields, special field names are case sensitive - you must use
-`{{Tags}}` rather than `{{tags}}` for example.
+كما هو الحال في الحقول الأخرى، فإن أسماء الحقول الخاصة مُميِّزة لحالة الأحرف -
+عليك استخدام `{{Tags}}` بدلًا من `{{tags}}` مثلًا.
 
-## Hint Fields
+## حقول تلميحية
 
-It’s possible to add a field to the front or back of a card, but make it
-hidden until you explicitly show it. We call this a 'hint field'. Before
-adding a hint, please bear in mind that the easier you make it to answer
-a question in Anki, the less likely you are to remember that question
-when you encounter it in real life. Please have a read about the
-'minimum information principle' on
-<http://www.supermemo.com/articles/20rules.htm> before proceeding.
+بإمكانك إضافة حقل إلى الجانب الأمامي أو الخلفي مع إخفائه وخيار لإظهاره.
+يدعى هذا «حقلًا تلميحيًا». قبل إضافة حقل تلميحي، لا تنسَ أنه كلما كانت
+إجابة سؤال أسهل، كان احتمال تذكرك لذلك السؤال عند مقابلته في الحياة الحقيقية أصغر.
+ألقِ نظرة على «مبدأ الحد الأدنى من المعلومات» في <http://www.supermemo.com/articles/20rules.htm>
+قبل إكمال القراءة.
 
-First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](editing.md#customizing-fields) section if you’re not sure how
-to do this.
+عليك أولًا إضافة حقل لوضع التلميح فيه إذا لم تفعل ذلك من قبل. انظر قسم
+[حقول](editing.md#customizing-fields) إذا لم تكن متأكدًا من كيفية فعل ذلك.
 
-Assuming you’ve created a field called MyField, you can tell Anki to
-include it on the card but hide it by default by adding the following to
-your template:
+لنفترض أنك أنشأت حقلًا يدعى «حقلي»، فيمكنك إخبار أنكي بتضمينه في البطاقة مخفيًا
+بشكل افتراضي بإضافة التالي إلى قالبك:
 
-    {{hint:MyField}}
+    {{hint:حقلي}}
 
-This will show a link labeled “show hint”; when you click it, the
-content of the field will be displayed on the card. (If MyField is
-empty, nothing will be shown.)
+سُيظهر هذا رابطًا بوسم «إظهار التلميح»؛ ستظهر محتويات الحقل عند الضغط عليه.
+(لن يظهر شيء إذا كان الحقل فارغًا).
 
-If you show the hint on the question and then reveal the answer, the
-hint will be hidden again. If you want to have the hint always revealed
-when the answer is shown, you will need to remove `{{FrontSide}}` from
-your back template and manually add the fields you wish to appear.
+إذا أظهرت التلميح في جانب السؤال ثم أظهرت الجواب، فسيُخفى التلميح مجددًا.
+إذا كنت تريد أن يظهر التلميح دائمًا عند إظهار الجواب، فعليك إزالة `{{FrontSide}}`
+من القالب الخلفي وإضافة الحقول التي ترغب في إظهارها يدويًا.
 
-It is not currently possible to use a hint field for audio — the audio
-will play regardless of whether you’ve clicked on the hint link.
+ليس من الممكن حاليًا استخدام حقل تلميح للتسجيلات الصوتية - ستُشغّل التسجيلات
+بغض النظر عما إذا ضغطت على رابط التلميح.
 
-If you want to customize the appearance or behaviour, you’ll need to
-implement the hint field yourself. We can not provide any support for
-doing so, but the following code should get you started:
+إذا كنت تريد تخصيص المظهر أو السلوك، فعليك تصميم حقل التلميح بنفسك.
+لا نستطيع توفير أي دعم لفعل ذلك، لكن الكود التالي قد يكون مفيدًا:
 
     {{#Back}}
     ﻿<a class=hint href="#"
@@ -182,169 +166,152 @@ doing so, but the following code should get you started:
     Show Back</a><div id="hint4753594160" class=hint style="display: none">{{Back}}</div>
     {{/Back}}
 
-## Dictionary Links
+## روابط القواميس
 
-You can also use field replacement to create dictionary links. Imagine
-you’re studying a language and your favourite online dictionary allows
-you to search for text using a web URL like:
+تستطيع استخدام ميزة استبدال الحقول لإنشاء روابط قاموس. لنفترض أنك تتعلم لغة
+ويسمح قاموسك المفضل على الإنترنت بالبحث عن نصوص من خلال رابط ويب كالتالي:
 
     http://example.com/search?q=myword
 
-You could add an automatic link by doing the following in your template:
+بإمكانك إضافة رابط تلقائي بوضع التالي في قالبك:
 
-    {{Expression}}
+    {{عبارة}}
 
-    <a href="http://example.com/search?q={{Expression}}">check in dictionary</a>
+    <a href="http://example.com/search?q={{عبارة}}">ابحث في القاموس</a>
 
-The template above would allow you to search for each note’s expression
-by clicking on the link while reviewing. There is a caveat however, so
-please see the next section.
+يسمح لك هذا القالب بالبحث عن عبارة كل ملحوظة بالضغط على الرابط عند المراجعة.
+لكن هناك تنبيه مهم، فانظر القسم التالي.
 
-## HTML Stripping
+## جرد HTML
 
-Like templates, fields are stored in HTML. In the dictionary link
-example above, if the expression contained the word "myword" without any
-formatting, then the HTML would be the same: "myword". But when you
-include formatting in your fields, extra HTML is included. If "myword"
-was bolded for example, the actual HTML would be
-"&lt;b&gt;myword&lt;/b&gt;".
+الحقول مخزنة بصيغة HTML مثل القوالب. في مثال رابط القاموس السابق،
+إذا احتوت العبارة كلمة "myword" بدون أي تنسيق، فسيكون الـHTML نفسه: "myword".
+لكن عندما تضيف تنسيقات إلى حقولك، فالـHTML الإضافي مضمّن أيضًا. إذا كانت "myword"
+مكتوبة بخط غامق مثلًا، فسيكون الـHTML "&lt;b&gt;myword&lt;/b&gt;".
 
-This can present a problem for things like dictionary links. In the
-above example, the dictionary link would end up being:
+قد يسبب هذا مشاكل لأمور مثل روابط القاموس. في المثال السابق،
+سيصبح رابط القاموس كالتالي:
 
-    <a href="http://example.com/search?q=<b>myword</b>">check in dictionary</a>
+    <a href="http://example.com/search?q=<b>myword</b>">ابحث في القاموس</a>
 
-The extra characters in the link would likely confuse the dictionary
-site, and you’re likely not to get any matches.
+في الغالب، ستُشكل الرموز الإضافية على القاموس ولن تحصل على أي نتائج.
 
-To solve this, Anki provides the ability to strip formatting from fields
-when they are replaced. If you prefix a field name with text:, Anki will
-not include any formatting. So a dictionary link that worked even with
-formatted text would be:
+يوفر أنكي خيار إزالة التنسيق من الحقول عند استبدالها كحل لذلك. إذا أضفت text:
+قبل اسم حقل، فلن يُضمَّن أي تنسيق. لذلك فسيكون رابط القاموس الذي يعمل حتى
+مع النص المنسّق كالتالي:
 
-    <a href="http://example.com/search?q={{text:Expression}}">check in dictionary</a>
+    <a href="http://example.com/search?q={{text:عبارة}}">ابحث في القاموس</a>
 
-## Right To Left Text
+## نصوص تقرأ من اليمين إلى اليسار
 
-If you’re using a language that reads from right to left, you’ll need
-to adjust the template like so:
+إذا كنت تستخدم لغة تُقرأ من اليمين إلى اليسار، فستحتاج إلى ضبط القالب كالتالي:
 
-    <div dir=rtl>{{FieldThatHasRTLTextInIt}}</div>
+    <div dir=rtl>{{حقل_من_اليمين_إلى_اليسار}}</div>
 
-## Media & LaTeX
+## وسائط و LaTeX
 
-Anki does not scan templates for media references, because it is slow to
-do so. This has implications for including media on the template.
+لا يفحص أنكي مراجع الوسائط في القوالب لأنها عملية بطيئة. لهذا تبعات بخصوص تضمين
+الوسائط في القوالب.
 
-### Static Sounds/Images {docsify-ignore}
+### صور/أصوات ثابتة {docsify-ignore}
 
-If you wish to include images or sounds on your cards that are the same
-for every card (eg, a company logo at the top of each card):
+إذا كنت تريد تضمين صور أو أصوات مشتركة بين كل البطاقات (مثل شعار شركة في أعلى
+كل بطاقة):
 
-1.  Rename the file so it starts with an underscore, eg "\_logo.jpg".
-    The underscore tells Anki that the file is used by the template and
-    it should be exported when sharing the deck.
+1.  ضع شرطة تحتية في أول اسم الملف، مثلًا "\_شعار.jpg". تخبر الشرطة التحتية أنكي
+بأن الملف مستخدم من قبل القالب ويجب تصديره عند مشاركة الرزمة.
 
-2.  Add a reference to the media on your front or back template, like:
+2.  أضف مرجعًا إلى الوسائط في القالب الأمامي أو الخلفي، مثل:
 
 <!-- -->
 
-    <img src="_logo.jpg">
+    <img src="_شعار.jpg">
 
-### Field References {docsify-ignore}
+### مراجع الحقول {docsify-ignore}
 
-Media references to fields are not supported. They may or may not display
-during review, and will not work when checking for unused media,
-importing/exporting, and so on. Examples that won’t work:
+مراجع الوسائط باستخدام الحقول غير مدعومة. قد تظهر أو لا تظهر خلال المراجعة،
+ولن تعمل حين فحص الوسائط غير المستخدمة، والاستيراد/التصدير، وما إلى ذلك.
+من الأمثلة التي لا تعمل:
 
-    <img src="{{Expression}}.jpg">
+    <img src="{{عبارة}}.jpg">
 
-    [sound:{{Word}}]
+    [sound:{{كلمة}}]
 
-    [latex]{{Field 1}}[/latex]
+    [latex]{{حقل 1}}[/latex]
 
-Instead, you should include the media references in the field. Please
-see the importing section for more information.
+يجب أن تضيف مراجع الوسائط إلى الحقول بدلًا من ذلك. انظر قسم الاستيراد
+لمزيد من المعلومات.
 
-## Checking Your Answer
+## التحقق من جوابك
 
-You can watch [a video about this
-feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
-YouTube.
+بإمكانك مشاهدة [فيديو عن هذه الميزة](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+في يوتيوب.
 
-The easiest way to check your answer is to click "Basic" at the top
-left of the card adding screen, and select "Basic (type in the answer)".
+الطريقة الأسهل للتحق من جوابك هي بالضغط على «أساسي» في أعلى يسار نافذة إضافة بطاقات،
+واختيار «أساسي (مع كتابة الجواب)».
 
-If you have downloaded a shared deck and would like to type in the answer
-with it, you can modify its card template. If it has a template like:
+إذا نزلت رزمة مشتركة وتريد إدخال الجواب فيها، تستطيع تعديل قالب بطاقاتها.
+إذا كان لها قالب كالتالي:
 
-    {{Native Word}}
+    {{كلمة أصلية}}
 
     {{FrontSide}}
 
     <hr id=answer>
 
-    {{Foreign Word}}
+    {{كلمة أجنبية}}
 
-To type in the foreign word and check if you are correct, you need to
-edit your front template so that it looks like this:
+لإدخال الكلمة الأجنبية والتحقق مما إذا كانت صحيحة، عليك تعديل القالب الأمامي
+ليبدو كالتالي:
 
-    {{Native Word}}
-    {{type:Foreign Word}}
+    {{كلمة أصلية}}
+    {{type:كلمة أجنبية}}
 
-Note that we have added `type:` in front of the field we want to
-compare. Since FrontSide is on the back of the card, the type answer box
-will appear on the back as well.
+لاحظ أننا أضفنا `type:` أمام الحقل الذي نريد المقارنة به. لأن FrontSide هي في
+الجانب الخلفي للبطاقة، فسيظهر صندوق إظهار الجواب في الخلف كذلك.
 
-When reviewing, Anki will display a text box where you can type in the
-answer, and upon hitting enter or showing the answer, Anki will show you
-which parts you got right and which parts you got wrong. The text box’s
-font size will be the size you configured for that field (via the
-“Fields” button when editing).
+سيظهر أنكي صندوق نص حيث يمكنك إدخال الجواب عند المراجعة، وعند الضغط على enter
+أو إظهار الجواب، سيظهر لك الأجزاء التي أدخلتها بشكل صحيح والأجزاء التي أدخلتها بشكل خاطئ.
+سيكون حجم خط الصندوق هو الحجم الذي أعددته لذلك الحقل (من خلال زر «حقول» عند التحرير).
 
-This feature does not change how the cards are answered, so it’s still
-up to you to decide how well you remembered or not.
+لا تغير هذه الميزة طريقة تقييم البطاقات، لذلك فما زال قرار تحديد مدى تذكرك للبطاقة بيدك.
 
-Only one typing comparison can be used on a card. If you add the above
-text multiple times, it will not work. It also only supports a single
-line, so it is not useful for comparing against a field that is
-comprised on multiple lines.
+يمكن أن تجرى مقارنة إدخال واحدة فقط في بطاقة. إذا أضفت النص السابق عدة مرات،
+لن تعمل الميزة. كما أنها تدعم سطرًا واحدًا فقط، لذلك فهي ليست مفيدة للمقارنة مع حقل
+يمتد عدة سطور.
 
-Anki uses a monospaced font for the answer comparison so that the
-“provided” and “correct” sections line up. If you wish to override the
-font for the answer comparison, you can put the following at the bottom
-of your styling section:
+يستخدم أنكي خطًا أحادي المسافة (monospaced) لمقارنة الجواب لكي تتحاذى
+الأقسام المدخلة مع الأقسام الصحيحة. إذا كنت تريد تغيير خط مقارنة الجواب، يمكنك وضع
+التالي أسفل قسم التنسيق:
 
     code#typeans { font-family: "myfontname"; }
 
-Which will affect the following HTML for the answer comparison:
+الذي سيؤثر على الـHTML التالي والخاص بمقارنة الجواب:
 
     <code id=typeans>...</code>
 
-Advanced users can override the default type-answer colours with the css
-classes 'typeGood', 'typeBad' and 'typeMissed'. AnkiMobile supports
-'typeGood' and 'typeBad', but not 'typeMissed'.
+يستطيع المستخدمون المتقدمون تغيير ألوان إدخال الجواب الافتراضية من خلال فئات CSS
+'typeGood'، و 'typeBad' ، و 'typeMissed'. يدعم أنكي موبيل
+'typeGood' و 'typeBad' لكنه لا يدعم 'typeMissed'.
 
-If you wish to override the size of the typing box and don’t want to
-change the font in the Fields dialog, you can override the default
-inline style using `!important`, like so:
+إذا كنت تريد تغيير حجم صندوق النص لكنك لا تريد تغيير الخط في نافذة الحقول،
+بإمكانك تغيير النسق الافتراضي باستخدام `!important`، كالتالي:
 
     #typeans { font-size: 50px !important; }
 
-It is also possible to type in the answer for cloze deletion cards. To
-do this, add `{{type:cloze:Text}}` to both the front and back
-template, so the back looks something like this:
 
-    {{cloze:Text}}
-    {{type:cloze:Text}}
-    {{Extra}}
+من الممكن أيضًا إدخال الجواب في بطاقات ملء الفراغات. لفعل ذلك،
+أضف `{{type:cloze:Text}}` إلى القالبين الأمامي والخلفي، ليبدو القالب الخلفي كالتالي:
 
-Note that since the cloze type does not use FrontSide, this must be
-added to both sides on a cloze note type.
+    {{cloze:نص}}
+    {{type:cloze:نص}}
+    {{إضافي}}
 
-If there are multiple sections elided, you can separate the answers in
-the text box with a comma.
+لاحظ أنه يجب إضافة هذا إلى كلا الجانبين لأن نوع ملء الفراغات لا يستخدم FrontSide.
 
-Type answer boxes will not appear in the ["preview"
-dialog](templates/intro.md) in the browser. When you review or look at
-the preview in the card types window, they will display.
+إذا كانت هناك عدة أقسام معتمة، تستطيع فصل الإجابات في صندوق النص بفاصلة.
+
+لن تظهر صناديق إدخال الجواب في نافذة [المعاينة](templates/intro.md) في المتصفح.
+لكنها ستظهر عند المراجعة أو في قسم المعاينة في نافذة أنواع البطاقات.
+
+</div>
