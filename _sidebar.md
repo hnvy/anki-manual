@@ -4,7 +4,7 @@
 - [دراسة](studying.md)
 - [إضافة/تحرير](editing.md)
 - [قوالب البطاقات](templates/intro.md)
- - [Field Replacements](templates/fields.md)
+ - [استبدالات الحقول](templates/fields.md)
  - [Card Generation](templates/generation.md)
  - [Styling & HTML](templates/styling.md)
 - [Preferences](preferences.md)
