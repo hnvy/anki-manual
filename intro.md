@@ -1,5 +1,3 @@
-<div dir="rtl">
-
 # مقدمة
 
 ## بداية سريعة
@@ -33,5 +31,3 @@
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
 إذا كنت ترغب في المساهمة بترجمة الدليل إلى لغة أخرى، انظر [وثائق الترجمة](https://translating.ankiweb.net/#/anki/manual).
-
-</div>
