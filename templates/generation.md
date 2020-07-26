@@ -1,217 +1,224 @@
-# Card Generation
+# توليد البطاقات
 
-## Reverse Cards
+## بطاقات معكوسة
 
-You can watch [a video about reversing
-cards](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) on YouTube.
+بإمكانك مشاهدة [فيديو عن البطاقات المعكوسة](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+في يوتيوب.
 
-If you want to create cards that go in both directions (e.g., both
-“ookii”→“big” and “big”→“ookii”), you have several options. The simplest
-is to select the “Basic (and reversed card)” built-in note type. This
-will generate two cards, one in each direction.
+إذا كنت تريد إنشاء بطاقات باتجاهين (مثلًا، كل من “ookii”←“big” و “big”←“ookii”)،
+فلديك عدة خيارات. الأبسط هو تحديد نوع الملحوظة المسمى «أساسي (وبطاقة معكوسة)».
+سيولد هذا بطاقتين، واحدة لكل اتجاه.
 
-If you want to generate reverse cards for only some of your material
-(perhaps you only want to take the time to study reverses for the most
-important material, or some of your cards don’t make sense reversed),
-you can select the “Basic (optional reversed card)” note type. This note
-type generates a forward-only card when you fill in only the first two
-fields; if you additionally enter something in the “Add Reverse” field
-(like a 'y'), Anki will generate a reverse card as well. The contents of
-this field will never be displayed on a card.
+إذا كنت تريد توليد بطاقات معكوسة لبعض من موادك فقط (ربما تريد أن تخصص وقت دراسة
+بطاقات معكوسة للمواد الأكثر أهمية، أو بعض من موادك لا تصلح للبطاقات المعكوسة)،
+بإمكانك تحديد نوع الملحوظة المسمى «أساسي (وبطاقة معكوسة اختيارية)». يولد هذا النوع
+بطاقة أمامية عندما تملأ الحقلين الأولين فقط؛ إذا أدخلت شيئًا في نص
+«إضافة بطاقة معكوسة» (مثل 'y')، سيولد أنكي بطاقة معكوسة أيضًا. لن يعرض محتوى
+هذا الحقل في بطاقة أبدًا.
 
-## Card Generation & Deletion
+## توليد بطاقات وحذفها
 
-Anki will not create cards with empty front sides. Thus if “My Field”
-was empty, and one card’s front template included only that field, the
-card would not be created.
+لن ينشئ أنكي بطاقات بجوانب أمامية فارغة. لذلك، إذا كان حقل «حقلي» فارغًا،
+ويحتوي القالب الأمامي لبطاقة ما ذلك الحقل فقط، فلن تنشأ البطاقة.
 
-If no cards can be created because all of the cards would have empty
-front sides, then the Add Notes window will warn you and not allow the
-note to be added until at least one card would be generated.
+إذا لم تكن هناك أي بطاقة يمكن إنشاؤها لأن كل البطاقات سيكون لها جوانب أمامية
+فارغة، ستنبهك نافذة إضافة ملحوظات ولن تسمح بإضافة الملحوظة حتى تصبح بطاقة واحدة
+على الأقل قابلة للإنشاء.
 
-When you edit a previously added note, Anki will automatically create
-extra cards if they were previously blank but no longer are. If your
-edits have made some cards blank when they previously were not, however,
-Anki will not delete them immediately, as that could lead to accidental
-data loss. To remove the empty cards, go to Tools → Empty Cards in the
-main window. You will be shown a list of empty cards and be given the
-option to delete them.
+عند تحرير بطاقة مضافة مسبقًا، سينشأ أنكي بطاقات إضافية تلقائيًا إذا كانت
+فارغة سابقًا لكن ليس بعد الآن. لكن إذا جعلت تعديلاتك بعض البطاقات فارغة بعد
+أن لم تكن كذلك، فلن يحذف أنكي هذه البطاقات فورًا لأن ذلك قد يؤدي إلى فقدان بيانات عَرَضي.
+لحذف البطاقات الفارغة، استخدم أدوات ← بطاقات فارغة في النافذة الرئيسية.
+ستظهر لك قائمة بطاقات فارغة وستُعطى خيار حذفها.
 
-Because of the way that card generation works, it is not possible to
-manually delete individual cards, as they would just end up being recreated
-the next time the note was edited. Instead, you should make the
-relevant conditional replacement fields empty and then use the Empty
-Cards option.
+بسبب طريقة عمل توليد البطاقات، فمن غير الممكن حذف بطاقات فردية يدويًا،
+لأنها ستُنشأ مجددًا عند تحرير الملحوظة. عليك جعل حقول الاستبدال الشرطي المعنية فارغة
+ثم استخدام خيار البطاقات الفارغة بدلًا من ذلك.
 
-Anki does not consider special fields or non-field text for the purposes
-of card generation. Thus if your front template looked like the
-following, no card would be generated if Country was empty:
+لا يأخذ أنكي الحقول الخاصة أو النصوص خارج الحقول بعين الاعتبار عند توليد بطاقات.
+لذلك، إذا كان قالبك الأمامي كالتالي، فلن تُولَّد أي بطاقة إذا كان حقل البلد فارغًا:
 
-    Where is {{Country}} on the map?
+    أين {{بلد}} على الخريطة؟
 
-## Selective Card Generation
+## توليد بطاقات اختياري
 
-Sometimes you may want to generate extra cards for only some of your
-material, such as testing your ability to recall the most important
-words of a set. You can accomplish this by adding an extra field to your
-note, and adding some text into it (such as "1") on the notes you want
-the extra card. Then in the card template, you can make the card’s
-creation depend on that field being non-empty. For more information on
-this, please see the conditional replacement section below.
+قد ترغب في توليد بطاقات إضافية لبعض موادك فقط في بعض الأحيان، مثلًا حينما تريد اختبار
+قدرتك على استحضار الكلمات الأهم في مجموعة. تستطيع تحقيق ذلك بإضافة حقل إضافي إلى
+ملحوظتك، وإضافة نص ما فيه (مثل "1") في الملحوظات التي تريد بطاقة إضافية فيها.
+تستطيع جعل توليد البطاقة معتمدًا على كون ذلك الحقل غير فارغ. لمزيد من المعلومات
+حول ذلك، انظر قسم الاستبدال الشرطي في الأسفل.
 
-## Conditional Replacement
+## استبدال شرطي
 
-It is possible to include certain text, fields, or HTML on your cards
-only if a field is empty or not empty. An example:
+من الممكن تضمين بعض النصوص، أو الحقول، أو HTML في بطاقاتك فقط عندما يكون حقل ما
+فارغًا أو غير فارغ. مثلًا:
 
-    This text is always shown.
+<div dir="ltr">
 
-    {{#FieldName}}
-        This text is only shown if FieldName has text in it
-    {{/FieldName}}
+    هذا النص ظاهر دائمًا.
 
-    {{^FieldName}}
-        This text is only shown if FieldName is empty
-    {{/FieldName}}
+    {{#اسم_حقل}}
+        يظهر هذا النص فقط عندما لا يكون اسم_حقل فارغًا.
+    {{/اسم_حقل}}
 
-A real life example is only showing a label if the field is not empty:
+    {{^اسم_حقل}}
+        يظهر هذا الحقل فقط عندما يكون اسم_حقل فارغًا.
+    {{/اسم_حقل}}
+</div>
 
-    {{#Tags}}
-        Tags: {{Tags}}
-    {{/Tags}}
+مثال من الحياة الواقعية هو إظهار وسم فقط عندما لا يكون الحقل فارغًا:
 
-Or say you want to display a specific field in blue on the front of your
-card if there are extra notes on the back (perhaps the fact that there
-are notes serves as a reminder that you should spend more time thinking
-about the answer). You can style the field as follows:
+<div dir="ltr">
 
-    {{#Notes}}
+    {{#سمات}}
+        سمات: {{سمات}}
+    {{/سمات}}
+</div>
+
+أو لنقل إنك تريد عرض حقل ما باللون الأزرق في الجانب الأمامي من بطاقتك
+إذا كانت هناك ملاحظات إضافية في الخلف (ربما يجعلك وجود ملاحظات تتذكر أن تقضي
+وقتًا أطول مفكرًا بالجواب). تستطيع تنسيق الحقل كالتالي:
+
+<div dir="ltr">
+
+    {{#ملاحظات}}
         <span style="color:blue;">
-    {{/Notes}}
+    {{/ملاحظات}}
 
-    {{FieldToFormat}}
+    {{الحقل_الذي_تريد_تنسيقه}}
 
-    {{#Notes}}
+    {{#ملاحظات}}
         </span>
-    {{/Notes}}
+    {{/ملاحظات}}
+</div>
 
-You can also use conditional replacement to control which cards are
-generated. This works since Anki will not generate
-cards which would have a blank front side. For
-example, consider a card with two fields on the front:
+كما يمكنك استخدام الاستبدال الشرطي للتحكم بتوليد البطاقات. يعمل هذا لأن أنكي
+لا ينشئ بطاقات لها جانب أمامي فارغ. مثلًا، خذ بطاقة بحقلين في الجانب الأمامي:
 
-    {{Expression}}
-    {{Notes}}
+    {{عبارة}}
+    {{ملاحظات}}
 
-Normally a card would be generated if either the expression or notes
-field had text in it. If you only wanted a card generated if expression
-was not empty, then you could change the template to this:
+ستولد بطاقة إذا كان حقل العبارة أو الملاحظات غير فارغ. إذا أدرت أن تولد بطاقة
+إذا لم يكن حقل العبارة فارغًا، بإمكانك تغيير القالب كالتالي:
 
-    {{#Expression}}
-        {{Expression}}
-        {{Notes}}
-    {{/Expression}}
+<div dir="ltr">
 
-And if you wanted to require both fields, you could use two conditional
-replacements:
+    {{#عبارة}}
+        {{عبارة}}
+        {{ملاحظات}}
+    {{/عبارة}}
+</div>
 
-    {{#Expression}}
-        {{#Notes}}
-            {{Expression}}
-            {{Notes}}
-        {{/Notes}}
-    {{/Expression}}
+إذا أدرت أن تتطلب كلا الحقلين، تستطيع استخدام استبدالين شرطيين:
 
-Keep in mind that this only works when you place the
-conditional replacement code on the _front_ of the card; if you do this
-on the back, you will simply end up with cards with a blank back side.
-Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the 'entire' front side in
-the conditional replacement; for instance, the following would not work
-as expected:
+<div dir="ltr">
 
-    {{#Expression}}
-        {{Expression}}
-    {{/Expression}}
-    {{Notes}}
+    {{#عبارة}}
+        {{#ملاحظات}}
+            {{عبارة}}
+            {{ملاحظات}}
+        {{/ملاحظات}}
+    {{/عبارة}}
+</div>
 
-## Limitations in older Anki versions
+لا تنس أن هذا يعمل فقط إذا وضعت كود الاستبدال الشرطي في _أمام_ البطاقة؛
+إذا فعلت هذا في الخلف، فستحصل على بطاقات بجانب خلفي فارغ ببساطة.
+بشكل مشابه، لأن هذا يعمل من خلال التحقق مما إذا كان الجانب الأمامي سيصبح فارغًا،
+فمن المهم أن تحيط الجانب الأمامي كله بعبارة الاستبدال الشرطي؛ على سبيل المثال،
+لن يعمل التالي كما هو متوقع:
 
-The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
+<div dir="ltr">
 
-Older Anki versions cannot use negated conditionals for card generation.
-For example, on Anki 2.1.28, the following would add a card if a field
-called AddIfEmpty is empty, and Front is non-empty:
+    {{#عبارة}}
+        {{عبارة}}
+    {{/عبارة}}
+    {{ملاحظات}}
+</div>
 
-    {{^AddIfEmpty}}
-        {{Front}}
-    {{/AddIfEmpty}}
+## قصورات في الإصدارات القديمة
 
-On earlier Anki versions, the negated conditional is ignored, and card
-generation will depend only on Front being non-empty.
+لا تنطبق القصورات التالية على أنكي 2.1.28+ و أنكي موبيل 2.0.64+.
 
-Mixing **AND** and **OR** conditions can also cause problems on older versions.
-For example, the following ("add the card if A **OR** B **OR** C is non-empty)
-is fine:
+لا تدعم الإصدارات القديمة الشروط المنفية لتوليد البطاقات. مثلًا، في أنكي 2.1.28،
+سيضيف الكود التالي بطاقة إذا كان الحقل المسمى «أضف_إذا_كان_فارغا» فارغًا،
+ولم يكن حقل الأمام فارغًا:
 
-    {{A}}
-    {{B}}
-    {{C}}
+<div dir="ltr">
 
-And the following ("add the card if A **AND** B **AND** C are non-empty") is fine:
+    {{^أضف_إذا_كان_فارغا}}
+        {{أمام}}
+    {{/أضف_إذا_كان_فارغا}}
+</div>
 
-    {{#A}}
-        {{#B}}
-            {{#C}}
-                {{A}}
-            {{/C}}
-        {{/B}}
-    {{/A}}
+في إصدارات أنكي الأقدم، يتم تجاهل الشرط المنفي، ويعتمد توليد البطاقات
+على كون حقل الأمام غير فارغ.
 
-But the following ("add the card if A **OR** (B **AND** C) are non-empty") will not work properly:
+خلط شروط **و** و **أو** قد يسبب مشاكل في الإصدارات القديمة أيضًا.
+مثلًا، الكود التالي صالح («أضف البطاقة إذا كان الحقل أ **أو** ب **أو** ج غير فارغ»):
 
-    {{A}}
-    {{#B}}
-        {{#C}}
-            {{B}}
-        {{/C}}
-    {{/B}}
+    {{أ}}
+    {{ب}}
+    {{ج}}
 
-## Cloze Templates
+والتالي («أضف البطاقة إذا كانت الحقول أ **و** ب **و** ج غير فارغة») صالح:
 
-Please see the [cloze deletion](editing.md#cloze-deletion) section for background info.
+<div dir="ltr">
 
-The cloze note type functions differently from regular note types.
-Instead of a customizable number of card types, it has a single type
-which is shared by all cloze deletions on a note.
+    {{#أ}}
+        {{#ب}}
+            {{#ج}}
+                {{أ}}
+            {{/ج}}
+        {{/ب}}
+    {{/أ}}
+</div>
 
-As mentioned in the card generation section above, generation of regular
-cards depends on one or more fields on the question being non-empty.
-Cloze deletion note types are generated differently:
+لكن التالي («أضف البطاقة إذا كان أ **أو** (ب **و** ج) غير فارغ») لن يعمل بشكل صحيح:
 
-- Anki looks on the front template for one or more cloze replacements,
-  like {{cloze:FieldName}}.
+<div dir="ltr">
 
-- It then looks in the FieldName field for all cloze references, like
-  {{c1::text}}.
+    {{أ}}
+    {{#ب}}
+        {{#ج}}
+            {{ب}}
+        {{/ج}}
+    {{/ب}}
+</div>
 
-- For each separate number, a card will be generated.
+## قوالب ملء الفراغات
 
-Because card generation functions differently for cloze deletion cards,
-{{cloze:…​}} tags can not be used with a regular note type - they
-will only function properly when used with a cloze note type.
+انظر قسم [عبارات ملء الفراغات](editing.md#cloze-deletion) للمعلومات التوضيحية.
 
-Conditional generation provides a special field so you can check which
-card you are rendering. If you wanted to display the "hint1" field on
-the first cloze, and "hint2" field on the second cloze for example, you
-could use the following template:
+يعمل نوع ملحوظات ملء الفراغات بشكل مختلف عن أنواع الملحوظات العادية. حيث يكون له
+نوع بطاقة واحد مشترك مع كل عبارات ملء الفراغات في الملحوظة بدلًا من أنواع بطاقات مخصصة.
 
-    {{cloze:Text}}
+كما قلنا في قسم توليد البطاقات في الأعلى، يعتمد توليد البطاقات العادية على كون
+حقل أو أكثر في جانب السؤال غير فارغ. تُوَلّد أنواع ملحوظات ملء الفراغات بشكل مختلف:
+
+- يبحث أنكي في القالب الأمامي عن عبارة ملء فراغات واحدة أو أكثر،
+مثل {{cloze:اسم_الحقل}}.
+
+- ثم يبحث في حقل اسم_الحقل عن كل مراجع عبارات ملء الفراغات، مثل {{c1::نص}}.
+
+- تولد بطاقة واحدة لكل رقم مختلف.
+
+لأن توليد البطاقات يعمل بشكل مختلف في بطاقات ملء الفراغات، فإن ملحقات {{cloze:…​}}
+لا يمكن استخدامها في نوع ملحوظة عادي - ستعمل بشكل صحيح عند استخدامها في نوع
+ملحوظات ملء فراغات فقط.
+
+يوفر الاستبدال الشرطي حقلًا خاصًا يمكنك من معرفة أي بطاقة تظهر. إذا أردت إظهار
+حقل «تلميح1» في العبارة الأولى، وحقل «تلميح2» في العبارة الثانية مثلًا،
+يمكنك استخدام القالب التالي:
+
+<div dir="ltr">
+
+    {{cloze:نص}}
 
     {{#c1}}
-    {{Hint1}}
+        {{تلميح1}}
     {{/c1}}
 
     {{#c2}}
-    {{Hint2}}
+        {{تلميح2}}
     {{/c2}}
+</div>

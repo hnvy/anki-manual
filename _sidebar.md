@@ -5,7 +5,7 @@
 - [إضافة/تحرير](editing.md)
 - [قوالب البطاقات](templates/intro.md)
  - [استبدالات الحقول](templates/fields.md)
- - [Card Generation](templates/generation.md)
+ - [توليد البطاقات](templates/generation.md)
  - [Styling & HTML](templates/styling.md)
 - [Preferences](preferences.md)
 - [Deck Options](deck-options.md)
