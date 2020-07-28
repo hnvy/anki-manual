@@ -1,131 +1,138 @@
-# Card Styling
+# تنسيق البطاقات
 
-You can watch [a video about styling
-cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
-The video shows Anki 2.0’s interface, but the concepts are largely the
-same.
+بإمكانك مشاهدة فيديو عن [تنسيق البطاقات](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+في يوتيوب. يظهر الفيديو واجهة أنكي 2.0، لكن المفاهيم هي نفسها تقريبًا.
 
-In between the front and back template in the Cards screen is the card
-styling area. In that section, you can change the background colour of
-the card, the default font, the text alignment, and so on.
+بين القالبين الأمامي والخلفي هناك قسم تنسيق البطاقة.
+تستطيع تغيير لون خلفية البطاقة، الخط الافتراضي، محاذاة الخط، وما إلى ذلك من خلال هذا القسم.
 
-The standard options available to you are:
+الخيارات الأساسية المتوفرة هي:
 
 **font-family**  
-The name of the font to use on the card. If your font has spaces in it
-like "MS Unicode", then you need to surround the font name in double
-quotes as in this sentence. It is also possible to use multiple fonts on
-one card; for information on that, please see below.
+اسم الخط الذي تريد استخدامه في البطاقة. إذا كان هناك فراغات في اسم الخط مثل "MS Unicode"،
+فعليك أن تحيط الاسم بأقواس مثل المستخدمة في هذه الجملة. من الممكن أيضًا استخدام
+عدة خطوط في البطاقة نفسها؛ تابع القراءة لمزيد من المعلومات.
 
 **font-size**  
-The size of the font in pixels. When changing it, make sure you leave px
-at the end.
+حجم الخط بوحدة البيكسل. لا تنس إبقاء "px" في آخر الحجم عند تغييره.
 
 **text-align**  
-Whether the text should be aligned in the center, left, or right.
+محاذاة النص إلى الوسط، أو اليسار، أو اليمين.
 
 **color**  
-The color of the text. Simple color names like 'blue', 'lightyellow',
-and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](http://htmlcolorcodes.org/) for more
-information.
+لون النص. ستعمل أسماء ألوان بسيطة مثل 'blue'، أو 'lightyellow'، وما إلى ذلك.
+كما بإمكانك استخدام رموز ألوان HTML لاختيار ألوان اعتباطية.
+انظر [هذا الموقع](http://htmlcolorcodes.org/) لمزيد من المعلومات.
 
 **background-color**  
-The color of the card background.
+لون خلفية البطاقة.
 
-Any CSS can be placed in the styling section – advanced users may wish
-to do things like add a background image or gradient, for example. If
-you’re wondering how to get some particular formatting, please search
-the web for information about how to do it in CSS, as there is a great
-deal of documentation available.
+يمكن وضع أي CSS في قسم التنسيق - قد يرغب المستخدمون المتقدمون في فعل أشياء مثل
+إضافة صورة خلفية أو خلفية بألوان متدرجة مثلًا. إذا كنت تتساءل
+كيف تحصل على صيغة ما، ابحث في الويب عن معلومات حول كيفية فعل ذلك في CSS،
+حيث هناك كمية هائلة من الوثائق.
 
-The styling is shared between all cards, which means that when you make
-an adjustment it will affect all cards for that note type. It is also
-possible to specify card-specific styling, however. The following
-example will use a yellow background on all cards except the first one:
+تشترك كل البطاقات بمعلومات التنسيق، ما يعني أنه عندما تجري تعديلًا
+فإنه سيؤثر على كل بطاقات نوع الملحوظة ذاك. لكن من الممكن أيضًا تطبيق تنسيقات
+خاصة ببطاقة محددة. يستخدم المثال التالي خلفية صفراء في كل البطاقات ما عدا الأولى:
+
+<div dir="ltr">
 
 ```css
 .card { background-color: yellow; }
 .card1 { background-color: blue; }
 ```
-    
-## Image Resizing
+</div>
 
-Anki shrinks images to fit the screen by default. You can change this by adding
-the following to the bottom of your styling section (outside of the default
-`.card { ... }`): 
+## تغيير حجم الصور
+
+يقلص أنكي الصور لتلائم الشاشة بشكل افتراضي. تستطيع تغيير هذا بإضافة التالي إلى
+أسفل قسم التنسيق (خارج قسم <span dir="ltr">`.card { ... }`</span> الافتراضي):
+
+<div dir="ltr">
 
 ```css
 img { max-width: none; max-height: none; }
 ```
+</div>
 
-AnkiDroid sometimes has [trouble scaling images to fit the
-screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
-image dimensions using css should fix this, but seems to be ignored as of
-AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
-example: 
+أحيانًا يواجه أنكي درويد مشاكل عند [تغيير جحم الصور لتلائم الشاشة](https://github.com/ankidroid/Anki-Android/issues/3612).
+ضبط أبعاد الصورة القصوى باستخدام CSS يجب أن يصلح هذا، لكن ليس في أنكي درويد 2.9 على ما يبدو.
+يمكن إصلاح هذا بإضافة <span dir="ltr">`!important`</span> لكل أمر تنسيق كالتالي:
+
+<div dir="ltr">
 
 ```css
 img { max-width: 300px !important; max-height: 300px !important; }
 ```
+</div>
 
-If you try to change the style for images and find that the star that
-appears on marked cards is affected (for instance, it becomes way too
-large), you can target it with the following:
+إذا أدرت تغيير تنسيق الصور ووجدت أن النجمة التي تظهر على البطاقات المعلّمة تأثرت بذلك
+(أصبحت كبيرة جدًا مثلًا)، فبإمكانك تنسيقها باستخدام التالي:
 
+<div dir="ltr">
 
 ```css
 img#star { ... }
 ```
+</div>
 
-You can explore the styling of cards interactively by using Chrome:
+تستطيع تصفح تنسيق البطاقات بشكل تفاعلي باستخدام متصفح كروم:
 
 <https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes>
 
-# Field Styling
+## تنسيق الحقول
 
-The default styling applies to the whole card. You can also make certain
-fields or part of the card use a different font, color, and so on. This
-is particularly important when studying foreign languages, as Anki will
-sometimes be unable to correctly display characters unless an
-appropriate font has been chosen.
+ينطبق التنسيق الافتراضي على البطاقة كاملة. كما تستطيع جعل بعض الحقول أو قسم من البطاقة
+يستخدم خطًا، أو لونًا مختلفًا، وما إلى ذلك. هذا مهم خصيصًا حين دراسة اللغات الأجنبية، حيث
+لا يقدر أنكي أحيانًا على إظهار الحروف بشكل صحيح إلا إذا اُختير الخط المناسب.
 
-Say you have an “Expression” field, and you want to give it the OSX Thai
-font “Ayuthaya”. Imagine your template already reads:
+لنقل أن لديك حقلًا باسم «عبارة»، وتريد عرضه بخط أو إس إكس التايلندي “Ayuthaya”.
+لنفرض أن قالبك يحوي التالي:
 
-    What is {{Expression}}?
+    ما {{عبارة}}؟
 
-    {{Notes}}
+    {{ملاحظات}}
 
-What we need to do is wrap the text we want to style in some HTML. We
-will put the following in front of the text:
+علينا إحاطة النص الذي نريد تنسيقه ببعض الHTML. سنضع التالي قبل النص:
+
+<div dir="ltr">
 
     <div class=mystyle1>
+</div>
 
-And the following behind it:
+والتالي بعده:
+
+<div dir="ltr">
 
     </div>
+</div>
 
-By wrapping the text like the above, we tell Anki to style the wrapped
-text with a custom style called “mystyle1”, which we will create later.
+بإحاطة النص هكذا، فإننا نخبر أنكي بتنسيق النص المحاط بتنسيق مخصص
+سننشئه لاحقًا يدعى “mystyle1”،
 
-Thus if we wanted the entire “What is …​?” expression to use the Thai
-font, we would use:
+إذا أدرنا أن تستخدم عبارة  «ما ...؟» كاملة الخط التايلندي، فسنستخدم:
 
-    <div class=mystyle1>What is {{Expression}}?</div>
+<div dir="ltr">
 
-    {{Notes}}
+    <div class=mystyle1>ما {{عبارة}}؟</div>
 
-And if we wanted only the expression field itself to use the Thai font,
-we’d use:
+    {{ملاحظات}}
+</div>
 
-    What is <div class=mystyle1>{{Expression}}</div>?
+وإذا أدرنا استخدام الخط لحقل العبارة فقط، فسنستخدم:
 
-    {{Notes}}
+<div dir="ltr">
 
-After we’ve edited the template, we now need to move to the Styling
-section between the templates. Before editing it, it should look
-something like:
+    ما <div class=mystyle1>{{عبارة}}</div>؟
+
+    {{ملاحظات}}
+</div>
+
+بعد تعديل القالب، علينا الانتقال إلى قسم التنسيق بين القوالب. يجب أن يبدو كالتالي
+قبل تعديله:
+
+<div dir="ltr">
 
 ```css
 .card {
@@ -136,8 +143,11 @@ something like:
  background-color: white;
 }
 ```
+</div>
 
-Add your new style to the bottom, so it looks like:
+أضف التنسيق الجديد إلى الأسفل كالتالي:
+
+<div dir="ltr">
 
 ```css
 .card {
@@ -152,10 +162,12 @@ Add your new style to the bottom, so it looks like:
  font-family: ayuthaya;
 }
 ```
+</div>
 
-You can include any styling you want in the style. If you wanted to
-increase the font size too, you’d change the mystyle1 section to look
-like:
+تستطيع تضمين أي تنسيق تريده. إذا أدرت تغيير حجم الخط أيضًا، فستعدل قسم mystyle1
+ليبدو هكذا:
+
+<div dir="ltr">
 
 ```css
 .mystyle1 {
@@ -163,56 +175,53 @@ like:
  font-size: 30px;
 }
 ```
+</div>
 
-It’s also possible to bundle custom fonts with your deck, so you don’t
-need to install them on your computer or mobile device. Please see the
-installing fonts section for more info.
+من الممكن أيضًا تضمين خطوط مخصصة مع رزمتك، لكي لا تحتاج إلى تنصيبها في حاسوبك
+أو هاتفك المحمول. انظر قسم تنصيب الخطوط لمزيد من المعلومات.
 
-## Audio Replay Buttons
+## أزرار إعادة تشغيل الصوت
 
-When audio or text to speech is included on your cards, Anki will show
-buttons you can click on to replay the audio.
+عندما يكون هناك تسجيل صوتي أو تحويل نص إلى كلام في بطاقاتك، سيظهر أنكي أزرارًا تستطيع
+الضغط عليها لإعادة تشغيل الصوت.
 
-If you prefer not to see the buttons, you can hide them in the
-preferences screen.
+بإمكانك إخفاء هذه الأزرار من خلال نافذة التفضيلات إذا كنت تفضل عدم رؤيتها.
 
-You can customize their appearance in your card styling, for example, to
-make them smaller and coloured, you could use the following:
+تستطيع تخصيص مظهر هذه الأزرار. تستطيع استخدام التالي لجعلها أصغر وبألوان مختلفة مثلًا:
 
+<div dir="ltr">
 
 ```css
 .replay-button svg { width: 20px; height: 20px; }
 .replay-button svg circle { fill: blue; }
 .replay-button svg path { stroke: white; fill: green; }
 ```
+</div>
 
-## Other HTML
+## HTML آخر
 
-Your templates can contain arbitrary HTML, which means that all the
-layout possibilities used on internet web pages can also be used on your
-cards. Things like tables, lists, images, links to external pages and so
-on are all supported. With tables for example, you could change the
-layout so that the front and back of a card appear on the left and right
-instead of the top and bottom.
+يمكن أن تحوي قوالبك على أي HTML، ما يعني أنه يمكن استخدام كل التخطيطات الممكنة
+في صفحات الويب في بطاقاتك. أشياء مثل الجداول، والقوائم، والصور، والروابط إلى صفحات خارجية
+وما إلى ذلك - كلها مدعومة. باستخدام الجداول مثلًا، تستطيع تغيير التخطيط بحيث يظهر
+الجانب الأمامي والخلفي في بطاقة على اليسار واليمين بدلًا من الأعلى والأسفل.
 
-Covering all of HTML’s features is outside the scope of this manual, but
-there are plenty of good introductory guides to HTML available on the
-web if you’d like to learn more.
+إن تغطية كل ميزات HTML خارج نطاق هذا الدليل، لكن هناك كثير من الأدلة التعريفية الجيدة
+حول HTML متوفرة على الويب إذا أردت تعلم المزيد.
 
-## Browser Appearance
+## مظهر المتصفح
 
-If your card templates are complex, it may be difficult to read the
-question and answer columns (called "Front" and "Back") in the [card
-list](browsing.md). The "browser appearance" option allows you to define a
-custom template to be used only in the browser, so you can include only
-the important fields and change the order if you desire. The syntax is
-the same as in standard card templates.
+إذا كانت قوالب بطاقاتك معقدةـ، فقد يكون من الصعب قراءة عمودي السؤال والجواب
+(التي تدعى «أمام» و «خلف») في [قائمة البطاقات](browsing.md).
+يسمح لك خيار «مظهر المتصفح» بتعريف قالب مخصص ليُستخدم في المتصفح فقط،
+حيث يمكنك تضمين الحقول المهمة فقط وتغيير الترتيب إذا أردت. الصياغة هي مثل صياغة
+قوالب البطاقات العادية.
 
-## Platform-Specific CSS
+## CSS خاص بمنصة معينة
 
-Anki defines some special CSS classes that allow you to define different
-styling for different platforms. The example below shows how to vary the
-font depending on where you’re reviewing:
+يعرّف أنكي عدة فئات CSS خاصة تسمح لك بتعريف تنسيقات مختلفة لمنصات مختلفة.
+يظهر المثال في الأسفل كيفية تغيير الخط اعتمادًا على المنصة التي تراجع منها:
+
+<div dir="ltr">
 
 ```css
 .win .jp { font-family: "MS Mincho"; }
@@ -220,127 +229,123 @@ font depending on where you’re reviewing:
 .linux .jp { font-family: "Kochi Mincho"; }
 .mobile .jp { font-family: "Hiragino Mincho ProN"; }
 ```
+</div>
 
-And in the template:
+وفي القالب:
+
+<div dir="ltr">
 
 ```
 <div class=jp>{{Field}}</div>
 ```
+</div>
 
-For different iOS devices, you can use '.iphone' and '.ipad'.
+تستطيع استخدام '<span dir="ltr">.iphone</span>' و '<span dir="ltr">.ipad</span>' لأجهزة آي أو إس المختلفة.
 
-You can also use properties like .gecko, .opera, and .ie to select
-particular browsers when using AnkiWeb. Please see
-<http://rafael.adm.br/css_browser_selector/> for a full list of options.
+تستطيع  استخدام خصائص مثل <span dir="ltr">.gecko</span> و <span dir="ltr">.opera</span>
+و <span dir="ltr">.ie</span> لتحديد متصفحات محددة عند استخدام أنكي ويب.
+انظر <http://rafael.adm.br/css_browser_selector/> لقائمة الخيارات كاملة.
 
-## Installing Fonts
+## تنصيب خطوط
 
-If you’re using Anki on a work or school computer where you don’t have
-permission to install new fonts, or you’re using Anki on a mobile
-device, it’s possible to add fonts directly to Anki.
+إذا كنت تستخدم أنكي على حاسوب العمل أو المدرسة حيث ليس لديك إذن بتنصيب خطوط جديدة،
+أو إذا كنت تستخدم أنكي على هاتف محمول، فمن الممكن إضافة خطوط إلى أنكي مباشرة.
 
-To add a font to Anki, it must be in the TrueType format. TrueType fonts
-have a filename ending in .ttf, such as "Arial.ttf". Once you’ve located
-a TrueType font, we’ll need to add it to the media folder:
+يجب أن يكون الخط الذي تريد إضافته بصيغة TrueType. لخطوط TrueType أسماء
+تنتهي بلاحقة <span dir="ltr">.ttf</span> مثل "Arial.ttf".
+بعد أن تحدد موقع خط TrueType، تحتاج إلى إضافته إلى مجلد الوسائط:
 
-1.  Rename the file, adding an underscore at the start, so it becomes
-    like "\_arial.ttf". Adding an underscore will tell Anki that this
-    file will be used on a template, and should not be deleted when
-    checking for unused media.
+1.  أضف شرطة تحتية (_) إلى اسم الملف ليصبح مثل <span dir="ltr">"\_arial.ttf"</span>.
+    إضافة شرطة تحتية تخبر أنكي أن هذا الملف سيُستخدم في قالب، ولا يجب حذفه
+    عند فحص الوسائط غير المستخدمة.
 
-2.  In your computer’s file browser, go to your [Anki Folder](files.md),
-    and then a folder called "User 1" (or your profile name if you’ve
-    renamed/added profiles).
+2.  في متصفح ملفات حاسوبك، اذهب إلى [مجلد أنكي](files.md)، ثم مجلد يدعى
+«مستخدم 1» (أو اسم ملفك الشخصي إذا أعد تسميته أو أضفت ملفًا جديدًا).
 
-3.  Inside the folder, you should see a folder called collection.media.
-    Drag the renamed file to that folder.
+3.  داخل المجلد، يجب أن ترى مجلدًا باسم collection.media. انسخ ملف الخط
+إلى هذا المجلد.
 
-After that, we need to update the template:
+علينا تحديث القالب بعد ذلك:
 
-1.  Click **Add** at the top of the main screen, and then select the
-    note type you want to change with the top left button.
+1.  اضغط **إضافة** في أعلى النافذة الرئيسية، وحدد نوع الملحوظة الذي تريد تغييره
+    من خلال الزر في أعلى اليسار.
 
-2.  Click **Cards**.
+2.  اضغط **بطاقات**.
 
-3.  In the styling section, add the following text to the bottom (after
-    the last "}" character), replacing "\_arial.ttf" with the name of
-    the file you copied into your media folder:
+3.  في قسم التنسيق، أضف النص التالي إلى الأسفل (بعد رمز "}" الأخير)،
+    مستبدلًا <span dir="ltr">"\_arial.ttf"</span> باسم الملف الذي تريد نسخه إلى مجلد الوسائط:
+
+<div dir="ltr">
 
 ```css
 @font-face { font-family: myfont; src: url('_arial.ttf'); }
 ```
+</div>
 
-Only change the "arial" part, not the "myfont" part.
+غير جزء "arial" فقط، وليس "myfont".
 
-After that, you can either change the font for the entire card, or for
-individual fields. To change the font for the entire card, simply locate
-the font-family: line in the .card section and change the font to
-"myfont". To change the font for only certain fields, please see the
-[Field Styling](templates/styling.md) instructions above.
+بعد ذلك، تستطيع إما تغيير خط البطاقة كاملة، أو حقول فردية. لتغيير خط البطاقة كاملة،
+ابحث عن سطر <span dir="ltr">font-family:</span> في قسم <span dir="ltr">.card</span>
+وغير الخط إلى "myfont". لتغيير خط حقول محددة فقط،
+انظر تعليمات [تنسيق الحقول](templates/styling.md) في الأعلى.
 
-Please make sure the filenames match exactly. If the file is called
-arial.TTF and you write arial.ttf in your card templates, it will not
-work.
+تأكد أن أسماء الملفات تتطابق. إذا كان اسم الملف arial.TTF فكتابة arial.ttf لن تعمل.
 
-## Night Mode
+## الوضع الليلي
 
-You can customize the way templates appear when night mode is enabled in
-the preferences screen.
+تستطيع تخصيص مظهر القوالب عندما يكون الوضع الليلي مفعلًا في نافذة التفضيلات.
 
-If you wanted a lighter grey background, you could use
-something like:
+إذا أردت خلفية رمادية أفتح، قد تستخدم التالي:
+
+<div dir="ltr">
 
 ```css
 .card.nightMode { background-color: #555; }
 ```
+</div>
 
-If you have a 'myclass' style, the following would show the text in
-yellow when night mode is enabled:
+إذا كان لديك تنسيق 'myclass'، فسيظهر الكود التالي النص بلون أصفر عندما يكون
+الوضع الليلي مفعلًا:
+
+<div dir="ltr">
 
 ```css
 .nightMode .myclass { color: yellow; }
 ```
+</div>
 
+## التلاشي والتنقل
 
-## Fading and Scrolling
+سينقلك أنكي إلى قسم الجواب بشكل افتراضي. إنه يبحث عن عنصر HTML بمعرف <span dir="ltr">id=answer</span>،
+وينتقل إليه. تستطيع وضع المعرّف في عنصر مختلف لتغيير موقع الانتقال، أو حذفه لإيقاف الانتقال.
 
-Anki will automatically scroll to the answer by default. It looks for a
-HTML element with id=answer, and scrolls to that. You can place the id
-on a different element to adjust the scrolling position, or remove the
-id=answer to turn off scrolling.
+يتلاشى جانب السؤال ببطء بشكل افتراضي. إذا أدرت ضبط فترة التلاشي، تستطيع وضع التالي
+في أعلى القالب الأمامي:
 
-The question side of a card fades in by default. If you wish to adjust
-this delay, you can place the following at the top of your front card
-template:
+<div dir="ltr">
 
     <script>qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
+</div>
 
-100 (milliseconds) is the default; set to 0 to disable fading.
+100 (مللي ثانية) هي المدة الافتراضية؛ غيرها إلى 0 لإيقاف تأثير التلاشي.
 
-## Javascript
+## جافا سكريبت
 
-As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template.
+من الممكن تضمين بعض أكواد جافا سكريبت في البطاقات من خلال القالب حيث إن بطاقات أنكي
+هي بمثابة صفحات ويب.
 
-Because Javascript is an advanced feature and so many things can go
-wrong, **Javascript functionality is provided without any support or
-warranty**. We can not provide any assistance with writing Javascript,
-and can not guarantee any code you have written will continue to work
-without modification in future Anki updates. If you are not comfortable
-addressing any issues you encounter on your own, then please avoid using
-Javascript.
+لأن جافا سكريبت ميزة متقدمة وهناك عدة أشياء قد تسبب المشاكل، **فإن ميزة جافا سكريبت
+موفرة بدون أي دعم أو ضمانة**. لا نستطيع توفير أي مساعدة لكتابة جافا سكريبت، ولا ضمان
+استمرارية عمل أي كود كتبته بدون تغيير في إصدارات أنكي المستقبلية. إذا لم تكن لديك
+القدرة على إصلاح أي مشاكل قد تواجهك بنفسك، فالرجاء تجنب استخدام جافا سكريبت.
 
-Each Anki client may implement card display differently, so you will
-need to test the behaviour across platforms. A number of clients are
-implemented by keeping a long running webpage and dynamically updating
-parts of it as cards are reviewed, so your Javascript will need to
-update sections of the document using things like
-document.getElementById() rather than doing things like
-document.write().
+قد يطبق كل برنامج لأنكي عرض البطاقات بشكل مختلف، لذلك فستحتاج إلى اختبار السلوك
+في عدة منصات. تعمل بعض البرامج من خلال إبقاء صفحة ويب تعمل لمدة طويلة وتحديث
+أجزاء منها بشكل ديناميكي عند مراجعة البطاقات، لذلك يحتاج كود جافا سكريبت الخاص بك
+إلى تحديث أقسام من الوثيقة باستخدام أشياء مثل <span dir="ltr">document.getElementById()</span>
+بدلًا من أشياء مثل <span dir="ltr">document.write()</span>.
 
-Functions like window.alert are also not available. Anki will write
-javascript errors to the terminal, so if you’re running on a Mac or
-Windows computer, you’ll need to manually catch the errors and write
-them to the document to see them. There is no debugger available, so to
-figure out problems you’ll need to break down your code until you
-discover which parts are causing problems.
+لا تتوفر دوال مثل window.alert أيضًا. سيكتب أنكي أخطاء جافا سكريبت في الطرفية،
+لذلك إذا كنت تعمل على حاسوب ماك أو ويندوز، فستحتاج إلى التقاط الأخطاء يدويًا وكتابتها
+إلى الوثيقة لرؤيتها. لا يتوفر مشخص أخطاء، لذلك عليك تجزيء أكوادك حتى تكتشف الأجزاء
+التي تسبب مشاكل.
