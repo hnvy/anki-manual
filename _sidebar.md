@@ -7,7 +7,7 @@
  - [استبدالات الحقول](templates/fields.md)
  - [توليد البطاقات](templates/generation.md)
  - [التنسيق و HTML](templates/styling.md)
-- [Preferences](preferences.md)
+- [تفضيلات](preferences.md)
 - [Deck Options](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)

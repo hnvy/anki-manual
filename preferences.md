@@ -1,69 +1,56 @@
-# Preferences
+# تفضيلات
 
-The preferences are available from the Tools menu on Windows/Linux, or
-the Anki menu on a Mac.
+يمكن الوصول إلى التفضيلات من خلال قائمة أدوات في ويندوز/لينكس، أو قائمة أنكي في ماك.
 
-## Basic
+## أساسي
 
-By default Anki pastes images on the clipboard as JPG files, to save
-disk space. You can use the **Paste clipboard images as PNG** option to
-paste as PNG images instead. PNG images support transparent backgrounds
-and are lossless, but they usually result in much larger file sizes.
+يلصق أنكي الصور من الحافظة بصيغة JPG بشكل افتراضي لتوفير مساحة القرص.
+تستطيع استخدام خيار **لصق الصور من الحافظة بصيغة PNG** للصق الصور
+بصيغة PNG بدلًا من ذلك. تدعم صور PNG الخلفيات الشفافة ولا تضر بجودة الصور،
+لكن حجمها أكبر بكثير عادةً.
 
-When **night mode** is enabled, Anki will show cards as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - please see [night mode
-styling](templates/styling.md#night-mode) for more information.
+عندما يكون **الوضع الليلي** مفعلًا، يظهر أنكي البطاقات بنص أبيض وخلفية سوداء.
+قد يتوجب تعديل بعض قوالب البطاقات لتعمل بشكل مناسب مع هذا الخيار - انظر
+[تنسيق الوضع الليلي](templates/styling.md#night-mode) لمزيد من المعلومات.
 
-When using macOS in dark mode, recent Anki versions will automatically
-switch to night mode. If you want to force Anki to use light mode while
-using the rest of your system in dark mode, please install Anki
-2.1.21beta3 or later, and install the -alternate version rather than the
--standard one.
+عند استخدام ماك أو إس في الوضع الليلي، تنتقل إصدارات أنكي الأخيرة إلى الوضع الليلي تلقائيًا.
+إذا كنت تريد استخدام أنكي في الوضع العادي عندما يكون النظام في الوضع الليلي، الرجاء تنصيب
+أنكي 2.1.21beta3 أو أحدث، أو تنصيب الإصدار البديل بدلًا من العادي.
 
-The **Anki 2.1 scheduler** is documented here:
+**مُجدوِل أنكي 2.1** موثق هنا:
 <https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21>
 
-The first drop-down box controls how note types and decks interact. The
-default of "When adding, default to current deck" means that Anki saves
-the last-used note type for each deck and selects it again then next
-time you choose the deck (and, in addition, will start with the current
-deck selected when choosing Add from anywhere). The other option,
-"Change deck depending on note type," saves the last-used deck for each
-note type (and opens the add window to the last-used note type when you
-choose Add). This may be more convenient if you always use a single note
-type for each deck.
+تتحكم القائمة المنسدلة الأولى بتفاعل أنواع الملحوظات والرزم.
+الخيار الافتراضي المعرف بـ«عامل الرزمة الحالية كرزمة افتراضية عند إضافة بطاقات»
+يعني أن أنكي سيحفظ نوع الملحوظة المستخدم مؤخرًا لكل رزمة ويحدده مجددًا عند اختيار الرزمة
+مجددًا (كما أنه سيحدد الرزمة الحالية عند ضغط إضافة من أي مكان). الخيار الآخر المعرف
+بـ«تغيير الرزمة اعتمادًا على نوع الملحوظة» يحفظ الرزمة المستخدمة مؤخرًا لكل نوع ملحوظة
+(ويفتح نافذة الإضافة محددًا نوع الملحوظة المستخدم مؤخرًا عند ضغط إضافة).
+قد يكون هذا أكثر ملائمة إذا كنت تستخدم نوع ملحوظة واحد لكل رزمة.
 
-The second drop-down box controls when new cards are shown: either mixed
-with, before, or after all reviews.
+تتحكم القائمة المنسدلة الثانية بعرض البطاقات الجديدة: إما مختلطة،
+أو قبل كل المراجعات، أو بعدها.
 
-The **Next day starts at** option controls when Anki should start
-showing the next day’s cards. The default setting of 4AM ensures that if
-you’re studying around midnight, you won’t have two days' worth of cards
-shown to you in one session. If you stay up very late or wake up very
-early, you may want to adjust this to a time you’re usually sleeping.
+يتحكم خيار **يبدأ اليوم التالي في** بزمن عرض البطاقات الجديدة لليوم التالي.
+يضمن الإعداد الافتراضي (4AM) أنه إذا كنت تدرس في منتصف الليل، فلن تُعرض لك بطاقات
+يومين اثنين في جلسة واحدة. إذا كنت تسهر حتى وقت متأخر أو تستيقظ مبكرًا، فقد ترغب
+في ضبط هذا الخيار إلى الوقت الذي تنام فيه.
 
-The **Learn ahead limit** tells Anki how to behave when there is nothing
-left to study in the current deck but cards in learning. The default
-setting of 20 minutes tells Anki that cards should be shown early if
-they have a delay of less than 20 minutes and there’s nothing else to
-do. If you set this to 0, Anki will always wait the full delay, showing
-the congratulations screen until the remaining cards are ready to be
-reviewed.
+يتحكم خيار **حد التعلم المبكر** بسلوك أنكي عندما لا تتبقى أي بطاقة لتدرسها
+في الرزمة الحالية إلا بطاقات في طور التعلم. يجعل الخيار الافتراضي (20 دقيقة) أنكي
+يظهر البطاقات مبكرًا إذا كان لها فاصل زمني أقصر من 20 دقيقة ولا يوجد شيء آخر لتدرسه.
+إذا ضبطته إلى 0، فسينتظر أنكي المدة كاملةً، مظهرًا شاشة التهنئة إلى حين تصبح
+البطاقات الباقية جاهزة للمراجعة.
 
-Timeboxing is a technique to help you focus by dividing a longer
-activity (such as a 30 minute study session) into smaller blocks. If you
-set the **timebox time limit** to a non-zero number of minutes, Anki
-will periodically show you how many cards you’ve managed to study during
-the prescribed time limit.
+تقسيم المهام (Timeboxing) هو تقنية لمساعدتك على التركيز بتقسيم نشاط طويل
+(مثل جلسة دراسة مدتها 30 دقيقة) إلى جلسات أصغر. إذا ضبطت خيار **مهلة مربع الوقت**
+إلى عدد من الدقائق غير الصفر، فسيظهر أنكي عدد البطاقات التي درستها خلال المدة المحددة بشكل دوري.
 
-## Network
+## الشبكة
 
-The network tab contains options related to syncing with AnkiWeb.
+تحوي تبويبة الشبكة على خيارات متعلقة بالمزامنة مع أنكي ويب.
 
-- When logged in, the **deauthorize** button will log you out.
-- When the 'force changes' option is enabled, the next sync will
-ask you whether you wish to upload or download. This is useful if
-you have made some changes accidentally, and wish to overwrite them
-with an older version that is on AnkiWeb.
-
+- عندما تكون مسجلًا في حساب، فزر **سحب الصلاحيات** سيخرجك من هذا الحساب.
+- عندما يكون خيار 'افرض التغييرات' مفعلًا، فستُسأل عند المزامنة التالية ما
+إذا كنت تريد الرفع أم التنزيل. هذا الخيار مفيد إذا أجريت بعض التغييرات بدون قصد،
+وتريد استبدالها بإصدار أقدم موجود في أنكي ويب.
