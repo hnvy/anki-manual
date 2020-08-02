@@ -8,7 +8,7 @@
  - [توليد البطاقات](templates/generation.md)
  - [التنسيق و HTML](templates/styling.md)
 - [تفضيلات](preferences.md)
-- [Deck Options](deck-options.md)
+- [خيارات الرزمة](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)
 - [Browsing](browsing.md)

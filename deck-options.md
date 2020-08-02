@@ -1,256 +1,204 @@
-# Deck Options
+# خيارات الرزمة
 
-Deck options are accessed by selecting a deck on the 'Decks' screen, and
-then clicking 'Options' at the bottom of the screen.
+يمكن الوصول إلى خيارات الرزمة بتحديد رزمة من نافذة الرزم، ثم الضغط على
+زر «خيارات» أسفل الشاشة.
 
-Anki allows you to share options between different decks, to make
-updating options in many decks at once easy. To do this, options are
-grouped into an 'options group'. By default, all newly created decks use
-the same options group, and decks imported from previous versions of
-Anki have separate option groups. If you’d like to alter the settings on
-one deck but not other decks, click the gears icon in the top right and
-add a new options group.
+يسمح لك أنكي بمشاركة خيارات بين رزم مختلفة لجعل تحديث خيارات عدة رزم في الوقت نفسه أسهل.
+لتحقيق ذلك، الخيارات مجمَّعة تحت «مجموعة خيارات». تستخدم كل الرزم المنشأة حديثًا
+مجموعة الخيارات نفسها، وتستخدم الرزم المستوردة من إصدارات أنكي السابقة مجموعات خيارات مختلفة
+بشكل افتراضي. إذا كنت تريد تغيير خيارات رزمة واحدة وليس الرزم الأخرى، اضغط زر أيقونة
+الأتراس المسننة في أعلى اليمين وأضف مجموعة خيارات جديدة.
 
-Please only change options that you fully understand, as inappropriate
-adjustments may render Anki less effective.
+الرجاء تغيير الخيارات التي تفهمها فقط، فقد تجعل التعديلات غير المناسبة أنكي أقل فعالية.
 
-Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
-changing the option will have the old delay, not the new one.
+ليس للخيارات أثر رجعي. مثلًا، إذا غيرت خيارًا يتحكم بالفاصل الزمني للبطاقات التي فشلت
+في تذكرها، فإن البطاقات التي فشلت في تذكرها قبل تغيير هذا الخيار سيكون لها الفاصل الزمني
+القديم، وليس الجديد.
 
-## New Cards
+## بطاقات جديدة
 
-**Steps** controls the number of learning repetitions, and the delay
-between them. Please see the [learning](studying.md#learning) section for an
-overview of how the steps work.
+يتحكم خيار **خطوات** بعدد تكرارات بطاقات التعلم، والفواصل الزمنية بينها.
+انظر قسم [التعلم](studying.md#learning) لملخص عن كيفية عمل هذه الخطوات.
 
-Steps over a day (1440 minutes) are supported as well - if you want, you
-can define a schedule like 10 minutes, 1 day, 3 days and then finally 7
-days before the card becomes a review card.
+الخطوات أطول من يوم (1440 دقيقة) مدعومة أيضًا - إذا أردت، بإمكانك تعريف جدول
+مثل 10 دقائق، يوم واحد، 3 أيام، وأخيرًا 7 أيام قبل أن تصبح البطاقة بطاقة مراجعة.
 
-If there’s nothing else to study, Anki will show cards up to 20 minutes
-early by default. The amount of time to look ahead is configurable in
-the [preferences](preferences.md). One thing to be aware of is that the
-due counts will differ between the deck screen and study screens in this
-case. The deck screen will not count cards that are not ready, but the
-study screen will. This is done so that you can tell which decks need
-your attention.
+إذا لم يعد هناك أي شيء لدراسته، سيظهر أنكي البطاقات مبكرًا بمدة 20 دقيقة بشكل افتراضي.
+يمكن ضبط هذه المدة من خلال [التفضيلات](preferences.md). خذ بعين الاعتبار أن
+عدد البطاقات المستحقة سيتختلف بين نافذة الرزم ونافذة الدراسة. لن تحصي نافذة الرزم
+البطاقات غير الجاهزة، بينما ستحصيها نافذة الدراسة. هذا من أجل أن تعرف
+أي الرزم تستوجب اهتمامك.
 
-Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. When you return to study the next day, the
-per-day learning cards will not be shown first, as that can make the
-first half of a review session frustratingly difficult. Instead, the
-cards will be shown after reviews are completed. They are included in
-the review count rather than the learning count, due to the way they are
-handled internally.
+يعامل أنكي الخطوات الصغيرة والخطوات الأطول من يوم بشكل مختلف، حيث يظهر البطاقات
+ذات الخطوات الصغيرة حالما يحين وقتها، مفضلًا لها على البطاقات المعلقة الأخرى مثل المراجعات.
+هذا من أجل أن تستطيع الإجابة عن البطاقة بأقرب وقت من الفترة المختارة قدر الإمكان.
+بينما تجدول البطاقات بفترات أطول من يوم على أساس يومي مثل المراجعات.
+عندما تدرس في اليوم التالي، لن تظهر البطاقات في طور التعلم المجدولة على أساس يومي أولًا،
+لأن ذلك قد يجعل النصف الأولى من جلسة المراجعة صعبًا ومحبطًا، لكن ستظهر البطاقات
+بعد الانتهاء من بطاقات المراجعة. تضمن هذه البطاقات في عداد المراجعة بدلًا من عداد التعلم
+بسبب طريقة معالجتها من قبل أنكي.
 
-**Order** controls whether Anki should add new cards into the deck
-randomly, or in order. When you change this option, Anki will re-sort
-the decks using the current option group. One caveat with random order
-mode: if you review many of your new cards and then add more new cards,
-the newly added material is statistically more likely to appear than the
-previously remaining cards. To correct this, you can change the order to
-ordered mode and back again to force a re-sort.
+يتحكم خيار **ترتيب** بكيفية إضافة البطاقات الجديدة إلى الزرمة؛ بشكل عشوائي أم بالترتيب.
+سيعيد أنكي فرز الرزم التي تستخدم مجموعة الخيارات الحالية عندما تغير هذا الخيار.
+هناك تنبيه مهم عند استخدام وضع الترتيب العشوائي: إذا راجعت كثيرًا من بطاقاتك الجديدة
+ثم أضفت مزيدًا من البطاقات الجديدة، فالمواد المضافة حديثًا لها احتمال ظهور أعلى
+من البطاقات الباقية سابقًا إحصائيًا. لتصحيح هذا، بإمكانك تغيير الخيار إلى الوضع المرتب
+ثم إعادته إلى الوضع العشوائي لفرض إعادة فرز.
 
-When you select random order, Anki will randomize your notes, keeping
-the cards of a given note close together. The cards of a given note are
-shown in the order their card types appear in, so that siblings are
-introduced consistently - otherwise you could end up in a state where
-some notes had all their cards introduced and other notes had only one
-or two. Please see the "bury related" option below for more info.
+عند تحديد وضع الترتيب العشوائي، سيرتب أنكي ملحوظاتك عشوائيًا مع إبقاء بطاقات الملحوظة نفسها
+قريبة إلى بعضها البعض. تظهر بطاقات الملحوظة نفسها بترتيب أنواع بطاقاتها، لذلك فالبطاقات الشقيقة
+تعرض بشكل متسق - وإلا فقد يحصل أن ترى كل بطاقات ملحوظات معينة بينما ترى بطاقة واحدة
+أو اثنتين فقط من بطاقات ملحوظات أخرى. انظر خيار «دفن البطاقات ذات الصلة» في الأسفل
+لمزيد من المعلومات.
 
-**New cards/day** tells Anki how many new cards you’d like introduced on
-each day you open the program. Missed days will not cause the cards to
-pile up. The limit applies to the current deck and subdecks. This means
-if "French" has a limit of 20 cards and "French::Lesson 1" and
-"French::Lesson 2" both have limits of 15 cards, you’ll get 15 cards
-from lesson 1 but only 5 cards from lesson 2.
+يحدد خيار **عدد البطاقات الجديدة في اليوم الواحد** عدد البطاقات الجديدة التي ستراها كل يوم
+تفتح البرنامج. لن تسبب الأيام التي لا تدرس فيها بتراكم البطاقات. ينطبق هذ الحد على
+الرزمة الحالية والرزم الفرعية. يعني هذا أنه إذا كان لرزمة «فرنسي» 20 بطاقة كحد
+ولكل من رزم «فرنسي::درس 1» و «فرنسي::درس 2» 15 بطاقة كحد، فسترى 15 بطاقة من درس 1
+و 5 بطاقات فقط من درس 2.
 
-Studying new cards will temporarily increase the number of reviews you
-need to do a day, as freshly learnt material needs to be repeated a
-number of times before the delay between repetitions can increase
-appreciably. If you are consistently learning 20 new cards a day, you
-can expect your daily reviews to be roughly about 200 cards/day. You can
-decrease the reviews required by introducing fewer new cards each day,
-or by turning off new card display until your review burden decreases.
-More than one Anki user has excitedly studied hundreds of new cards over
-their first few days of using the program, and then become overwhelmed
-by the reviews required.
+ستزيد دراسة البطاقات الجديدة عدد المراجعات التي تحتاج إنهاءها في اليوم مؤقتًا،
+حيث إن عليك دراسة المواد المدروسة حديثًا عدة مرات قبل أن يزداد الفاصل الزمني بين
+المراجعات إلى مدة معتبرة. إذا كنت تدرس 20 بطاقة جديدة يوميًا بانتظام، فتوقع أن تكون
+مراجعاتك اليومية حوالي 200 بطاقة في اليوم. تستطيع تقليص رقم المراجعات المطلوبة
+بدراسة بطاقات جديدة أقل كل يوم، أو بإيقاف عرض البطاقات الجديدة حتى تنقص المراجعات المتراكمة.
+أكثر من مستخدم لأنكي درس مئات البطاقات الجديدة خلال أول أيام استخدامه للبرنامج،
+ثم أصبح غير قادر على التعامل مع المراجعات المطلوبة.
 
-**Graduating interval** is the delay between answering 'Good' on a card
-with no steps left, and seeing the card again.
+**الفاصل الزمني بين آخر خطوة وأول مراجعة** هو الفاصل الزمني بين الإجابة عن بطاقة
+لم يعد لها أي خطوات بـ«جيد» ثم رؤية البطاقة مجددًا.
 
-**Easy interval** is the delay between answering 'easy' on a learning
-card and seeing it in review mode for the first time.
+**الفاصل الزمني للبطاقات السهلة** هو الفاصل الزمني بين الإجابة عن بطاقة في طور التعلم
+بـ«سهل» ورؤيتها مجددًا في وضع المراجعة للمرة الأولى.
 
-**Starting ease** controls the easiness that cards start out with. It is
-set when a card graduates from learning for the first time. It defaults
-to 250%, meaning that once you’ve finished learning a card, answering
-"Good" on subsequent reviews will increase the delay by approximately
-2.5x (eg if the last delay was 10 days, the next delay would be 25
-days). Based upon how you rate the card in subsequent reviews, the
-easiness may increase or decrease from what it starts out as.
+يتحكم خيار **سهولة أولية** بالسهولة التي تبدأ بها البطاقات. تصبح هذه السهولة حيز التنفيذ
+عندما تتخرج بطاقة من طور التعلم للمرة الأولى. السهولة الافتراضية هي 250%، ما يعني
+أنه حالما تنتهي من تعلم بطاقة، فإن الإجابة بـ«جيد» في المراجعات القادمة سيضاعف الفاصل الزمني
+2.5 مرة تقريبًا (مثلًا إذا كان آخر فاصل 10 أيام، فسيكون الفاصل التالي 25 يومًا).
+قد تزيد السهولة أو تنقص عن القيمة الأولية بناءً على تقييمك للبطاقة في المراجعات القادمة.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session. For this to
-work, your new cards/day setting needs to be large enough for the cards
-of multiple notes to be included.
+إيقاف **ادفن البطاقات الجديدة ذات الصلة...** يمنع أنكي من [دفن البطاقات الشقيقة](studying.md#siblings-and-burying)،
+ويجعله يعمل على تجنب إظهار البطاقات الشقيقة وراء بعضها مباشرة في الجلسة نفسها فقط بدلًا من ذلك.
+لتحقيق ذلك، يجب أن يكون عدد البطاقات الجديدة في اليوم كبيرًا لدرجة كافية لكي تتضمن بطاقات من عدة ملحوظات.
 
-## Reviews
+## مراجعات
 
-**Maximum reviews/day** allows you to set an upper limit on the number
-of reviews to show each day. When this limit is reached, Anki will not
-show any more review cards for the day, even if there are some waiting.
-If you study consistently, this setting can help to smooth out
-occasional peaks in due card counts, and can save you from a heart
-attack when returning to Anki after a week off. When reviews have been
-hidden due to this option, a message will appear in the congratulations
-screen, suggesting you consider increasing the limit if you have time.
+يسمح لك خيار **عدد المراجعات الأقصى في اليوم** بضبط حد أقصى لعدد المراجعات التي تظهر كل يوم.
+لن يظهر أنكي مزيدًا من بطاقات المراجعة في اليوم إذا وصل هذا الحد، حتى لو كان هناك المزيد.
+إذا كنت تدرس بانتظام، قد يساعدك هذا الخيار على التخفيف من الارتفاعات التصادفية
+لعدد البطاقات المستحقة، وقد ينقذك من نوبة قلبية عند العودة إلى أنكي بعد أسبوع انقطاع.
+ستظهر رسالة في نافذة التهنئة تقترح عليك رفع الحد إذا كان لديك الوقت
+عندما يكون هناك مراجعات مخفية بسبب هذا الخيار.
 
-**Easy bonus** allows you to set the difference in intervals between
-answering 'Good' and 'Easy' on a card. For instance, with the default
-value of 130%, Easy will give an interval that is 1.3 times the Good
-interval.
+يسمح لك خيار **مكافأة البطاقات السهلة** بضبط فرق الفواصل الزمنية بين إجابة بطاقة
+بـ«جيد» و«سهل». مثلًا، مع القيمة الافتراضية 130%، سيعطيك زر «سهل» فاصلًا زمنيًا
+أطول بـ 1.3 مرة من فاصل «جيد».
 
-**Interval modifier** allows you to apply a multiplication factor to the
-intervals Anki generates. At its default of 100% it does nothing; if you
-set it to 80% for example, intervals will be generated at 80% of their
-normal size (so a 10 day interval would become 8 days). You can thus use
-the multiplier to make Anki present cards more or less frequently than
-it would otherwise, trading study time for retention or vice versa.
+يسمح لك خيار **معدِّل الفاصل الزمني** بتطبيق عامل ضرب للفواصل الزمنية التي يولدها أنكي.
+القيمة الافتراضية 100% لا تفعل شيئًا؛ إذا ضبطته إلى 80% مثلًا، فستكون الفواصل الزمنية
+80% من حجمها العادي (سيصبح فاصل 10 أيام 8 أيام). لذلك فبإمكانك استخدام هذا الخيار
+لجعل أنكي يظهر البطاقات بوتيرة أكبر أو أصغر من الوضع  العادي، للمقايضة بين مدة الدراسة والتذكر.
 
-For moderately difficult material, the average user should find they
-remember approximately 90% of mature cards that come up for review. You
-can find out your own performance by opening the graphs/statistics for a
-deck and looking at the Answer Buttons graph - mature retention is the
-correct% on the right side of the graph. If you haven’t been studying
-long you may not have any mature cards yet. As performance with new
-cards and younger cards can vary considerably, it’s a good idea to wait
-until you have a reasonable amount of mature reviews before you start
-drawing conclusions about your retention rate.
+للمواد الصعبة باعتدال، يجب أن يجد المستخدم العادي أنه يتذكر 90% تقريبًا من البطاقات
+الناضجة التي تُعرض للمراجعة. تستطيع رؤية أدائك بفتح الرسوم البيانية/الإحصائيات الخاصة برزمة
+والاطلاع على الرسم البياني الخاص بأزرار الجواب - معدل تذكر البطاقات الناضجة هو نسبة %صحيح
+على يمين الرسم البياني. إذا لم تبدأ الدراسة منذ مدة طويلة فقد لا يكون لديك أي بطاقات ناضجة بعد.
+لأن أداءك في البطاقات الجديدة والبطاقات اليافعة قد يتغير كثيرًا، فمن الجيد الانتظار لفترة حتى
+يصبح لديك كمية جيدة من المراجعات الناضجة قبل استخلاص أي نتائج حول معدل تذكرك.
 
-On the SuperMemo website, they suggest that you can find an appropriate
-multiplier for a desired retention rate. Their formula boils down to:
+يُنصح في موقع سوبرميمو أن تبحث عن عامل ضرب مناسب لمعدل التذكر الذي ترغب فيه.
+يمكن تلخيص معادلتهم كالتالي:
+<div dir="ltr">
 
-    log(desired retention%) / log(current retention%)
+    log(معدل التذكر المرغوب فيه%) / log(معدل التذكر الحالي%)
+</div>
 
-Imagine we have a current retention rate of 85% and we want to increase
-it to 90%. We’d calculate the modifier as:
+لنفرض أن لدينا حاليًا 85% كمعدل تذكر ونريد رفعه إلى 90%. فسنحسب عامل الضرب كالتالي:
+<div dir="ltr">
 
     log(90%) / log(85%) = 0.65
+</div>
 
-You can use Google to [calculate
-it](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
+تستطيع استخدام غوغل [لحساب ذلك](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)).
 
-If you plug the resulting 65% into the interval modifier, you should
-find over time that your retention moves closer to your desired
-retention.
+إذا أدخلت القيمة الناتجة 65% كمُعدِّل الفاصل الزمني، فيجب أن تجد أن معدل تذكرك
+يقترب للمعدل المرغوب بمرور الوقت.
 
-One important thing to note however is that the tradeoff between time
-spent studying and retention is not linear: we can see here that to
-increase our retention by 5 percentage points, we’d have to study 35%
-more frequently. If the material you are learning is very important then
-it may be worth the extra effort – that’s something you’ll need to
-decide for yourself. If you’re simply worried that you’re forgetting too
-much, you may find investing more time into the initial learning stage
-and/or making mnemonics gives you more gain for less effort.
+يرجى ملاحظة أن المفاضلة بين مدة الدراسة والتذكر ليست خطية: بإمكاننا هنا رؤية أنه
+لكي نرفع معدل تذكرنا ب 5%، نحتاج أن ندرس بوتيرة أكبر بـ 35%.
+إذا كانت المواد التي تدرسها مهمة جدًا فقد تستحق هذا الجهد الإضافي - إنه أمر عليك
+أنت تقريره بنفسك. إذا كنت ببساطة قلقًا من أنك تنسى كثيرًا، فقد تجد أن استثمار وقتك
+بفترة التعلم الأولية أو صنع معلومات تذكيرية (Mnemonics) يعود عليك بتذكر أفضل بجهد أقل.
 
-One final thing to note is that Anki forces a new interval to be at
-least 1 day longer than it was previously so that you don’t get stuck
-reviewing with the same interval forever. If your goal is to repeat a
-card once a day for multiple days, you can do that by setting more
-learning mode steps instead of by adjusting this modifier.
+لاحظ أيضًا أن أنكي يفرض على الفاصل الجديد أن يكون أطول بيوم واحد على الأقل من الفاصل
+السابق لكي لا ينتهي بك المطاف بالمراجعة بالفاصل نفسه إلى الأبد. إذا كان هدفك هو تكرار بطاقة
+مرة يوميًا لعدة أيام، تستطيع تحقيق ذلك من خلال إضافة خطوات تعلم أكثر بدلًا من ضبط
+هذا العامل.
 
-**Maximum interval** allows you to place an upper limit on the time Anki
-will wait to reshow a card. The default is 100 years; you can decrease
-this to a smaller number if you’re willing to trade extra study time for
-higher retention.
+يسمح لك خيار **الفاصل الزمني الأقصى** بضبط حد أقصى للمدة التي سينتظرها أنكي لإظهار
+بطاقة مجددًا. القيمة الافتراضية هي 100 سنة؛ بإمكانك ضبطه إلى رقم أصغر إذا كنت تريد
+صرف وقت دراسة أكبر من أجل معدل تذكر أكبر.
 
-**Hard interval** specifies what the next interval will be when you
-press the Hard button. The percentage is relative to the previous
-interval, eg with a default 120%, a card with a 10 day interval will be
-given 12 days. This option is only available when the experimental
-scheduler is enabled in the preferences.
+يحدد خيار **الفاصل الزمني للبطاقات الصعبة** الفاصل التالي عند الضغط على زر «صعب».
+النسبة هي بالنسبة إلى الفاصل السابق، مثلًا بقيمة 120% افتراضية، فبطاقة بفاصل 10 أيام
+ستُعطى كفاصل 12 يومًا. يتوفر هذا الخيار فقط عندما يكون المجدول التجريبي مفعلًا في التفضيلات.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session.
+إيقاف **ادفن البطاقات المراجعة ذات الصلة...** يمنع أنكي من دفن [البطاقات الشقيقة]((studying.md#siblings-and-burying))،
+ويجعله يعمل على تجنب إظهار البطاقات الشقيقة وراء بعضها مباشرة في الجلسة نفسها فقط بدلًا من ذلك.
 
-Review cards are always shown in random order. If you wish to see them
-in a different order, you can use a [filtered deck](filtered-decks.md). More
-specifically, Anki randomizes reviews by grabbing batches of 50 cards in
-the order that they exist in the database, randomizing each batch, then
-putting them together. This means that there is a slight bias towards
-older cards being shown first, but it prevents individual cards from
-showing up in a predictable order.
+تظهر بطاقات المراجعة بترتيب عشوائي دائمًا. إذا كنت تريد رؤيتها بترتيب مختلف،
+تستطيع استخدام [رزمة مفلترة](filtered-decks.md). بعبارة أدق أكثر، يرتب أنكي المراجعات
+عشوائيًا بانتقاء حزم مكونة من 50 بطاقة بترتيب ظهورها في قاعدة البيانات، وترتيب كل حزمة عشوائيًا،
+ووضعها معًا. يعني هذا أن هناك انحياز طفيف لصالح ظهور البطاقات القديمة أولًا، لكن هذا يمنع
+البطاقات الفردية من الظهور بترتيب يمكن التنبؤ به.
 
-## Lapses
+## سقطات
 
-When you forget a review card, it is said to have 'lapsed'. The default
-behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
-due tomorrow), and put it in the learning queue for a refresher in 10
-minutes. This behaviour can be customized with the options listed below.
+عندما تنسى بطاقة مراجعة، فيقال إن البطاقة قد «سقطت». السلوك الافتراضي للمراجعات الساقطة
+هو إعادة ضبط الفاصل الزمني إلى 1 (تصبح مستحقة غدًا)، ووضها في صف بطاقات التعلم لتراجعها
+من جديد بعد 10 دقائق. يمكن تخصيص هذا السلوك من خلال الخيارات في الأسفل.
 
-If you leave the steps blank, Anki will not place the card back in the
-learning queue, and it will be rescheduled as a review with its new
-interval determined by the settings below.
+إذا تركت حقل الخطوات فارغًا، فلن يضع أنكي البطاقة في صف بطاقات التعلم مجددًا،
+وستعاد جدولتها كبطاقة مراجعة ويحدد فاصلها الجديد بالإعدادات في الأسفل.
 
-The new interval is determined when you answer "Again" to a review card,
-not when the card finishes its relearning steps. For this reason, the
-"Good" and "Easy" buttons during relearing do not alter the interval
-again - they only control which step you are on. If there is only a
-single step (the default), the "Easy" button will be hidden, since it
-would accomplish the same thing as the "Good" button. If you have 2 or
-more steps, "Easy" is not hidden, to allow you to graduate cards from
-the queue before all of their steps are finished.
+يُحدَّد الفاصل الجديد عندما تجيب عن بطاقة مراجعة بـ«مجددًا»، وليس عندما تنهي البطاقة
+خطوات إعادة التعلم. لهذا السبب، لا تعدل أزرار «جيد» و«سهل» الفاصل مجددًا خلال طور إعادة التعلم -
+بل يتحكمان بالخطوة الحالية فقط. إذا كان هناك خطوة واحدة فقط (وهو الافتراضي)، لن يظهر زر «سهل»،
+لأنه سيفعل الشيء نفسه الذي يفعله زر «جيد». إذا كان لديك خطوتين أو أكثر، فلن يخفى زر «سهل»،
+للسماح لك بتخريج البطاقات من صف التعلم قبل أن تنتهي كل خطواتها.
 
-'New interval' controls how much Anki should reduce the previous
-interval. It reduces the previous interval to the percentage you
-specify. If a card had a 200 day interval, the default of 0% would
-reduce the interval to 0 (but see the next option). If you set this
-option to 50%, the card would have its interval reduced to 100 days
-instead.
+يحدد «الفاصل الجديد» كم يجب إنقاص الفاصل السابق، حيث ينقص هذا الخيار الفاصل السابق
+بالنسبة التي تحددها. إذا كان لبطاقة فاصل 200 يوم، فالقيمة الافتراضية 0% ستنقص الفاصل
+إلى 0 (لكن انظر الخيار التالي). إذا ضبطت هذا الخيار إلى 50%، سينقص الفاصل إلى 100 يوم
+بدلًا من ذلك.
 
-'Minimum interval' allows you to apply a minimum limit to the above
-option. The default setting says that lapses should be reviewed one day
-later. The interval must be 1 day or more.
+يسمح لك خيار «الفاصل الزمني الأصغر» بفرض حد أدنى على الخيار السابق. الإعداد الافتراضي يعني
+أن البطاقات الساقطة يجب أن تُراجع بعد يوم. يجب أن يكون الفاصل يومًا واحدًا أو أكثر.
 
-The leech options control the way Anki handles leeches. Please see the
-leech section for more information.
+يتحكم خيار البطاقات المستعصية بطريقة التعامل مع هذه البطاقات. انظر قسم
+[البطاقات المستعصية](leeches.md) لمزيد من المعلومات.
 
-## General
+## عام
 
-Anki monitors how long it takes you to answer each question so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling. If you take longer than 60 seconds, Anki
-assumes you have walked away from your computer or have been distracted,
-and limits the recorded time to 60 seconds, so that you don’t end up
-with inaccurate statistics. The 'ignore answer times…​' option allows
-you to adjust the cutoff threshold. The minimum cutoff is 30 seconds.
+يسجل أنكي كم تستغرق من الوقت للإجابة عن كل سؤال لكي يظهر لك الوقت الذي استغرقته بالدراسة كل يوم.
+لا يؤثر هذا الوقت بالجدولة. إذا استغرقت أكثر من 60 ثانية، يفترض أنكي أنك ابتعدت عن الحاسوب
+أو تعطلت بشيء آخر، ويحد الوقت المستغرق بـ60 ثانية، لكي لا تحصل على إحصائيات غير دقيقة.
+يسمح لك خيار «تجاهل فترات الإجابة...» بضبط هذا الحد. الحد الأدنى الممكن هو 30 ثانية.
 
-If 'show answer timer' is checked, Anki will display the current time
-taken for each card in the study area.
+إذا كان خيار «أظهر مؤقت الإجابة» مفعلًا، سيظهر أنكي الوقت الحالي المستغرق لكل بطاقة في شاشة الدراسة.
 
-By default, Anki automatically plays audio on the front and back of
-cards. If you uncheck 'automatically play audio', Anki will not play
-audio until you press the replay audio key, `r` or `F5`.
+يشغل أنكي التسجيلات الصوتية في الحقلين الأمامي والخلفي بشكل افتراضي. إذا ألغيت تحديد
+خيار «شغل التسجيلات الصوتية تلقائيًا»، فلن يشغل أنكي التسجيلات الصوتية حتى تضغط
+زر إعادة تشغيل الصوت، أو `r`، أو `F5`.
 
-The 'when answer shown, replay both question and answer audio' option
-controls what happens when you choose to replay audio while the answer
-is shown. Please note that it does not control what happens when you
-show the answer; for that please see [this section](templates/fields.md#special-fields).
+يتحكم خيار «اشمل جانب السؤال عند إعادة تشغيل الملفات الصوتية دائمًا» بما يحدث عندما
+تعيد تشغيل الصوت عندما يكون جانب الجواب ظاهرًا. لاحظ أن هذا الخيار لا يتحكم بما يحدث
+عندما تُظهر الجواب؛ لفعل ذلك انظر [هذا القسم](templates/fields.md#special-fields).
 
-## Description
+## وصف
 
-This section allows you to edit the deck description, which is shown in
-the study overview. The description is automatically set when
-downloading shared decks. You can delete all the text in the description
-if you no longer want to see it in the study overview area.
+يمكنك هذا القسم من تعديل وصف الرزمة، والذي يظهر في شاشة موجز الدراسة.
+يضبط الوصف تلقائيًا عند تنزيل رزم مشتركة. تستطيع حذف كل النصوص في الوصف إذا لم تعد تريد
+رؤيتها في شاشة الموجز.
 
-You can also use HTML in the description—anything that works on a note
-should be valid.
+كما تستطيع استخدام HTML في الوصف - أي شيء يعمل في الملحوظات يجب أن يعمل هنا.
