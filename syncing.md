@@ -1,188 +1,159 @@
-# Syncing with AnkiWeb
+# المزامنة مع أنكي ويب
 
-AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Please sign
-up for a [free account](https://ankiweb.net/) before following the steps
-below.
+أنكي ويب هي خدمة تسمح لك بمزامنة مجموعتك مع عدة أجهزة وبالدراسة عبر الإنترنت.
+أنشئ [حسابًا مجانيًا](https://ankiweb.net/) قبل متابعة الخطوات في الأسفل.
 
-## Setup
+## الإعداد
 
-To start syncing your collection across devices, click the sync button
-(the top right one on the main screen), or press 'y' on your keyboard.
-You’ll be prompted for your AnkiWeb ID and password, which you created
-in the signup process.
+للبدء بمزامنة مجموعتك مع عدة أجهزة، اضغظ زر مزامنة (في أعلى يمين النافذة الرئيسية)،
+أو اضغط مفتاح 'y'. سيُطلب منك معرف أنكي ويب الخاص بك وكلمة السر اللتين أنشأتهما
+عند إنشاء حساب.
 
-When you synchronize your collection for the first time, Anki will ask
-you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose "upload" to send your
-data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose "download" to replace the empty local
-collection with the cards that are on AnkiWeb. If you have different
-cards on both devices, [more work is required](#merging-conflicts) to
-avoid losing data.
+عند مزامنة مجموعتك للمرة الأولى، ستُسأل ما إذا كنت تريد الرفع أم التنزيل. إذا كان لديك
+بطاقات في الحاسوب وكان حساب أنكي ويب فارغًا، اختر «رفع» لإرسال بياناتك إلى أنكي ويب.
+إذا كان لديك بطاقات من جهاز آخر في أنكي ويب، ولم يكن لديك بطاقات في حاسوبك، اختر
+«تنزيل» لاستبدال مجموعتك المحلية الفارغة ببطاقات أنكي ويب. إذا كان لديك بطاقات مختلفة في كلا
+الجهازين، فعليك [فعل المزيد](#merging-conflicts) لتجنب فقدان البيانات.
 
-Once the initial one way sync is completed, Anki will be able to merge
-changes from multiple locations with a few exceptions.
+حالما تكتمل مزامنة الاتجاه الواحد الأولية، سيكون أنكي قادرًا على دمج التغييرات
+من مواقع مختلفة مع استثناءات قليلة.
 
-If you have multiple people using Anki on one machine and have created a
-profile for each user, each user will need to create their own AnkiWeb
-account to sync with. If you attempt to synchronize multiple profiles
-with a single AnkiWeb account, you will lose data.
+إذا كان هناك أناس عديدون يستخدمون أنكي على الجهاز نفسه وأنشؤوا ملفات شخصية لكل منهم،
+سيحتاج كل مستخدم إلى إنشاء حساب أنكي ويب خاص به. إذا حاولت مزامنة ملفات شخصية متعددة
+بحساب أنكي ويب واحد فستفقد بيانات.
 
-## Automatic Syncing
+## المزامنة التلقائية
 
-Once syncing is enabled, Anki will automatically sync each time your
-collection is closed or opened. If you would prefer to synchronize
-manually, you can disable automatic syncing in Anki’s preferences.
+ستُزامن مجموعتك تلقائيًا في كل مرة تغلق أنكي أو تفتحه حالما تفّعل المزامنة.
+إذا كنت تفضل المزامنة يدويًا، تستطيع إيقاف المزامنة التلقائية من خلال التفضيلات.
 
-## Media
+## لون الزر
 
-Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added or removed from your media folder, but
-will not notice if you have edited some existing files without adding or
-removing any. To get your edits noticed, you need to add or remove a
-file as well.
+سيتغير لون زر المزامنة إلى الأزرق عندما تُتطلب مزامنة عادية، وسيتغير إلى أحمر
+عندما تُتطلب مزامنة كاملة.
 
-If you’re running Anki off a USB flash drive, you should use an NTFS
-file system, as Anki may not be able to detect media changes on a FAT32
-filesystem.
+## الوسائط
 
-## Conflicts
+سيزامن أنكي أي أصوات وصور مستخدمة في ملحوظاتك. سيلاحظ إضافة الوسائط وحذفها في مجلد الوسائط،
+لكنه لن يلاحظ إذا عدلت بعض الملفات الموجودة بدون إضافة أي ملف أو حذفه. تحتاج إلى إضافة ملف أو حذفه
+لكي تُلاحظ تعديلاتك.
 
-Under normal circumstances, reviews and note edits can be merged, so if
-you review or edit on two different devices before syncing, Anki will
-preserve your changes from both locations. If the same card has been
-reviewed in two different locations, both reviews will be marked in the
-revision history, and the card will be kept in the state it was when it
-was most recently answered.
+إذا كنت تستخدم أنكي من محرك فلاش USB، فعليك استخدام نظام الملفات NTFS، لأن أنكي قد
+لا يكون قادرًا على اكتشاف تغييرات الوسائط في نظام الملفات FAT32.
 
-There are certain changes that Anki is unable to merge. These mainly
-relate to the format of notes: things like adding a new field, or
-removing a card template. When you perform an operation that can’t be
-merged, Anki will warn you, and give you the option of aborting the
-operation. If you choose to continue, you’ll be asked to choose whether
-to keep the local copy or the copy on AnkiWeb when your collection is
-next synchronized.
+##  التعارضات
 
-If certain problems are detected while syncing, it will also force a one
-way sync. If you find this consistently happens, please post on our
-support site.
+يمكن دمج المراجعات وتعديلات الملحوظات في الأحوال العادية، لذلك إذا راجعت أو عدلت
+في جهازين مختلفين قبل المزامنة، سيحفظ أنكي تغييراتك في كلا الموقعين. إذا راجعت
+البطاقة نفسها في موقعين مختلفين، ستُسجل كلا هاتين المراجعتان في سجل التغييرات،
+وسيُبقى على البطاقة بحالتها التي كانت عليها  عندما أُجيبت آخر مرة.
 
-When a one way sync is required, you need to choose whether you wish to
-keep the collection on your local device, or the collection on AnkiWeb.
-If changes have been made on both ends, only changes on one end can be
-preserved.
+هناك بعض التغييرات التي لا يستطيع أنكي دمجها. تتعلق هذه التغييرات معظمًا بصيغ الملحوظات:
+أشياء مثل إضافة حقل جديد، أو حذف قالب بطاقة. سينذرك أنكي عندما تجري عملية لا يمكن دمجها،
+وسيعطيك خيار إلغاء العملية. إذا اخترت الاستمرار، سيطلب منك الاختيار بين إبقاء النسخة المحلية
+أو النسخة في أنكي ويب عندما تزامن مجموعتك في المرة القادمة.
 
-If you choose Upload, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose "Download"
-to have them grab a copy of that content.
+إذا كشفت بعض المشاكل عند المزامنة، فستُفرض مزامنة باتجاه واحد. إذا وجدت أن هذا يحدث بانتظام،
+الرجاء الإبلاغ في موقع الدعم.
 
-If you choose Download, it will replace any local changes you’ve made
-with the data that is on AnkiWeb.
+عندما تكون المزامنة باتجاه واحد مطلوبة، عليك اختيار إما إبقاء مجموعتك المحلية، أو مجموعة
+أنكي ويب. إذا أجريت تغييرات في كلا الجانبين، فستبقى تغييرات جانب واحد فقط.
 
-Once all devices are in sync, future syncs will return to the normal
-behaviour of merging changes from both ends.
+إذا اخترت رفع، سيُرسل المحتوى في جهازك المحلي إلى أنكي ويب. تحتاج بعدها إلى مزامنة
+أجهزتك الأخرى، واختيار «تنزيل» لتنزيل نسخة من ذلك المحتوى.
 
-If you wish to force a full upload or download (for example, because you
-accidentally deleted a deck on one side and want to restore the deck
-rather than having its deletion synchronized), you can check the "On
-next sync, force changes in one direction" box in
-Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
-the option to choose which side you want to use.)
+إذا اخترت تنزيل، فسيُستبدل أي تغيير محلي بالبيانات الموجودة في أنكي ويب.
 
-Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb, please
-ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
-from AnkiWeb on the following sync.
+حالما تكون كل الأجهزة مزامنة، فستعود المزامنات المستقبلية إلى وضع دمج التغييرات من
+كلا الجانبين العادي.
 
-## Merging Conflicts
+إذا كنت تريد فرض رفع أو تنزيل كامل (لأنك حذفت رزمة في جانب بدون قصد وتريد استعادة الرزمة
+بدلًا من مزامنة هذا الحذف مثلًا)، تستطيع تفعيل خيار «عند المزامنة التالية، افرض التغييرات في جانب واحد»
+في أدوات&lt;تفضيلات&lt;الشبكة، ثم المزامنة كالمعتاد. (ستعطى خيار اختيار أي جانب تريد استخدامه).
 
-Because the [first sync](#setup) can only sync changes in one
-direction, if you have added different content to different devices or
-profiles before setting syncing up, content on one device will be lost
-if you overwrite it with the content from the other device. With some
-work, it is possible to manually merge data into a single collection.
+يؤثر فرض المزامنة بجانب واحد بمزامنة البطاقات فقط - تزامن الوسائط كالمعتاد.
+إذا كان هناك ملفات تريد حذفها من أنكي ويب، تأكد أولًا من أن برنامجك مزامن بشكل
+كامل مع أنكي ويب. بعد ذلك، أي ملفات تحذفها (من خلال ميزة فحص الوسائط مثلًا) ستُحذف
+من أنكي ويب عند المزامنة التالية.
 
-Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use File&gt;Export to export
-"all decks" with scheduling information and media files included, and
-save the file somewhere safe. In AnkiMobile, the Add/Export button on
-the decks list screen will let you export all decks with media.
+## دمج التعارضات
 
-Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose "upload" to overwrite any existing data on
-AnkiWeb with the data from your mobile device. If both devices/profiles
-are on your computer, synchronize the device/profile with the most
-number of decks first.
+لأن [المزامنة الأولى](#setup) يمكنها أن تزامن تغييرات في جانب واحد فقط، فإذا أضفت محتوى
+مختلفًا في أجهزة أو ملفات شخصية مختلفة قبل إعداد المزامنة، سيٌفقد المحتوى في جانب واحد
+إذا استبدلته بالمحتوى في الجهاز الآخر. يمكن دمج البيانات إلى مجموعة واحدة يدويًا ببعض الجهد.
 
-Now return to the other device/profile. If automatic syncing is enabled,
-a message may pop up asking if you want to upload or download. Click the
-cancel button - we don’t want to sync yet.
+ابدأ بأخذ نسخة احتياطية في كل جهاز/ملف شخصي، في حال حدث خطأ ما. في إصدار الحاسوب
+يمكنك استخدام ملف&lt;تصدير لتصدير «كل الرزم» مع تضمين معلومات المزامنة والوسائط،
+ثم احفظ النسخة في مكان آمن. في أنكي موبيل، زر إضافة/تصدير في نافذة قائمة الرزم يسمح لك
+بتصدير كل الرزم مع الوسائط.
 
-Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose "export". Export the content with scheduling
-information and media included, and save the .apkg file somewhere. Now
-you’ll need to repeat this for each top-level deck.
+بعد ذلك، إذا كان إحدى أجهزتك جهازًا محمولًا، فزامنه أولًا. إذا كان هناك تعارض، اختر
+«رفع» لاستبدال أي بيانات في أنكي ويب ببيانات جهازك المحمول. إذا كان
+كلا الجهازان/الملفات الشخصية على حاسوبك، زامن الجهاز/الملف الشخصي ذا عدد الرزم
+الأكبر أولًا.
 
-Once all top-level decks have been exported, click the sync button at
-the top right, and choose "download", which will overwrite the local
-content with the content you synced from your other device.
+عد الآن إلى الجهاز/الملف الشخصي الآخر. إذا كانت المزامنة التلقائية مفعلة، ستظهر رسالة
+تسألك ما إذا كنت تريد الرفع أم التحميل. اضغط زر إلغاء لأننا لا نريد المزامنة الآن.
 
-You can now use File&gt;Import to import the .apkg files you exported
-earlier, which will merge the exported content with the existing
-content, so everything will be in one place.
+عندما تكون في قائمة الرزم، اضغط زر الأتراس المسننة بجانب الرزمة الأولى واختر «تصدير».
+صدّر المحتوى مع معلومات الجدولة والوسائط، واحفظ ملف الـ .apkg في مكان ما. عليك
+تكرار هذا الإجراء لكل رزمة رئيسية.
 
-## Firewalls
+بعد تصدير كل الرزم، اضغظ زر مزامنة في أعلى اليمين، واختر «تنزيل»، ما سيؤدي إلى
+استبدال المحتوى المحلي بالمحتوى الذي زامنته من الجهاز الآخر.
 
-Anki needs to be able to make outbound HTTPS connections to sync. At a
-minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
-syncN.ankiweb.net, where N is number between 2 and 6. These domains may
-change over time, and the IP addresses they point to may also change, so
-we recommend you allow wildcard access to \*.ankiweb.net to reduce the
-chance of the firewall rules needing to be updated in the future.
+بإمكانك الآن استخدام ملف&lt;استيراد لاستيراد ملفات .apkg التي صدرتها سابقًا، ما سيؤدي
+إلى دمج المحتوى المصدر مع المحتوى الموجود، بحيث يكون كل شيء في مكان واحد.
 
-If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, please contact your
-network administrator for assistance - it is not something we can help
-you with.
+## جدران الحماية
 
-## Proxies
+يحتاج أنكي إلى إجراء اتصالات HTTPS صادرة من أجل المزامنة. يجب أن يكون قادرًا على
+الاتصال بـ ankiweb.net و sync.ankiweb.net و syncN.ankiweb.net على الأقل،
+حيث N هو رقم بين 2 و 6. قد تتغير هذه النطاقات مع الوقت، وقد تتغير عناوين الآي بي التي تشير إليها،
+لذلك ننصح بالسماح بوصول شامل إلى <span dir="ltr">\*.ankiweb.net</span> لتقليل الحاجة إلى تحديث قوانين جدار الحماية
+في المستقبل.
 
-If you need a proxy to access the internet, Anki should automatically
-pick up your system proxy settings if you’re on Windows or OS X, and
-will honour the HTTP_PROXY environment variable if you’re on another
-platform.
+إذا كان لديك جدار حماية في جهازك، فيجب أن تضيف استثناءً لأنكي. إذا كنت على شبكة عمل أو مدرسة،
+فالرجاء التواصل مع مدير شبكتك للمساعدة، فليس هذا أمرًا يمكننا المساعدة فيه.
 
-Anki will only be able to pick up your system settings if a proxy is
-manually configured, and does not require a password. If your system
-uses automatic proxy setup, or uses a proxy that requires a username and
-password, you will need to manually tell Anki the proxy configuration.
+## البروكسيات
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
-variable that points to the proxy server. It will look like:
+إذا كنت تحتاج بروكسي للوصول إلى الإنترنت، فيجب أن يكتشف أنكي إعدادات البروكسي الخاصة بالنظام
+تلقائيًا إذا كنت تعمل على ويندوز أو أو إس إكس، وسيأخذ متغير البيئة HTTP_PROXY بعين الاعتبار
+إذا كنت في منصة أخرى.
+
+يمكن لأنكي أن يكتشف إعدادات النظام فقط إذا كان البروكسي معدًا يدويًا ولا يحتاج إلى كلمة مرور.
+إذا كان نظامك يستخدم إعداد البروكسي التلقائي، أو يستخدم بروكسي يتطلب اسم مستخدم وكلمة مرور،
+فستحتاج إلى إخبار أنكي بإعدادات البروكسي يدويًا.
+
+لإخبار أنكي إعدادات البروكسي، عرّف متغير البيئة HTTPS_PROXY ليشير إلى خادم البروكسي.
+سيبدو كالتالي:
+
+<div dir="ltr">
 
     http://user:pass@proxy.company.com:8080
+</div>
 
-If your username or password contains an @ (eg <user@workdomain.com>),
-you need to change it to %40, like so:
+إذا كان اسم المستخدم أو كلمة المرور يحويان رمز @ (<user@workdomain.com> مثلًا)،
+فستحتاج إلى تغييره إلى <span dir="ltr">%40</span>، كالتالي:
+
+<div dir="ltr">
 
     http://user%40workdomain.com:pass@proxy.company.com:8080
+</div>
 
-Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
+يتوقع أنكي 2.0 أن يجد HTTP_PROXY بدلًا من HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
+لتعريف متغيرات البيئة في ويندوز، انظر
 <https://www.google.com/search?q=windows+set+environmental+variable>
 
-If you’re on a Mac, please see
+إذا كنت تعمل في ماك، انظر
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
-Heavily locked down networks that intercept secure connections and
-present their own certificate instead may cause Anki to throw up SSL
-errors. In such environments, you may be able to work around the errors
-with <https://ankiweb.net/shared/info/878367706>
+الشبكات المغلقة بقوة والتي تقاطع الاتصالات الآمنة وتقدم شهادتها كبديل قد تجعل أنكي
+يظهر أخطاء SSL. في مثل هذه البيئات، قد تكون قادرًا على تخطي هذه الأخطاء باستخدام
+<https://ankiweb.net/shared/info/878367706>.
 
-An alternative solution is to install a local proxy server, and point
-that proxy server at your normal proxy server. You can then tell Anki to
-use the local proxy, which will redirect requests to the proxy you
-normally use.
+كحل بديل، تستطيع تنصيب خادم بروكسي محلي، وتوجيهه إلى خادم البروكسي العادي.
+تستطيع عندها إخبار أنكي باستخدام البروكسي المحلي، والذي سيوجه الطلبات إلى البروكسي
+الذي تستخدمه عادةً.
