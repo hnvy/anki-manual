@@ -1,4 +1,6 @@
-# تنسيق البطاقات
+# التنسيق و HTML
+
+## تنسيق البطاقات
 
 بإمكانك مشاهدة فيديو عن [تنسيق البطاقات](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 في يوتيوب. يظهر الفيديو واجهة أنكي 2.0، لكن المفاهيم هي نفسها تقريبًا.
@@ -39,8 +41,12 @@
 <div dir="ltr">
 
 ```css
-.card { background-color: yellow; }
-.card1 { background-color: blue; }
+.card {
+  background-color: yellow;
+}
+.card1 {
+  background-color: blue;
+}
 ```
 </div>
 
@@ -52,7 +58,10 @@
 <div dir="ltr">
 
 ```css
-img { max-width: none; max-height: none; }
+img {
+  max-width: none;
+  max-height: none;
+}
 ```
 </div>
 
@@ -63,7 +72,10 @@ img { max-width: none; max-height: none; }
 <div dir="ltr">
 
 ```css
-img { max-width: 300px !important; max-height: 300px !important; }
+img {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
 ```
 </div>
 
@@ -73,7 +85,9 @@ img { max-width: 300px !important; max-height: 300px !important; }
 <div dir="ltr">
 
 ```css
-img#star { ... }
+img#star {
+  ...;
+}
 ```
 </div>
 
@@ -136,11 +150,11 @@ img#star { ... }
 
 ```css
 .card {
- font-family: arial;
- font-size: 20px;
- text-align: center;
- color: black;
- background-color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 ```
 </div>
@@ -151,15 +165,15 @@ img#star { ... }
 
 ```css
 .card {
- font-family: arial;
- font-size: 20px;
- text-align: center;
- color: black;
- background-color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 
 .mystyle1 {
- font-family: ayuthaya;
+  font-family: ayuthaya;
 }
 ```
 </div>
@@ -171,8 +185,8 @@ img#star { ... }
 
 ```css
 .mystyle1 {
- font-family: ayuthaya;
- font-size: 30px;
+  font-family: ayuthaya;
+  font-size: 30px;
 }
 ```
 </div>
@@ -192,9 +206,17 @@ img#star { ... }
 <div dir="ltr">
 
 ```css
-.replay-button svg { width: 20px; height: 20px; }
-.replay-button svg circle { fill: blue; }
-.replay-button svg path { stroke: white; fill: green; }
+.replay-button svg {
+  width: 20px;
+  height: 20px;
+}
+.replay-button svg circle {
+  fill: blue;
+}
+.replay-button svg path {
+  stroke: white;
+  fill: green;
+}
 ```
 </div>
 
@@ -224,10 +246,18 @@ img#star { ... }
 <div dir="ltr">
 
 ```css
-.win .jp { font-family: "MS Mincho"; }
-.mac .jp { font-family: "Hiragino Mincho Pro"; }
-.linux .jp { font-family: "Kochi Mincho"; }
-.mobile .jp { font-family: "Hiragino Mincho ProN"; }
+.win .jp {
+  font-family: "MS Mincho";
+}
+.mac .jp {
+  font-family: "Hiragino Mincho Pro";
+}
+.linux .jp {
+  font-family: "Kochi Mincho";
+}
+.mobile .jp {
+  font-family: "Hiragino Mincho ProN";
+}
 ```
 </div>
 
@@ -278,7 +308,10 @@ img#star { ... }
 <div dir="ltr">
 
 ```css
-@font-face { font-family: myfont; src: url('_arial.ttf'); }
+@font-face {
+  font-family: myfont;
+  src: url("_arial.ttf");
+}
 ```
 </div>
 
@@ -300,7 +333,9 @@ img#star { ... }
 <div dir="ltr">
 
 ```css
-.card.nightMode { background-color: #555; }
+.card.nightMode {
+  background-color: #555;
+}
 ```
 </div>
 
@@ -310,7 +345,9 @@ img#star { ... }
 <div dir="ltr">
 
 ```css
-.nightMode .myclass { color: yellow; }
+.nightMode .myclass {
+  color: yellow;
+}
 ```
 </div>
 
