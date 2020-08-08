@@ -1,24 +1,20 @@
-# Profiles
+# الملفات الشخصية
 
-If more than one person wants to use Anki on your computer, you can set
-up a separate profile for each user. Each user profile has their own
-collection, and own program settings. Profiles are configured by going
-to the File menu and choosing "Switch Profile".
+إذا كان هناك أكثر من شخص يريد استخدام أنكي على حاسوبك، تستطيع إعداد ملف شخصي منفصل
+لكل مستخدم. لكل ملف شخصي مجموعته وإعداداته الخاصتين. تُعد الملفات الشخصية
+بالذهاب إلى قائمة الملف واختيار «تبديل الملف الشخصي».
 
-Profiles are primariy intended to be used by different people, and are not
-recommended for splitting up your own content.
+إن وظيفة الملفات الشخصية الأساسية هي أن تُستخدَم من قبل عدة أشخاص، ولا ينصح باستخدامها
+لتقسيم محتواك الخاص.
 
-**Only a single profile can be synced to an AnkiWeb account.** If you attempt
-to link two or more profiles to the same AnkiWeb account, you will overwrite
-the data from one profile with the data from the other.
+**يمكن لملف شخصي واحد فقط أن يُزامَن إلى حساب أنكي ويب**. إذا حاولت ربط ملفين شخصيين
+أو أكثر إلى حساب أنكي ويب نفسه، فستُستبدَل بيانات ملف ببيانات الملف الآخر.
 
-AnkiDroid does not support profiles.
+لا يدعم أنكي درويد الملفات الشخصية.
 
-If you have created multiple profiles for yourself, the best option is to
-merge them into a single profile. You can do so by exporting one deck from
-profile A, and then importing it into profile B, repeating for any other decks
-in profile A, until everything is in profile B.
+إذا أنشأت أكثر من ملف شخصي لنفسك، فيُنصَح بدمجها إلى ملف واحد. تستطيع تحقيق هذا
+بتصدير رزمة من الملف الشخصي أ، واستيرادها إلى الملف ب، وتكرار الفعل نفسه لكل رزمة في ملف أ،
+حتى يصبح كل شيء في ملف ب.
 
-If you have different users on your computer, each user will need to set up a
-separate AnkiWeb account for their profile. Attempting to sync different
-profiles with the same AnkiWeb account will result in lost data.
+إذا كان هناك عدة مستخدمين لحاسوبك، فسيحتاج كل مستخدم لأن يعد حساب أنكي ويب منفصلًا
+لملفه الشخصي. تؤدي محاولة مزامنة ملفات شخصية مختلفة إلى الحساب نفسه إلى فقدان بيانات.

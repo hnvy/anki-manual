@@ -10,7 +10,7 @@
 - [تفضيلات](preferences.md)
 - [خيارات الرزمة](deck-options.md)
 - [المزامنة مع أنكي ويب](syncing.md)
-- [Profiles](profiles.md)
+- [الملفات الشخصية](profiles.md)
 - [Browsing](browsing.md)
 - [Filtered Decks](filtered-decks.md)
 - [Searching](searching.md)
