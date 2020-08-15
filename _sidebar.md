@@ -24,5 +24,5 @@
 - [Add-ons](addons.md)
 - [Miscellaneous](misc.md)
 - [Contributing](contrib.md)
-- [FAQs](faqs.md)
+- [أسئلة متكررة](faqs.md)
 - [مصادر](resources.md)
