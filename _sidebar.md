@@ -11,7 +11,7 @@
 - [خيارات الرزمة](deck-options.md)
 - [المزامنة مع أنكي ويب](syncing.md)
 - [الملفات الشخصية](profiles.md)
-- [Browsing](browsing.md)
+- [التصفح](browsing.md)
 - [Filtered Decks](filtered-decks.md)
 - [Searching](searching.md)
 - [Importing](importing.md)

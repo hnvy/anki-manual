@@ -1,220 +1,206 @@
-# Browsing
+# التصفح
 
-The Browse screen allows you to search through your cards and notes, and edit
-them. It is opened by clicking on _Browse_ in the main window, or by pressing
-_b_ on your keyboard. It is comprised of three sections: the _sidebar_ on the
-left, the _card list_ on the top right, and the _current note_ on the bottom
-right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink another.
+تسمح لك نافذة المتصفح بالبحث خلال بطاقاتك وملحوظاتك وتحريرها. تستطيع فتح هذه النافذة
+بالضغط على __تصفّح__ في النافذة الرئيسية، أو بالضغط على مفتاح __b__. تتكون النافذة من
+ثلاث أقسام: __الشريط الجانبي__ على اليسار، __قائمة البطاقات__ في أعلى اليمين،
+و__الملحوظة الحالية__ في أسفل اليمين. يمكنك الضغط على هذه الأقسام وسحبها لتوسيع
+قسم ما وتقليص الآخر من خلال وضع مؤشر الفأرة بين القسمين.
 
-## Sidebar
+## الشريط الجانبي
 
-The sidebar on the left allows quick access to common search terms. Clicking
-on an item will search for it.
+يوفر لك الشريط الجانبي على اليسار وصولًا سريعًا إلى عبارات بحث شائعة. سيؤدي الضغط على
+عنصر إلى البحث عنه.
 
-You can hold down Ctrl (Command on a Mac) while clicking in order to append
-the clicked item to the current search with an AND condition, instead of
-starting a new search. If you wanted to show learning cards that were
-also in the German deck for instance, you could click on "Learning",
-then Ctrl+click on "German".
+تستطيع ضغط Ctrl (Command في ماك) عند النقر على عنصر لكي تضيف العنصر المنقور إلى
+عبارة البحث الحالية بدالة __و__ بدلًا من بدء بحث جديد. إذا كنت تريد إظهار البطاقات في طور التعلم
+والتي هي في رزمة اللغة الألمانية أيضًا مثلًا، تستطيع النقر على «تعلم»، ثم Ctrl+نقرة على «ألمانية».
 
-You can hold down Shift to create an OR search instead of an AND. For
-example, you could click one deck, then shift-click another to show
-cards from either of the decks in the same view.
+تستطيع ضغط زر Shift لإنشاء بحث __أو__ بدلًا من __و__. مثلًا، تستطيع الضغط على رزمة،
+ثم shift+نقرة على رزمة أخرى لإظهار بطاقات من أيِّ من الرزمتين في القائمة نفسها.
 
-You can hold down Alt (Option on a Mac) in order to reverse the search
-(prepend a _-_) – for instance, to show all cards in a current deck that
-do _not_ have a certain tag. Alt/option can be combined with either Ctrl
-or Shift (e.g., Ctrl-Alt-clicking will result in adding a new search
-term that is negated).
+تستطيع ضغط alt (option في ماك) لعكس البحث (بإضافة _-_ قبل عبارة البحث) -
+مثلًا، لإظهار كل البطاقات في الزرمة الحالية التي _ليس_ لها سمة معينة، يمكن جمع Alt/option
+مع Ctrl أو Shift (Ctrl+Alt+نقرة يؤدي إلى إضافة عبارة بحث منفية).
 
-To remove tags that are not used by any notes, use Tools&gt;Check
-Database from the main window.
+لحذف السمات غير المستخدمة من قبل أي ملحوظة، استخدم أدوات&lt;فحص قاعدة البيانات
+في النافذة الرئيسية.
 
-## Searching
+## البحث
 
-Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax, please
-see the [searching section](searching.md).
+هناك صندوق بحث فوق قائمة البطاقات. تستطيع إدخال عدة أمور هناك للبحث عن بطاقات.
+لمزيد من المعلومات عن صياغة عبارات البحث، انظر قسم [البحث](searching.md).
 
-## Card List
+## قائمة البطاقات
 
-The card list displays cards that match the current search.
+تعرض قائمة البطاقات البطاقات التي تطابق عبارة البحث الحالية.
 
-The columns are configurable: right click on one (or ctrl+click on a
-Mac) to choose which columns you’d like to see. You can drag columns to
-reorder them. Clicking on a column will sort by that column; click again
-to reverse the sort order. Not all columns can be sorted on.
+يمكن تخصيص الحقول: اضغط بزر الفأرة الأيمن على عمود (أو Ctrl+نقرة في ماك) لاختيار
+العمودات التي تريد رؤيتها. تستطيع سحب الحقول لترتيبها. يؤدي الضغط على عمود إلى فرز
+البطاقات حسب ذلك العمود؛ اضغط مجددًا لعكس ترتيب الفرز. يمكن الفرز حسب بعض الحقول فقط.
 
-The due column behaves differently for different types of cards. New
-cards show a number rather than a due date, which indicates the order
-the new cards will be presented in. Cards in (re)learning and reviews
-will both show a due date, but when sorting they are first grouped by
-type and then sorted by date.
+يعمل عمود البطاقات المستحقة بشكل مختلف حسب أنواع البطاقات المختلفة. تظهر
+البطاقات الجديدة رقمًا يشير على ترتيب عرض البطاقات الجديدة بدلًا من تاريخ استحقاق.
+تظهر البطاقات في طور التعلم وإعادة التعلم والمراجعة تاريخ استحقاق، لكنها تُجمع حسب
+النوع ثم التاريخ عند الفرز.
 
-The "edited" and "changed" columns sound the same but track different
-things. "Edited" tracks the last time changes were made to the _note_
-(e.g., when the content of a field was edited), while "changed" tracks
-the last time changes were made to the _card_ (e.g., when you reviewed
-the card and the review history and interval were updated).
+يبدو عمودا «تاريخ التعديل» و «تاريخ التغيير» متشابهين، لكنهما يدلان على أمور مختلفة.
+يدل «تاريخ التعديل» على آخر مرة أجريت فيها تغييرات على __الملحوظة__
+(عند تحرير محتوى حقل مثلًا)، بينما يدل «تاريخ التغيير» على آخر مرة أجريت فيها تغييرات
+على __البطاقة__ (عندما راجعت البطاقة وتم تحديث تاريخ المراجعة والفواصل الزمنية مثلًا).
 
-When you click on a card, its note will be shown in the bottom section.
-If you drag the mouse or hold ctrl or command to select multiple cards,
-the editor will be temporarily hidden. Various operations (such as
-changing the deck) can operate on multiple cards at once.
+عندما تضغط على بطاقة، ستظهر ملحوظتها في القسم السفلي. إذا سحبت بالفأرة أو ضغطت
+زر Ctrl أو Command لتحديد عدة بطاقات، سيختفي المحرر مؤقتًا. يمكن إجراء عدة عمليات
+(مثل تغيير الرزمة) على عدة بطاقات في الوقت نفسه.
 
-The background colour will change depending on the card. Marked cards
-are a shade of purple. Suspended cards are a shade of yellow. For more
-information about marked and suspended cards, please see [editing and
-more](studying.md).
+يتغير نوع الخلفية حسب البطاقة. للبطاقات المعلّمة لون بنفسجي، وللبطاقات الموقوفة لون أصفر.
+لمزيد من المعلومات حول البطاقات المعلّمة والموقوفة،
+انظر [التحرير والمزيد](studying.md#editing-and-more).
 
-One of the available columns is called the _sort field_. Anki allows you
-to choose one field from each type of note to be used for sorting. You
-can change the sort field by clicking on "Fields…​" in the current note
-section.
+يدعى أحد العمودات المتوفرة __حقل الفرز__. يسمح لك أنكي باختيار حقل واحد من
+كل نوع ملحوظة ليستخدمه من أجل الفرز. تستطيع تغيير حقل الفرز بالضغط على «حقول...»
+في قسم الملحوظة الحالية.
 
-The question and answer columns display what you’d see on the question
-and answer while reviewing, except the answer column will strip the
-question part for clarity. You can also choose a [custom
-format](templates/styling.md#browser-appearance) in the card type editor instead of showing
-what would be seen during review.
+يظهر عمودا السؤال والجواب ما تراه في جانبي السؤال والجواب عند المراجعة،
+ما عدا أن عمود الجواب لن يظهر جانب السؤال من أجل الوضوح. كما تستطيع اختيار
+[صيغة مخصصة](templates/styling.md#browser-appearance) من خلال محرر نوع البطاقات
+بدلًا من إظهار ما تراه عند المراجعة.
 
-## Current Note
+## الملحوظة الحالية
 
-The bottom right area displays the currently selected card’s note. For
-more information about cards and notes, please see [the
-basics](getting-started.md). For more information on formatting buttons, please see
-[editing](editing.md).
+يظهر القسم في أسفل اليمين ملحوظة البطاقة المحددة حاليًا. لمزيد من المعلومات
+حول البطاقات والملحوظات، انظر قسم [الأساسيات](getting-started.md).
+لمزيد من المعلومات حول أزرار التنسيق، انظر قسم [التحرير](editing.md).
 
-You can see a preview of what the currently selected card would look
-like when reviewing by clicking the "preview" button next to the search
-box. Note that this will not display any type answer fields on your
-cards, which makes it easier to preview cards quickly.
+تستطيع معاينة ما ستبدو عليه البطاقة المحددة عند المراجعة بالضغط على زر «معاينة»
+بجانب صندوق البحث. لاحظ أن هذا لن يظهر أي من حقول إدخال الجواب الموجودة في بطاقاتك،
+ما يجعل معاينة البطاقات أسرع.
 
-## Menu
+## القائمة
 
-Up the top of the window/screen is the menu. You can also access it quickly by
-right clicking on command+clicking on the card list area.
+توجد القائمة في أعلى النافذة. كما يمكنك الوصول إليها بسرعة بالضغط بزر الفأرة الأيمن
+أو بنقرة+command في قسم قائمة البطاقات.
 
-_Info_ shows various information about the currently selected card,
-including its review history. For more information, see the
-[statistics](stats.md) section.
+يظهر خيار _معلومات_ معلومات منوعة عن البطاقة المحددة، بما في ذلك سجل مراجعتها.
+لمزيد من المعلومات، انظر قسم [الإحصائيات](stats.md).
 
-_Mark_ and _Suspend_ are documented in [editing and more](studying.md).
+خيارا _وضع/إزالة علامة_ و _تفعيل/إيقاف_ موثقان في [التحرير والمزيد](studying.md#editing-and-more).
 
-_Change Deck_ allows you to move cards to a different deck. Cards can be
-placed in different decks, so if you want to move all cards in a note,
-you should first use Edit &gt; Select Notes.
+يسمح لك خيار _تغيير الرزمة_ بنقل البطاقات إلى رزمة أخرى. يمكن وضع بطاقات ملحوظة في
+رزم مختلفة، لذلك إذا كنت تريد نقل كل بطاقات ملحوظة ما، فيجب أولًا أن تستخدم
+تحرير &lt; تحديد الملحوظات.
 
-_Add Tags_ and _Remove Tags_ allow you to add or remove tags from notes
-in bulk. To remove unused tags from the list on the left, use
-Tools&gt;Check Database from the main window.
+يسمح لك خيارا _إضافة سمات_ و_إزالة سمات_ بإضافة سمات وحذفها من البطاقات بدفعة واحدة.
+لحذف السمات غير المستخدمة من القائمة على اليسار، استخدم أدوات&lt;فحص قاعدة البيانات
+من النافذة الرئيسية.
 
-_Delete_ removes the selected card(s) and their notes. It is not
-possible to remove individual cards, as individual cards are controlled
-by the [templates](templates/intro.md).
+يحذف خيار _حذف_ البطاقة/البطاقات المحددة وملحوظاتها. لا يمكن حذف بطاقات فردية،
+لأنها خاضعة [للقوالب](templates/intro.md).
 
-## Find and Replace
+## البحث والاستبدال
 
-This option (Notes→Find and Replace…​) allows you to replace text in the
-notes you have selected. The regular expression option allows you to
-perform complex replacements. For example, given the following text in a
-field:
+يسمح لك هذا الخيار (ملحوظات←بحث واستبدال...) باستبدال نصوص في الملحوظات التي حددتها.
+يسمح لك خيار التعابير النمطية بإجراء استبدالات معقدة. على سبيل المثال، لنأخذ النص التالي في حقل ما:
+
+<div dir="ltr">
 
     <img src="pic.jpg" />
+</div>
 
-Searching for:
+البحث عن:
+
+<div dir="ltr">
 
     <img src="(.+?)" />
+</div>
 
-and on Anki 2.1.28, replacing with:
+وفي أنكي 2.1.28، الاستبدال بـ:
+
+<div dir="ltr">
 
     ${1}
+</div>
 
-on older Anki versions, replacing with:
+وفي الإصدارات القديمة، الاستبدال بـ:
+
+<div dir="ltr">
 
     \1
+</div>
 
-Will change the card to:
+سيغير البطاقة إلى:
+
+<div dir="ltr">
 
     pic.jpg
+</div>
 
-A full discussion on regular expressions is outside the scope of this
-document. There are a number of tutorials available on the web. For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>. For older Anki versions, please see <http://docs.python.org/library/re.html>.
+إن مناقشة كاملة للتعابير النمطية هي خارج نطاق هذه الوثيقة. هناك عدة دروس تعليمية
+متوفرة في الويب. لدليل صياغة التعابير في أنكي 2.1.28+، انظر <https://docs.rs/regex/1.3.9/regex/#syntax>.
+للإصدارات القديمة، انظر <http://docs.python.org/library/re.html>.
 
-## Finding Duplicates
+## البحث عن ملحوظات مكررة
 
-You can use the Notes→Find Duplicates option to search for notes that
-have the same content. When you open the window, Anki will look at all
-of your note types and present a list of all possible fields. If you
-want to look for duplicates in the "Back" field, you’d select it from
-the list and then click "Search".
+تستطيع استخدام خيار ملحوظات←بحث عن ملحوظات مكررة للبحث عن ملحوظات لها المحتوى نفسه.
+عندما تفتح النافذة، سيفحص أنكي كل أنواع ملحوظاتك ويعرض لك قائمة بكل الحقول الممكنة.
+إذا كنت تريد البحث عن ملحوظات مكررة في حقل «خلف»، فستختارها من القائمة وتضغط «بحث».
 
-Unlike the check that happens when you add cards manually, the duplicate
-finding feature is not limited to a single note type. This means that by
-default, it will search in all note types that have the field you
-provided.
+على عكس الفحص الذي يُجرى عندما تضيف بطاقات يدويًا، ليس ميزة البحث عن الملحوظات المكررة
+محدودة بنوع ملحوظة واحد. يعني هذا أن أنكي سيبحث في كل أنواع الملحوظات التي لها
+الحقل الذي اخترته بشكل افتراضي.
 
-The _optional limit_ text box allows you to narrow down where Anki will
-look for duplicates. If you only want to search for duplicates in the
-"French Vocab" and "French Verbs" note types, you would enter:
+يسمح لك صندوق النص المسمى _فلتر اختياري_ بحصر مجال البحث. إذا كنت تريد البحث
+عن ملحوظات مكررة في أنواع الملحوظات «مفردات فرنسية» و «أفعال فرنسية»، فستدخل:
 
-    note:'french vocab' or note:'french verbs'
+<div dir="ltr">
 
-Or you might want to look only for duplicates in a particular deck, so
-you could use:
+    note:'مفردات فرنسية' or note:'أفعال فرنسية'
+</div>
 
-    deck:'myDeck'
+أو قد ترغب في البحث عن المكرر في رزمة معينة فقط، فقد تستخدم التالي:
 
-The search syntax is the same as used when searching in the browser.
-Please see the [searching](searching.md) section for more information.
+<div dir="ltr">
 
-You can click one of the links in the search results list to display the
-duplicate notes in that set. If the search brings up a large number of
-duplicates, you may wish to instead click the Tag Duplicates button,
-which will tag all matching notes with "duplicate." You can then search
-for this tag in the browser and handle them all from the same screen.
+    deck:'رزمتي'
+</div>
 
-## Other Menu Items
+صياغة البحث هي نفسها المستخدمة عند البحث في المتصفح. انظر قسم [البحث](searching.md)
+لمزيد من المعلومات.
 
-Some other items in the menus:
+تستطيع الضغط على أي من الروابط في نتائج البحث لعرض الملحوظات المكررة في تلك المجموعة.
+إذا نتج البحث عن عدد كبير من الملحوظات المكررة، فقد ترغب في الضغط على زر إضافة سمة
+للملحوظات المكررة بدلًا من ذلك، والذي سيضيف سمة «مكرر» لكل الملحوظات المطابقة.
+تستطيع عندها البحث عن هذه السمة في المتصفح ومعالجة كل ملحوظاتها في نافذة واحدة.
 
-_Reschedule_ allows you to move cards to the end of the new card queue,
-or reschedule them as a review card on a given date. The second option
-is useful if you have imported already-learnt material, and you want to
-start it off with higher initial intervals. For example, choosing 60 and
-90 will give all the imported cards an initial interval of 2 to 3
-months.
+## عناصر قائمة أخرى
 
-The card’s revision history is not cleared when rescheduling:
-rescheduling changes the current state of a card, but not its history.
-If you want to hide the history, you will need to export your notes as a
-text file, delete the notes, and then import the text file again,
-creating new notes.
+بعض العناصر الأخرى في القوائم:
 
-_Reposition_ allows you to change the order new cards will appear in.
-You can find out the existing positions by enabling the _due_ column, as
-described in the card list section above. If you run the reposition
-command when multiple cards are selected, it will apply increasing
-numbers to each card in turn. By default the number increases by one for
-each card, but this can be adjusted by changing the "step" setting. The
-_Shift position of existing cards_ option allows you to insert cards
-between currently existing ones, pushing the currently existing ones
-apart. For instance, if you have five cards and you want to move 3, 4,
-and 5 between 1 and 2, selecting this setting would cause the cards to
-end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
-off, 2 and 3 will get the same position number (and it will thus be
-random which one comes up first).
+يسمح لك خيار _إعادة جدولة_ بنقل البطاقات إلى آخر صف البطاقات الجديدة، أو إعادة جدولتها
+كبطاقات مراجعة بتاريخ محدد. الخيار الثاني مفيد إذا استوردت مواد مدروسة من قبل،
+وتريد البدء بها بفواصل أولية أعلى. مثلًا، اختيار 60 و 90 سيعطي كل البطاقات المستوردة
+فاصل أولي مكون من شهرين أو ثلاث.
 
-_Change Note Type_ allows you to convert the selected notes from one
-type to another. For example, imagine you have a Russian note type and a
-Computer note type, and you accidentally added some computer-related
-text into a Russian note. You can use this option to fix that mistake.
-The scheduling of cards is not affected.
+لا يُمسح سجل مراجعة البطاقة عند إعادة الجدولة: تغير إعادة الجدولة وضع البطاقة الحالي وليس سجلها.
+إذا كنت تريد إخفاء السجل، فسيتوجب عليك تصدير ملحوظاتك كملف نصي، وحذف الملحوظات،
+ثم استيراد الملف النصي مجددًا لإنشاء ملحوظات جديدة.
 
-_Select Notes_ takes the currently selected cards, finds their notes,
-and then selects all cards of those notes. If your notes have only one
-card, this does nothing.
+يسمح لك خيار _تغيير الموضع_ بتغيير ترتيب ظهور البطاقات الجديدة. تستطيع رؤية
+المواضع الحالية بتفعيل عمود _مستحقة_، كما هو مشروح في قسم قائمة البطاقات في الأعلى.
+إذا اخترت خيار إعادة الموضعة عند تحديد عدة بطاقات، فسيتم إعطاء أعداد متصاعدة
+لكل بطاقة بالترتيب. يزداد العدد بواحد لكل بطاقة افتراضيًا، لكن يمكن تعديل هذا
+بتغيير إعداد «الخطوة». يسمح لك خيار _غير موضع البطاقات الموجودة_ بوضع بطاقات
+بين البطاقات الموجودة حاليًا، مبعدًا البطاقات الموجودة أكثر. على سبيل المثال،
+إذا كان لديك 5 بطاقات وتريد نقل 3، 4،5 بين 1 و2، فتحديد هذا الخيار سيضع البطاقات
+بالترتيب 1، 3، 4، 5، 2. أما إذا أوقفت هذا الخيار، فالبطاقتان 1 و 2 ستأخذان رقم الموضع
+نفسه (وستظهر واحدة قبل الأخرى بشكل عشوائي).
 
-The _Go_ menu exists to provide keyboard shortcuts to jump to various
-parts of the browser, and to go up and down the card list.
+يسمح لك خيار _تغيير نوع الملحوظة_ بتحويل الملحوظات المحددة من نوع إلى آخر. مثلًا،
+لنقل أن لديك نوع ملحوظة لغة روسية ونوع ملحوظة حاسوب، وأضفت بعض النصوص المتعلقة بالحاسوب
+إلى ملحوظة لغة روسية بدون قصد. فتستطيع استخدام هذا الخيار لإصلاح هذا الخطأ.
+لا تتأثر جدولة البطاقات بهذا الخيار.
+
+خيار _تحديد الملحوظات_ يأخذ البطاقات المحددة، ويجد ملحوظاتها، ثم يحدد كل بطاقات هذه الملحوظات.
+إذا كان لملحوظاتك بطاقة واحدة فقط، فلا يفعل هذا الخيار شيئًا.
+
+توفر قائمة _ذهاب_ اختصارات لوحة مفاتيح للقفز إلى أقسام مختلفة من المتصفح،
+وللتنقل أعلى وأسفل في قائمة البطاقات.
