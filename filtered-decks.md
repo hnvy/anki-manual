@@ -1,283 +1,224 @@
-# Filtered Decks & Cramming
+# الرزم المفلترة والدراسة المكثفة
 
-When you study a regular deck in Anki, only a limited number of cards
-are shown: the cards Anki thinks you’re about to forget, and a daily
-limit of new cards. This is generally useful, as it ensures you don’t
-spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to revise
-for a test, focus on particular material, and so on. To make this
-possible, Anki provides a different type of deck called a 'filtered
-deck'.
+يظهر عدد محدود من البطاقات فقط عندما تدرس رزمة عادية في أنكي: البطاقات التي يعتقد
+أنكي أنك على وشك نسيانها، وحد البطاقات الجديدة اليومي. هذا مفيد عمومًا، لأنه يضمن
+أنك لا تدرس لوقت أطول من اللازم. لكن قد يكون من المفيد أحيانًا الخروج عن الجدول المعتاد،
+عندما تريد المذاكرة لامتحان مثلًا، أو التركيز على مادة محددة، وما إلى ذلك.
+لجعل هذا ممكنًا، يوفر أنكي نوع رزمة مختلفة تدعى «رزمة مفلترة».
 
-Filtered decks offer a lot of possibilities. They can be used for
-previewing cards, cramming cards before a test, studying particular
-tags, catching up on a backlog with a particular sort order, reviewing
-ahead of schedule, going over the day’s failed cards, and more.
+توفر الرزم المفلترة فرص عديدة. يمكن استخدامها لمعاينة البطاقات،
+أو الدراسة المكثفة قبل امتحان، أو دراسة سمات محددة، أو دراسة البطاقات المتراكمة
+بترتيب معين، أو المراجعة المبكرة، أو تكرار البطاقات التي فشلت في تذكرها اليوم، والمزيد.
 
-## Custom Study
+## الدراسة المخصصة
 
-The easiest way to create a filtered deck is with the Custom Study
-button, which appears at the bottom of the screen when you click on a
-deck. It offers some convenient presets for common tasks like reviewing
-the cards you’ve failed that day. It will create a filtered deck called
-"Custom Study Session" and automatically open it for you.
+أسهل طريقة لإنشاء رزمة مفلترة هي باستخدام زر دراسة مخصصة الذي يظهر أسفل الشاشة
+عند الضغط على زرمة. يوفر هذا بعض الإعدادات لمهام شائعة مثل مراجعة البطاقات التي فشلت
+في تذكرها ذاك اليوم. ستُنشأ رزمة مفلترة تدعى «جلسة دراسة مخصصة» وستُفتح تلقائيًا.
 
-If an existing "Custom Study Session" deck exists, it will be emptied
-before a new one is created. If you wish to keep a custom study deck,
-you can rename it from the deck list.
+إذا كان هناك رزمة «جلسة دراسة مخصصة» موجودة مسبقًا، فستُفرَّغ قبل إنشاء
+رزمة جديدة. إذا كنت تريد الإبقاء على رزمة دراسة مخصصة، تستطيع تغيير اسمها من خلال
+قائمة الرزم.
 
-Here is a summary of each of the options:
+هذا موجز لكل خيار:
 
-**Increase today’s new card limit**  
-Add more new cards to the deck you are currently studying. Note that
-unlike other options, this does 'not' create a new filtered deck, it
-modifies the existing deck.
+**ارفع حد البطاقات الجديدة لليوم**  
+أضف مزيدًا من البطاقات الجديدة إلى الرزمة التي تدرسها حاليًا. لاحظ أنه عكس الخيارات الأخرى،
+هذا الخيار _لا_ ينشئ رزمة مفلترة جديدة، بل يعدل الرزمة الموجودة.
 
-**Increase today’s review card limit**  
-If not all reviews due today were shown due to the daily review limit,
-this option allows you to show more of them. Like with the new cards
-option, this modifies the existing deck.
+**ارفع حد مراجعات اليوم**  
+إذا لم تظهر كل المراجعات المستحقة اليوم بسبب حد المراجعات اليومي، فهذا الخيار يسمح
+لك بإظهار مزيد منها. يعدل هذا الخيار الرزمة الموجودة مثل خيار البطاقات الجديدة.
 
-**Review forgotten cards**  
-Show all cards that you’ve answered Again (1) to within a number of days
-you specify.
+**مراجعة البطاقات المنسية**  
+يظهر كل البطاقات التي أجبت عنه بـ مجددًا (1) خلال مدة زمنية تحددها.
 
-**Review ahead**  
-Show cards that will be due in the near future (a number of days you
-specify). This is useful for working through some of your older cards
-before a vacation, but it will not help with cards you have learnt
-recently. Please see the [reviewing ahead](#reviewing-ahead) section
-below for more info.
+**المراجعة مبكرًا**  
+يظهر البطاقات التي ستكون مستحقة في المستقبل القريب (خلال عدد أيام تحدده).
+هذا الخيار مفيد لدراسة بعض بطاقاتك القديمة قبل عطلة، لكنه لا يساعد مع البطاقات
+التي درستها مؤخرًا. انظر قسم [المراجعة المبكرة](#reviewing-ahead) لمزيد من المعلومات.
 
-**Preview new cards**  
-Show cards that you have recently added, without converting them to
-review cards as they are answered.
+**معاينة البطاقات الجديدة**  
+يظهر البطاقات التي أضفتها مؤخرًا، بدون تحويلها إلى بطاقات مراجعة عندما تجيب عنها.
 
-**Study by card state or tag**  
-Select a certain number of cards from the current deck to study. You can
-choose to select new cards only, due cards only, or all cards; after you
-click "Choose Tags", you can also limit the selected cards by tags. If
-you wish to see all the cards in the deck (for instance, to study before
-a big test), you can set the number of cards to more than the number of
-cards in the deck.
+**دراسة حسب حالة البطاقة أو السمة**  
+يختار عددًا من البطاقات في الرزمة الحالية لتدرسها. تستطيع اختيار البطاقات الجديدة فقط،
+أو البطاقات المستحقة فقط، أو كل البطاقات؛ بعد ضغط «اختيار سمات»، تستطيع حصر
+البطاقات المحددة بالسمات أيضًا. إذا كنت تريد رؤية كل البطاقات في الرزمة (لتدرس
+قبل امتحان مهم مثلًا)، تستطيع ضبط عدد البطاقات إلى عدد أكبر من عدد البطاقات في الرزمة.
 
-## Home Decks
+## الرزم الأصل
 
-When a card is moved to a filtered deck, it retains a link to the deck
-it was in previously. That previous deck is said to be the card’s 'home
-deck'.
+عندما تُنقل بطاقة إلى رزمة مفلترة، تحتفظ هذه البطاقة برابط إلى الرزمة التي كانت فيها.
+تدعى تلك الرزمة «الرزمة الأصل».
 
-Cards automatically return to their home deck after they are studied in
-the filtered deck. This can be after a single review, or after multiple
-reviews, depending on your settings.
+تعود البطاقات إلى رزمتها الأصل تلقائيًا بعد دراستها في الرزمة المفلترة. قد يكون
+هذا بعد مراجعة واحدة، أو عدة مراجعات، اعتمادًا على إعداداتك.
 
-It is also possible to move all cards back to their home decks at once:
+من الممكن أيضًا إرجاع كل البطاقات إلى رزمها الأصل في الوقت نفسه:
 
--   The "Empty" button in the study overview moves all cards in the
-    filtered deck back to their home deck, but does not delete the empty
-    filtered deck. This can be useful if you want to fill it again later
-    (using the Rebuild button).
+-   زر «تفريغ» في موجز الدراسة يرجع كل البطاقات في الرزمة المفلترة إلى رزمتها الأصل،
+    بدون حذف الرزمة المفلترة. هذا مفيد إذا كنت تريد ملأها لاحقًا (باستخدام زر إعادة إنشاء).
 
--   Deleting a filtered deck does the same thing as "Empty" does, but
-    also removes the emptied deck from the deck list. No cards are
-    deleted when you delete a filtered deck.
+-   حذف رزمة مفلترة هو مثل تفريغها، لكن الحذف يحذف الرزمة من قائمة الرزم. لا تُحذف
+    البطاقات عند حذف رزمة مفلترة.
 
-In the current implementation, if you create, rebuild, empty or delete a
-filtered deck while cards are still in learning, they will be turned
-back into new cards. In the case of failed reviews in relearning, any
-remaining relearning steps will be skipped. This has been fixed in the
-[experimental
-scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
+في التنفيذ الحالي، إذا أنشأت رزمة مفلترة، أو أعدت إنشاءها، أو فرغتها، أو حذفتها
+عندما ما يزال فيها بطاقات في طور التعلم، فسيتم تحويل هذه البطاقات إلى بطاقات جديدة.
+في حالة المراجعات الفاشلة في طور إعادة التعلم، يتم تخطي أي خطوات إعادة تعلم متبقية.
+تم إصلاح هذا في [المجدول التجريبي](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
 
-## Creating Manually
+## إنشاء يدوي
 
-Advanced users can create filtered decks with arbitrary search strings,
-instead of relying on set presets. To create a filtered deck manually,
-choose Create Filtered Deck from the Tools menu.
+يمكن للمستخدمين المتقدمين إنشاء رزم مفلترة بعبارات بحث اعتباطية بدلًا من الاعتماد
+على إعدادات معدة مسبقًا. لإنشاء رزمة مفلترة يدويًا، اختر إنشاء رزمة مفلترة من قائمة أدوات.
 
-When you click the Build button, Anki finds cards that match the
-settings you specified, and temporarily moves them from their existing
-decks into your new filtered deck for study.
+عندما تضغط زر إنشاء، يجد أنكي البطاقات التي تطابق الإعدادات التي خصصتها، وينقلها
+مؤقتًا من رزمها إلى رزمة مفلترة جديدة للدراسة.
 
-If you wish to fetch cards again using the same filter options (for
-instance, if you want to study all cards with a particular tag every
-day), you can use the Rebuild button at the bottom of the deck’s
-overview screen.
+إذا كنت تريد جلب بطاقات مجددًا باستخدام إعدادات الفلترة نفسها (مثلًا، إذا كنت تريد
+دراسة البطاقات التي لها سمة معينة كل يوم)، تستطيع استخدام زر إعادة إنشاء الموجود
+أسفل نافذة موجز الرزمة.
 
-The **search** area controls what cards Anki will gather. All of the
-searches possible in the browser are also possible for filtered decks,
-such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. Please see the [searching](searching.md) section of the
-manual for more information on the different possibilities.
+تتحكم منطقة **بحث** بالبطاقات التي سيجلبها أنكي. كل عبارات البحث الممكنة في المتصفح
+هي ممكنة في الرزم المفلترة أيضًا، مثل الحصر بسمات معينة، البحث عن بطاقات نُسيت
+عدة مرات، وما إلى ذلك. انظر قسم [البحث](searching.md) لمزيد من المعلومات حول
+الإمكانيات المختلفة.
 
-Filtered decks can not pull in cards that are suspended, buried, or
-already in a different filtered deck. And unless you are using the
-experimental scheduler, they can not pull in cards that are in
-(re)learning. For this reason, a search in the browser may reveal cards
-that don’t end up in the filtered deck.
+لا يمكن أن تجلب الرزم المفلترة البطاقات الموقوفة أو المدفونة أو الموجودة في رزمة مفلترة أخرى.
+كما لا يمكنها جلب البطاقات في طور التعلم أو إعادة التعلم، إلا إذا كنت تستخدم المجدول التجريبي.
+لهذا السبب، قد يظهر البحث في المتصفح بطاقات لا تظهر في الرزمة المفلترة.
 
-The **limit** option controls how many cards will be gathered into the
-deck. The order you select controls both the order cards are gathered
-in, and the order they will be reviewed in. If you select "most lapses"
-and a limit of 20 for example, then Anki will show you only the 20 most
-lapsed cards.
+يتحكم خيار **عدد البطاقات الأقصى** بعدد البطاقات التي ستُجلب إلى الرزمة. يتحكم
+الترتيب الذي تحدده بترتيب جلب البطاقات، وترتيب مراجعتها. إذا حددت «الأكثر سقطات»
+وحد أقصى من 20 مثلًا، فسيظهر لك أنكي البطاقات الـ20 ذات العدد الأكبر من السقطات.
 
-For efficiency reasons, if your cram deck contains more than 1000 cards,
-only 1000 cards will be shown as due on the deck list and study screens.
+لأسباب تتعلق بالأداء، إذا كانت رزمة الدراسة المكثفة الخاصة بك تحتوي على أكثر من 1000 بطاقة،
+فستظهر 1000 بطاقة فقط كمستحقة في قائمة الرزم ونوافذ الدراسة.
 
-## Order
+## الترتيب
 
-The "cards selected by" option controls the order that cards will appear
-in. If the maximum number of cards you select is lower than the number
-of cards that match the filter criteria, Anki will exclude the cards at
-the end of this sorted list first.
+يتحكم خيار «بطاقة محددة حسب» بترتيب ظهور البطاقات. إذا كان عدد البطاقات الأقصى
+الذي اخترته أقل من عدد البطاقات التي تطابق الفلتر، سيقصي أنكي البطاقات في نهاية
+هذه القائمة المرتبة أولًا.
 
-**Oldest seen first**  
-Display cards that you haven’t seen in reviews for the longest time
-first.
+**الأقدم أولًا**  
+يعرض البطاقات التي لم ترها في المراجعات منذ أطول مدة أولًا.
 
-**Random**  
-Randomize the order of all cards that match the filter criteria (use no
-set order).
+**عشوائي**  
+يرتب البطاقات التي تطابق الفلتر بشكل عشوائي.
 
-**Increasing intervals**  
-Display cards that have the smallest interval first.
+**فواصل زمنية متزايدة**  
+يظهر البطاقات ذات الفواصل الأقصر أولًا.
 
-**Decreasing intervals**  
-Display cards that have the largest interval first.
+**فواصل زمنية متناقصة**  
+يظهر البطاقات ذات الفواصل الأطول أولًا.
 
-**Most lapses**  
-Display cards that you have failed the most times first.
+**الأكثر سقطات**  
+يظهر البطاقات التي فشلت في تذكرها مرات أكثر أولًا.
 
-**Order added**  
-Display cards that you added first (have the earliest creation date)
-first.
+**تاريخ الإضافة**  
+يعرض البطاقات التي أضفتها بشكل أسبق أولًا.
 
-**Order due**  
-Display cards with the earliest due date first.
+**تاريخ الاستحقاق**  
+يعرض البطاقات ذات تاريخ الاستحقاق الأقصر أولًا.
 
-**Latest added first**  
-Display cards that you’ve most recently added to the deck first. (This
-is the opposite of 'Order added'.)
+**المضافة مؤخرًا أولًا**  
+يعرض البطاقات التي أضفتها مؤخرًا أولًا (هذا عكس خيار «تاريخ الإضافة»).
 
-**Relative overdueness**  
-Display cards that are most overdue in relation to their current
-interval first (for instance, a card with a current interval of 5 days
-overdue by 2 days displays before a card with a current interval of 5
-years overdue by a week). This is useful if you have a large backlog
-that may take some time to get through and want to review the cards
-you’re most in danger of forgetting first.
+**الاستحقاق النسبي**  
+يعرض البطاقات التي مضى تاريخ استحقاقها حسب فاصلها الحالي أولًا (على سبيل المثال،
+بطاقة بفاصل 5 أيام مضى يومان على تاريخ استحقاقها تظهر قبل بطاقة بفاصل 5 سنين مضى
+أسبوع على تاريخ استحقاقها). هذا الخيار مفيد إذا كانت لديك كمية بطاقات متراكمة كبيرة
+تحتاج بعض الوقت لدراستها وكنت تريد مراجعة البطاقات التي من المرجح أكثر نسيانك لها أولًا.
 
-## Steps & Returning
+## الخطوات والرجوع
 
-Please see the section on [learning](studying.md#learning) as a reminder of how
-steps work.
+انظر قسم [التعلم](studying.md#learning) حول كيفية عمل الخطوات.
 
-By default, Anki will use the steps of a card’s home deck. If a new card
-would normally be reviewed twice when being learnt, the same thing will
-happen when you study it in a filtered deck.
+يستخدم أنكي خطوات الرزمة الأصل لكل بطاقة بشكل افتراضي. إذا كان يجب مراجعة بطاقة جديدة
+مرتين قبل تعلمها، فسيحصل الشيء نفسه عند دراستها في رزمة مفلترة.
 
-Cards return to their home deck when (re)learning is complete. Thus if
-you have 3 learning steps, a new card will return to its home deck upon
-three presses of "Good" or a single press of "Easy".
+تعود البطاقات إلى رزمها الأصل عندما يتم تعلمها/إعادة تعلمها. إذا كان لديك 3 خطوات تعلم،
+فستعود بطاقة جديدة إلى رزمتها الأصل بعد ثلاث نقرات على «جيد» أو نقرة واحدة على «سهل».
 
-The **custom steps** option allows you to override the home deck’s steps
-and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time.
+يسمح لك خيار **خطوات مخصصة** بتجاهل خطوات الرزمة الأصل وتوفير خطواتك الخاصة بدلًا من ذلك.
+تُطبَّق الخطوات الموفرة على البطاقات في طور التعلم، والمراجعات الساقطة، والمراجعات المبكرة.
 
-## Counts
+## الإحصاء
 
-In a filtered deck, reviews that were already due are displayed in the
-review count as normal. Learning cards and non-due reviews are counted
-in the new card count, due to how the underlying implementation works.
-Reviews that were not due are not scheduled like new cards however -
-Anki uses a special algorithm that takes into account how close they
-were to their normal due time when reviewed.
+في الرزم المفلترة، تظهر المراجعات المستحقة في عداد المراجعات بشكل عادي.
+تظهر البطاقات في طور التعلم والمراجعات غير المستحقة في عداد البطاقات الجديدة،
+بسبب طريقة عملها الداخلية. لا تُجدول المراجعات غير المستحقة مثل البطاقات الجديدة مع ذلك -
+يستخدم أنكي خوارزمية خاصة تأخذ بعين الاعتبار كم كانت هذه البطاقات قريبة من موعد
+استحقاقها الاعتيادي عند مراجعتها.
 
-## Due Reviews
+## المراجعات المستحقة
 
-If the filtered deck includes cards that were due for review, they will
-be shown like they would have been in their original deck - they appear
-in the review card count at the bottom of the screen, and there are four
-choices for how well you remembered. Upon a correct answer, the card
-will be moved back to its home deck, and its next delay adjusted using
-the home deck’s settings. If you forget the card, it will be shown
-according to the relearning steps defined in the home deck.
+إذا كانت الرزمة المفلترة تحتوي على بطاقات كانت مستحقة للمراجعة، فستظهر كما كانت ستظهر
+في رزمها الأصلية - تظهر في عداد المراجعات أسفل الشاشة، ويتوفر أربع خيارات لتقييم مدى تذكرك لها.
+عند الإجابة الصحيحة عنها، تُنقل البطاقة إلى رزمتها الأصل، ويضبط فاصلها الزمني القادم باستخدام
+إعدادات الرزمة الأصل. إذا نسيت البطاقة، فستظهر حسب خطوات إعادة التعلم المعرفة في الرزمة الأصل.
 
-## Reviewing Ahead
+## المراجعة المبكرة
 
-If your search included cards that are not due, Anki will show the
-reviews ahead of time.
+إذا تضمن بحثك بطاقات غير مستحقة، فسيظهر أنكي المراجعات مبكرًا.
 
-Anki uses a special algorithm for these reviews that takes into account
-how early you are reviewing. If the cards were almost due to be shown,
-they will be given a new delay similar to what they would have received
-if you had reviewed them on time. If the cards are reviewed soon after
-they were scheduled however, their new delay will be similar to their
-previous delay. This calculation works on a sliding scale.
+يستخدم أنكي خوارزمية خاصة تأخذ بعين الاعتبار مدى إبكارك بالمراجعة لهذه المراجعات .
+إذا كانت البطاقات على وشك الظهور، فستُمنح فاصلًا جديدًا مشابهًا للفاصل الذي كانت ستمنحه
+إذا راجعتها في وقتها. لكن إذا راجعت البطاقات بعد وقت قصير من جدولتها، سيكون فاصلها الجديد
+قريبًا من الفاصل السابق. يعمل هذا الحساب حسب مقياس متدرج.
 
-Because reviewing a card shortly after it is scheduled has little impact
-on scheduling (eg, a card due tomorrow with a one day interval will
-remain due tomorrow if reviewed early), **the "review ahead" custom
-study setting is not appropriate for repeated use**. If used to go
-through a week’s worth of cards before a trip, the mature cards will be
-rescheduled into the future and the new cards will remain at small
-intervals, because you don’t know them well enough for them to be
-rescheduled further. If you review ahead again the next day, all you’ll
-end up doing is going through those same new cards again, to little
-benefit.
+لأن مراجعة بطاقة بعد مدة قصيرة من جدولتها لها تأثير ضئيل على الجدولة (مثلًا،
+بطاقة مستحقة غدًا بفاصل يوم واحد ستبقى مستحقة غدًا إذا روجعت مبكرًا)، **خيار
+«المراجعة المبكرة» الخاص بالدراسة المخصصة غير مناسب للاستخدام المتكرر**.
+إذا اعتدت على مراجعة بطاقات أسبوع كامل قبل رحلة، فستُجدوَل البطاقات الناضجة إلى مدة طويلة
+وستبقى للبطاقات الجديدة فواصل قصيرة، لأنك لا تعرفها جيدًا بشكل كافي لكي تُجدول إلى مدة أطول.
+إذا راجعت مبكرًا في اليوم التالي أيضًا، فكل ما ستفعله هو مراجعة هذه البطاقات الجديدة مجددًا
+دون فائدة كبيرة.
 
-Early reviews are included in the new card count rather than the review
-count, and will be shown according to the number of relearning steps
-defined in the home deck (unless you have provided custom steps). This
-means that if you have customized the number of relearning steps in the
-home deck, the non-due card may be shown more than once.
+إن المراجعات المبكرة مضمنة في عداد البطاقات الجديدة بدلًا من عداد المراجعات، وتظهر
+حسب عدد خطوات إعادة التعلم المعرفة في الرزمة الأصل (إلا إذا وفرت خطوات مخصصة).
+هذا يعني أنه إذا خصصت عدد خطوات إعادة التعلم في الرزمة الأصل، فقد تظهر البطاقة غير المستحقة
+أكثر من مرة.
 
-If you have multiple steps, Anki will only consider the first answer
-when deciding the next delay, and like relearning in normal decks,
-"Good" and "Easy" differ only in the step change and not the resulting
-delay.
+إذا كان لديك عدة خطوات، سيأخذ أنكي الجواب الأول فقط بعين الاعتبار عند تحديد الفاصل التالي،
+وكما في إعادة التعلم في الرزم العادية، «جيد» و «سهل» يختلفان في تغير الخطوات وليس في
+الفاصل الناتج.
 
-## Rescheduling
+## إعادة الجدولة
 
-By default, Anki will return cards to their home decks with altered
-scheduling based on your performance in the filtered deck. If you
-disable the **reschedule cards based on my answers** option, Anki will
-return the cards in the same state they were in when they were moved
-into the filtered deck. This is useful for quickly flipping through
-material.
+بشكل افتراضي، يعيد أنكي البطاقات إلى رزمها الأصل مع تغير في الجدولة بناءً على أدائك
+في الرزم المفلترة. إذا أوقفت خيار **إعادة جدولة البطاقات بناءً على أجوبتي**، فسيعيد
+أنكي البطاقات بنفس الحالة التي كانت عليها عند نقلها إلى الرزمة المفلترة.
+هذا مفيد للاطلاع السريع على المواد.
 
-If you have disabled rescheduling, the "Good" and "Easy" buttons will
-display no time above them when pressing them would cause the card to
-return to its home deck with its original scheduling.
+إذا أوقفت إعادة الجدولة، فلن تظهر أزرار «جيد» و «سهل» وقتًا فوقها عندما يؤدي نقرها
+إلى إعادة البطاقة إلى رزمتها الأصل بجدولتها الأصلية.
 
-Please note that new cards are returned to the end of the new card
-queue, rather than the start of it.
+لاحظ أن البطاقات الجديدة تعاد إلى نهاية صف البطاقات الجديدة، وليس بدايته.
 
-## Catching Up
+## الاستدراك
 
-Filtered decks can be useful for catching up when you’ve fallen behind
-in your reviews. One Anki user describes the way they use the filtered
-decks to catch up as follows:
+الرزم المفلترة مفيدة للاستدراك عندما تتأخر عن مراجعاتك. يصف مستخدم لأنكي
+طريقة استخدامه للرزم المفلترة من أجل الاستدراك كالتالي:
 
-    I did this for a backlog of 800 cards with filtered subdecks. Worked
-    very well for me.
-    
-    Just Due filter with: "is:due prop:due>-7"
-    
-    Over Due filter with: "is:due prop:due<=-7"
-        
-    The Just Due deck will then contain cards that became due in the past
-    week. That's the deck you should study every day as it gets the cards
-    that become due regularly. With this you can study as if there wasn't
-    any backlog.
-    
-    The Over Due deck will contain your backlog, cards which you didn't
-    study in time. You can study them the same way you would study new
-    cards. They go back into the regular cards, so the number of overdue
-    will never grow as long as you keep your Just Due deck in check.
-    
-    How long it takes depends on how many overdue cards you study each day
-    in addition to the ones that become due regularly. You can still motor
-    through them when you feel like it - or you can do a specific number per
-    day like you would for new cards. Up to you.
+    فعلت هذا لـ 800 بطاقة متراكمة برزم فرعية مفلترة وأخذت الطريقة مفعولها جيدًا بالنسبة لي.
+
+    فلتر البطاقات المستحقة: "is:due prop:due>-7"
+
+    فلتر البطاقات التي مضى تاريخ استحقاقها: "is:due prop:due<=-7"
+
+    ستحتوي رزمة البطاقات المستحقة إذن على بطاقات أصبحت مستحقة خلال الأسبوع الماضي.
+    هذه هي الرزمة التي يجب أن تدرسها كل يوم حيث تجلب البطاقات التي تصبح مستحقة بانتظام.
+    هكذا يمكنك الدراسة وكأنه لم يكن هناك أي تراكم.
+
+    ستحتوي رزمة البطاقات التي مضى تاريخ استحقاقها على البطاقات المتراكمة،
+    البطاقات التي لم تدرسها في وقتها. يمكنك دراستها كما تدرس البطاقات الجديدة.
+    تعود البطاقات إلى بطاقات عادية، لذلك فعدد البطاقات التي مضى استحقاقها
+    لن ينمو أبدًا ما دمت تدرس رزمة البطاقات المستحقة.
+
+    يعتمد الوقت الذي ستستغرقه على عدد البطاقات التي مضى استحقاقها
+    والتي تدرسها كل يوم بالإضافة إلى البطاقات التي تصبح مستحقة بانتظام.
+    ما زلت تستطيع دراسة عدد كبير عندما ترغب في ذلك - أو تستطيع دراسة
+    عدد محدد كل يوم كما تفعل مع البطاقات الجديدة. إنه قرارك.

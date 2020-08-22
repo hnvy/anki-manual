@@ -12,7 +12,7 @@
 - [المزامنة مع أنكي ويب](syncing.md)
 - [الملفات الشخصية](profiles.md)
 - [التصفح](browsing.md)
-- [Filtered Decks](filtered-decks.md)
+- [الرزم المفلترة](filtered-decks.md)
 - [Searching](searching.md)
 - [Importing](importing.md)
 - [Exporting](exporting.md)
