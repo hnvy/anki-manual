@@ -13,7 +13,7 @@
 - [الملفات الشخصية](profiles.md)
 - [التصفح](browsing.md)
 - [الرزم المفلترة](filtered-decks.md)
-- [Searching](searching.md)
+- [البحث](searching.md)
 - [Importing](importing.md)
 - [Exporting](exporting.md)
 - [Managing Files](files.md)

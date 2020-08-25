@@ -1,305 +1,291 @@
-# Searching
+# البحث
 
-Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes.
+تستخدم نافذة متصفح أنكي وميزة الرزم المفلترة الطريقة نفسها للبحث عن بطاقات أو ملحوظات معينة.
 
-## Simple searches
+## عبارات بحث بسيطة
 
-When you type some text into the search box, Anki finds matching notes
-and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see later in this section for how to search
-for tags). Some examples:
+عندما تدخل نصًا ما في صندوق البحث، يبحث أنكي عن ملحوظات مطابقة ويظهر بطاقاتها.
+يبحث أنكي في كل حقول الملحوظات، لكنه لا يبحث في السمات (أكمل القراءة في هذا القسم
+لتعرف كيف تبحث عن سمات معينة). بعض الأمثلة:
 
-`dog`  
-search for "dog" - will match words like "doggy" and "underdog" too.
+`كلب`  
+يبحث عن «كلب» - يطابق كلمات مثل «كلبي» و «الكلب» أيضًا.
 
-`dog cat`  
-finds notes that have both "dog" and "cat" on them, such as "raining
-cats and dogs"".
+`كلب قطة`  
+يبحث عن الملحوظات التي تحتوي على كل من «كلب» و«قطة»، مثل «تشاجر الكلب مع القطة».
 
-`dog or cat`  
-finds notes with either "dog" or "cat".
+`كلب or قطة`  
+يبحث عن ملحوظات تحتوي على «كلب» أو «قطة».
 
-`dog (cat or mouse)`  
-finds notes with dog and cat, or dog and mouse.
+`كلب (قطة or فأرة)`  
+يبحث عن ملحوظات تحتوي على كلب وقطة، أو كلب وفأرة.
 
-`-cat`  
-finds notes without the word "cat".
+`-قطة`  
+يبحث عن محلوظات لا تحتوي على كلمة «قطة».
 
-`-cat -mouse`  
-finds notes with neither "cat" nor "mouse".
+`-قطة -فأرة`  
+يبحث عن ملحوظات لا تحتوي على أي من «قطة» و «فأرة».
 
-`-(cat or mouse)`  
-same as the above.
+`-(قطة or فأرة)`  
+مثل المثال السابق.
 
-`"a dog"`  
-finds notes with the exact sequence of characters "a dog" on them, such
-as "atta dog", but not "dog a" or "adog".
+`"قط الجيران"`  
+يبحث عن ملحوظات تحتوي على العبارة «قط الجيران» نفسها بالضبط، مثل «قط الجيران المزعج»،
+ولكن ليس «قط الشارع».
 
-`-"a dog"`  
-finds notes without the exact phrase "a dog"
+`-"قط الجيران"`  
+يبحث عن ملحوظات لا تحتوي على عبارة «قط الجيران».
 
-`d_g`  
-finds notes with d, &lt;a letter&gt;, g, like dog, dig, dug, and so on.
+`ك_ب`  
+يبحث عن ملحوظات تحتوي على ك، &gt;حرف ما&lt;، ب، مثل كلب، كرب، وما إلى ذلك.
 
-`d*g`  
-finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
-etc.
+`ك*ب`  
+يبحث عن ملحوظات تحتوي على ك، &gt;0 حرف أو أكثر&lt;، ب، مثل كب، كلب، كاسب، وما إلى ذلك.
 
-`w:dog`  
-search for "dog" on a word boundary - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.
+`w:كلب`  
+يبحث عن «كلب» ككلمة منفصلة - يطابق «كلب»، لكن ليس «كلبي» أو «كلبان».
+يتطلب أنكي 2.1.24+ أو أنكي موبيل 2.1.61+.
 
-`w:dog*`  
-will match "dog" and "doggy", but not "underdog".
+`w:كلب*`  
+يطابق «كلب» و «كلبي»، ولكن ليس «الكلب».
 
-`w:*dog`  
-will match "dog" and "underdog", but not "doggy".
+`w:*كلب`  
+يطابق «كلب» و «الكلب»، ولكن ليس «كلبي».
 
-Things to note from the above:
+نقاط تجب ملاحظتها حول الأعلى:
 
-- Search terms are separated by spaces.
+- تُفصل عبارات البحث بمسافات.
 
-- When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit 'and' is inserted between each
-  term. On Anki 2.1.24+ and AnkiMobile 2.0.60+ you can be explicit
-  if you like ("dog and cat" is the same as "dog cat"), but older
-  Anki versions will treat "and" as just another word to search for.
+- عند توفير عبارات بحث عديدة، يبحث أنكي عن الملحوظات التي تطابق كل العبارات -
+  توضع عبارة 'and' بين كل عبارة ضمنيًا. في أنكي 2.1.24+ وأنكي موبيل 2.0.60+ تستطيع كتابتها
+  بالشكل الواضح («كلب and قطة» هي مثل «كلب قطة»)، لكن الإصدارات القديمة تعامل "and"
+  كأي كلمة تبحث عنها.
 
-- You can use "or" if you only need one of the terms to match.
+- تستطيع استخدام "or" إذا كنت تريد أن تتطابق عبارة واحدة على الأقل.
 
-- You can prepend a minus sign to a term to find notes that don’t
-  match.
+- تستطيع وضع علامة ناقص قبل عبارة لإيجاد ملحوظات لا تطابق هذه العبارة.
 
-- If you want to search for something including a space or
-  parenthesis, enclose it in double quotes. You can quote either the
-  `"entire:term"`, or just the `part:"after a colon"`.
+- إذا كنت تريد البحث عن شيء يتضمن مسافة أو أقواس، أحطه بعلامات اقتباس مزدوجة.
+  تستطيع اقتباس `"كل:العبارة"`، أو فقط `القسم:"بعد النقطتين الرأسيتين"`.
 
-- You can group search terms by placing them in parentheses, as in the
-  **dog (cat or mouse)** example. This becomes important when
-  combining OR and AND searches — in the example, with the
-  parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-  without them it would match either 'dog and cat' or 'mouse'.
+- تستطيع جمع عبارات البحث بوضعها بين أقواس، مثل **كلب (قطة or فأرة)**.
+  يكون هذا مهمًا عند جمع عبارات OR و AND - المثال السابق مع الأقواس سيطابق إما
+  «كلب قطة» أو «كلب فأرة»، بينما سيطابق إما «كلب and قطة» أو «فأرة» بدون أقواس.
 
-- Anki is only able to search within formatting in the [sort
-  field](editing.md#customizing-fields) you’ve configured. For example, if you add
-  "**exa**mple" to one of your fields, this will not be matched when
-  searching for "example" unless that field is the sort field. If a
-  word is not formatted, or the formatting does not change in the
-  middle of the word, then Anki will be able to find it in any field.
+- يقدر أنكي على البحث في التنسيق في [حقل الفرز](editing.md#customizing-fields) الذي أعددته فقط.
+  مثلًا، إذا أضفت «**مثـ**ال» لحقل من حقولك، فلن يطابق عند البحث عن «مثال» إلا إذا كان هذا الحقل حقل فرز.
+  إذا كانت كلمة غير منسقة، أو لا يتغير التنسيق في منتصف الكلمة، فسيكون أنكي قادرًا على إيجادها في أي حقل.
 
-## Limiting to a field
+## الحصر بحقل
 
-You can also ask Anki to match only if a particular field contains some
-text. Unlike the searches above, searching on fields requires an 'exact
-match' by default.
+تستطيع أيضًا البحث بحقول محددة. عكس عبارات البحث في الأعلى، يتطلب البحث في الحقول
+مطابقة تامة بشكل افتراضي.
 
-`front:dog`  
-find notes with a Front field of exactly "dog". A field that says "a
-dog" will not match.
+`أمام:كلب`  
+يبحث عن ملحوظات بحقل أمامي يحتوي على «كلب» فقط. لن يتطابق حقل يحتوي على «الكلب».
 
-`front:*dog*`  
-find notes with Front field containing dog somewhere
+`أمام:*كلب*`  
+يبحث عن ملحوظات بحقل أمامي يحتوي على «كلب» في أي مكان.
 
-`front:`  
-find notes that have an empty Front field
+`أمام:`  
+يبحث عن ملحوظات لها حقل أمامي فارغ.
 
-`front:_*`  
-find notes that have a non-empty Front field
+`أمام:_*`  
+يبحث عن ملحوظات لها حقل أمامي غير فارغ.
 
-`front:*`  
-find notes that have a Front field, empty or not
+`أمام:*`  
+يبحث عن ملحوظات لها حقل باسم «أمام»، سواء كان فارغًا أم لا.
 
-`fr*:text`
-find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
+`فر*:نص`  
+يبحث عن ملحوظات لها حقل يبدأ اسمه بـ «فر». يتطلب أنكي 2.1.24+ أو أنكي موبيل 2.1.60+.
 
-## Tags, decks, cards and notes
+## السمات، والرزم، والبطاقات، والملحوظات
 
-`tag:animal`  
-find notes with the tag "animal"
+`tag:حيوان`  
+يبحث عن ملحوظات لها سمة «حيوان».
 
 `tag:none`  
-find notes with no tags
+يبحث عن ملحوظات ليس لها سمات.
 
 `tag:ani*`  
-find notes with tags starting with ani
+يبحث عن ملحوظات لها سمات تبدأ أسماؤها بـ "ani".
 
-`deck:french`  
-find cards in a French deck, or subdecks like French::Vocab
+`deck:فرنسي`  
+يبحث عن بطاقات في رزمة فرنسي، أو رزم فرعية مثل فرنسي::مفردات.
 
-`deck:french -deck:french::*`  
-find cards in French, but not subdecks
+`deck:فرنسي -deck:فرنسي::*`  
+يبحث عن بطاقات في رزمة فرنسي، ولكن ليس في رزمها الفرعية.
 
-`deck:"french vocab"`  
-searching when a deck has a space
+`deck:"فرنسي مفردات"`  
+مثال عن البحث في رزمة عندما يكون هناك فراغات في اسم هذه الرزمة.
 
-`"deck:french vocab"`  
-also ok
+`"deck:فرنسي مفردات"`  
+مثل المثال السابق.
 
 `deck:filtered`  
-filtered decks only
+يبحث في الرزم  المفلترة فقط.
 
 `-deck:filtered`  
-normal decks only
+يبحث في الرزم العادية فقط.
 
 `card:forward`  
-search for Forward cards
+يبحث عن البطاقات غير المعكوسة.
 
 `card:1`  
-search for cards by template number - eg, to find the second cloze
-deletion for a note, you’d use card:2
+يبحث عن بطاقات برقم قالبها. مثلًا، للبحث عن عبارة ملء الفراغات الثانية في ملحوظة،
+ستستخدم card:2.
 
-`note:basic`  
-search for cards with a Basic note type
+`note:أساسي`  
+يبحث عن بطاقات لها نوع الملحوظة «أساسي».
 
-## Ignoring accents/combining characters
+## تجاهل الحركات
 
-Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+يتطلب أنكي 2.1.24+ أو أنكي موبيل 2.0.60+.
 
-You can use `nc:` to remove combining characters ("no combining"). For example:
+تستطيع استخدام `nc:` لحذف الحركات (اختصار لـ "no combining"). على سبيل المثال:
 
 `nc:uber`  
-matches notes with "uber", "über", "Über" and so on.
+يطابق ملحوظات تحتوي على "uber"، و "über"، و "Über" وما إلى ذلك.
 
 `nc:は`  
-matches "は", "ば", and "ぱ"
+يطابق "は"، و "ば"، و "ぱ".
 
-Searches that ignore combining characters are slower than regular searches.
+إن عبارات البحث التي تتجاهل الحركات أبطأ من عبارات البحث العادية.
 
-## Regular expressions
+## التعابير النمطية
 
-Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
-a standard and powerful way of searching in text.
+يدعم أنكي 2.1.24+ وأنكي موبيل 2.0.60+ البحث في الملحوظات باستخدام «التعابير النمطية»،
+وهي طريقة قياسية وقوية للبحث في النصوص.
 
-Start a search with `re:` to search by regular expression. Some examples:
+ابدأ عبارة البحث بـ `re:` للبحث باستخدام التعابير النمطية. بعض الأمثلة:
 
-`"re:(some|another).*thing"`  
-find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
+`"re:(شيء|ما).*آخر"`  
+يبحث عن ملحوظات تحتوي على «شيء» أو «ما»، متبوعًا بـ 0 حرف أو أكثر، ثم «آخر».
 
 `re:\d{3}`  
-find notes that have 3 digits in a row
+يبحث عن ملحوظات تحتوي على ثلاث أرقام على التوالي.
 
-Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match. Eg:
+يمكن حصر التعابير النمطية بحقل محدد. لاحظ أنه عكس البحث العادي في حقول محددة،
+لا تتطلب التعابير النمطية في الحقول تطابقًا تامًا. مثلًا:
 
-`front:re:[a-c]1`  
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field
+`أمام:re:[a-c]1`  
+يطابق الحروف الصغيرة أو الكبيرة a1، أو B1، أو c1 الموجودة في أي موضع في الحقل «أمام».
 
-`front:re:^[a-c]1$`  
-like the above, but will not match if any other text falls before or after a1/b1/c1.
+`أمام:re:^[a-c]1$`  
+مثل المثال السابق، لكن لن يتطابق إذا كان هناك أي نص قبل a1/b1/c1 أو بعده.
 
-You can learn more about regular expressions here: https://regexone.com/lesson/introduction_abcs
+تستطيع تعلم المزيد عن التعابير النمطية هنا: https://regexone.com/lesson/introduction_abcs
 
-Some things to be aware of:
+يرجى الانتباه إلى بعض النقاط:
 
-- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
-- Some text like spaces and newlines may be represented differently in HTML - you can
-  use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, please see the regex crate documentation: https://docs.rs/regex/1.3.9/regex/#syntax
+- البحث غير حساس لحالة الأحرف بشكل افتراضي؛ ضع (?-i) في مقدمة عبارة البحث لجعل البحث
+  حساسًا لحالة الأحرف.
+- بعض الرموز مثل رمز المسافة ورمز نهاية السطر قد تُمثّل بشكل مختلف في HTML -
+  تستطيع استخدام محرر HTML في نافذة التحرير لرؤية محتوى HTML المضمن.
+- لخصائص ميزة التعابير النمطية المستخدمة في أنكي،انظر وثائق حزمة regex: https://docs.rs/regex/1.3.9/regex/#syntax
 
-## Card state
+## حالة البطاقة
 
 `is:due`  
-review cards and learning cards waiting to be studied
+بطاقات المراجعة والتعلم التي يُنتظر دراستها.
 
 `is:new`  
-new cards
+البطاقات الجديدة.
 
 `is:learn`  
-cards in learning
+البطاقات في طور التعلم.
 
 `is:review`  
-reviews (both due and not due) and lapsed cards
+المراجعات (المستحقة وغير المستحقة) والبطاقات الساقطة.
 
 `is:suspended`  
-cards that have been manually suspended
+البطاقات التي أُوقفَت يدويًا.
 
 `is:buried`  
-cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
-manually
+البطاقات التي دفنت، إما [تلقائيًا](studying.md#siblings-and-burying) أو يدويًا.
 
-Cards that have lapsed fall into several of these categories, so it may
-be useful to combine them to get more precise results:
+تصنف البطاقات الساقطة ضمن أصناف عدة من الأعلى، لذلك فمن المفيد جمعها للحصول على
+نتائج أدق:
 
 `is:learn is:review`  
-cards that have lapsed and are awaiting relearning
+البطاقات الساقطة والتي هي بانتظار إعادة التعلم.
 
 `-is:learn is:review`  
-review cards, not including lapsed cards
+بطاقات المراجعة، باستثناء البطاقات الساقطة.
 
 `is:learn -is:review`  
-cards that are in learning for the first time
+البطاقات في طور التعلم لأول مرة.
 
-## Card properties
+## خصائص البطاقات
 
 `prop:ivl>=10`  
-cards with interval of 10 days or more
+البطاقات بفاصل 10 أيام أو أكثر.
 
 `prop:due=1`  
-cards due tomorrow
+البطاقات المستحقة غدًا.
 
 `prop:due=-1`  
-cards due yesterday that haven’t been answered yet
+البطاقات التي كانت مستحقة البارحة ولم تُجَب بعد.
 
 `prop:due>-1 prop:due<1`  
-cards due between yesterday and tomorrow
+البطاقات المستحقة بين البارحة والغد.
 
 `prop:reps<10`  
-cards that have been answered less than 10 times
+البطاقات التي أجيبت أقل من 10 مرات.
 
 `prop:lapses>3`  
-cards that have moved into relearning more than 3 times
+البطاقات التي نقلت إلى طور إعادة التعلم أكثر من 3 مرات.
 
 `prop:ease!=2.5`  
-cards easier or harder than default
+البطاقات الأسهل أو الأصعب من السهولة الافتراضية.
 
-Note that due only matches review cards and learning cards with an
-interval of a day or more: cards in learning with small intervals like
-10 minutes are not included.
+لاحظ أن due يطابق بطاقات المراجعة وبطاقات التعلم بفاصل يوم أو أكثر. البطاقات
+طور التعلم ذات فواصل صغيرة مثل 10 دقائق ليست مضمنة.
 
-## Recently added
+## المضافة/المعدلة مؤخرًا
 
 `added:1`  
-cards added today
+البطاقات المضافة اليوم.
 
 `added:7`  
-cards added in last week
+البطاقات المضافة آخر أسبوع.
 
-The check is made against card creation time rather than note creation
-time, so cards that were generated within the time frame will be
-included even if their notes were added a long time ago.
+يفحص هذا تاريخ إنشاء البطاقة وليس تاريخ إنشاء الملحوظة، لذلك فالبطاقات التي أنشئت
+في الوقت المحدد ستُضمَّن حتى لو أضيفت ملحوظاتها منذ وقت طويل.
 
-## Recently answered
+`edited:n`  
+البطاقات التي أضيف نص ملحوظاتها أو عُدِّل في آخر n يوم. يتطلب أنكي 2.1.28+
+أو أنكي موبيل 2.0.64+.
+
+## المجابة مؤخرًا
 
 `rated:1`  
-cards answered today
+البطاقات المجابة اليوم.
 
 `rated:1:2`  
-cards answered Hard (2) today
+البطاقات المجابة بـ «صعب» (2) اليوم.
 
 `rated:7:1`  
-cards answered Again (1) over the last 7 days
+البطاقات المجابة بـ «مجددًا» في آخر سبع أيام.
 
 `rated:31:4`  
-cards answered Easy (4) in the last month
+البطاقات المجابة بـ «سهل» في آخر شهر.
 
-For speed, rating searches are limited to 31 days.
+عبارات بحث التقييم مقيدة بمدة 31 يوم من أجل السرعة.
 
-## Object IDs
+## معرفات الكائنات
 
 `nid:123`  
-all cards of the note with note id 123
+كل بطاقات الملحوظة ذات معرف الملحوظة 123.
 
 `cid:123`  
-the card with card id 123
+البطاقة ذات معرف البطاقة 123.
 
 `mid:123`  
-find note types with note type id 123
+يبحث عن أنواع الملحوظات بمعرف نوع الملحوظة 123.
 
-Note and card IDs can be found in the [card info](stats.md) dialog in the
-browser. Note type IDs can be found by clicking on a note type in the
-Browse screen. These searches may also be helpful when doing add-on
-development or otherwise working closely with the database.
+يمكن إيجاد معرفات البطاقة والملحوظة من خلال نافذة [معلومات البطاقة](stats.md) في المتصفح.
+قد تكون عبارات البحث هذه مفيدة أيضًا عند تطوير الإضافات أو التفاعل مع قاعدة البيانات عن قرب.
 
-Object IDs will not work in the mobile clients, and are not intended to
-be used in filtered decks at the moment.
+لا تعمل معرفات الكائنات في تطبيقات الهاتف المحمول، وليست مخصصة للاستخدام في الرزم
+المفلترة في الوقت الحاضر.
