@@ -1,190 +1,175 @@
-# Importing
+# الاستيراد
 
-Anki can import text files, packaged Anki decks created by the export
-feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
-file, click the File menu and then "Import".
+يستطيع أنكي استيراد الملفات النصية، وحزم الرزم المنشأة بميزة التصدير،
+وملفات <span dir="ltr">.db</span> الخاصة بـ Mnemosyne 2.0،
+وملفات <span dir="ltr">.xml</span> الخاصة بـ SuperMemo.
+لاستيراد ملف، اضغط على قائمة ملف ثم «استيراد».
 
-## Text Files
+## الملفات النصية
 
-Any **plain text** file that contains fields separated by commas,
-semicolons or tabs can be imported into Anki, provided some conditions
-are met.
+يمكن استيراد أي **ملف نصي** يحتوي حقولًا مفصولة بفواصل، أو فواصل منقوطة، أو رموز tab،
+إذا توفرت الشروط التالية.
 
--   The files must be plain text (myfile.txt). Other formats like
-    myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
-    file first.
+-   يجب أن تكون الملفات بصيغة نصية عادية (ملفي.txt). يجب تحويل الصيغ الأخرى مثل
+     مثل ملفي.xls، أو ملفي.rtf، أو ملفي.doc إلى صيغة نصية أولًا.
 
--   The files must be in UTF-8 format (see below).
+-   يجب أن تكون الملفات بصيغة UTF-8 (انظر في الأسفل).
 
--   Anki determines the number of fields in the file by looking at the
-    first (non-commented) line. Any lines in the file which have a
-    different number of fields will be ignored.
+-   يحدد أنكي عدد الحقول في الملف بالنظر إلى السطر الأول (غير المذيَّل). يتم تجاهل
+    أي سطور لها عدد مختلف من الحقول.
 
--   The first line also defines the separating character – if Anki finds
-    a ';' on the first line it will use that, if it finds a comma it’ll
-    use that, etc.
+-   يحدد السطر الأول أيضًا الرمز الفاصل - إذا وجد أنكي رمز «؛» في السطر الأول فسيستخدمه،
+    وإذا وجد فاصلة فسيستخدمها، وهكذا دواليك.
 
-Fields in your text file can be mapped to any field in your notes,
-including the tags field. You can choose which field in the text file
-corresponds to which field in the note when you import.
+يمكن إيزاع الحقول في الملف النصي إلى أي حقل في ملحوظاتك، بما في ذلك حقل السمات.
+تستطيع اختيار ما يقابل كل حقل في الملف النصي من حقول الملحوظة عند الاستيراد.
 
-When you import a text file, you can choose what deck to put the cards
-in. Keep in mind that if you have the deck override option set for one
-or more of your templates, the cards will go to that deck rather than
-the one you’ve selected.
+عند استيراد ملف نصي، تستطيع اختيار الرزمة التي تريد وضع البطاقات فيها.
+لاحظ أنه إذا كان خيار الرزمة المهيمنة مفعلًا لواحد أو أكثر من قوالبك، فستذهب البطاقات
+إلى تلك الرزمة بدلًا من الرزمة التي حددتها.
 
-This is an example of a valid file:
+هذا مثال عن ملف صالح:
 
-    foo bar; bar baz; baz quux
-    apple; banana; grape
+    قطة لطيفة؛ كلب شرس؛ حصان قوي
+    تفاح؛ موز؛ عنب
 
-There are two ways to include newlines in fields.
+هناك طريقتان لتضمين رموز نهاية السطر في حقولك.
 
-**Escape the multi-lines by placing the contents of the field in
-quotation marks**:
+**أحط السطور المتعددة للحقل بأقواس اقتباس**:
 
-    hello; "this is
-    a two line answer"
-    two; this is a one line one
+    مرحبا؛ "هذا جواب
+    مكون من سطرين"
+    اثنان؛ هذا جواب مكون من سطر واحد
 
-Because quotes are used to mark where a field begins and ends, if you
-wish to include them inside your field, you need to replace a single
-doublequote with two doublequotes to "escape" them from the regular
-handling, like so:
+لأن علامات الاقتباس تُستخدم لتحديد بداية الحقل ونهايته، إذا أردت استخدامها داخل حقولك،
+فعليك استبدال علامة الاقتباس المزودجة الواحدة باثنتين، كالتالي:
 
-    field one;"field two with ""escaped quotes"" inside it"
+    الحقل الأول؛"الحقل الثاني "بعلامات اقتباس متجاهلة" داخله"
 
-When you use a spreadsheet program like Libreoffice to create the CSV
-file for you, it will automatically take care of escaping double quotes.
+عند استخدام برنامج جدولة بيانات مثل Libreoffice لإنشاء ملف CSV، سيعالج البرنامج
+علامات الاقتباس المزدوجة تلقائيًا.
 
-**Use HTML new lines**:
+**استخدم نهايات سطور HTML**:
 
-    hello; this is<br>a two line answer
-    two; this is a one line one
+    مرحبا؛ هذا<br>جواب مكون
+    من سطرين؛ هذا جواب مكون من سطر
 
-You need to turn on the "allow HTML in fields" checkbox in the import
-dialog for HTML newlines to work.
+عليك تفعيل خيار «اسمح بـ HTML في الحقول» في نافذة الاستيراد لكي يعمل هذا.
 
-Escaped multi-lines will not work correctly if you are using cloze
-deletions that span multiple lines. In this case, please use HTML
-newlines instead.
+لا تعمل السطور المتعددة بعلامات الاقتباس بشكل صحيح إذا كنت تستخدم عبارات ملء فراغات
+تمتد عدة سطور. في هذه الحالة، استخدم نهايات سطور HTML بدلًا من ذلك.
 
-You can also include tags in another field and select it as a tags field
-in the import dialog:
+تستطيع أيضًا تضمين السمات في حقل آخر وتحديده كحقل سمات في نافذة الاستيراد:
 
-    first field; second field; tags
+    الحقل الأول؛ الحقل الثاني؛ السمات
 
-This is an example of a valid file where the first line is ignored (\#):
+هذا مثال عن ملف صالح بسطر أول مُتجاهَل (\#):
 
-    # this is a comment and is ignored
-    foo bar; bar baz; baz quux
-    field1; field2; field3
+    # هذا تعليق يتم تجاهله
+    شيء ما؛ فلان؛ شيء
+    حقل 1؛ حقل 2؛ حقل 3
 
-### Spreadsheets and UTF-8
+### جداول البيانات و UTF-8
 
-If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
-easiest way to do this is to use the free LibreOffice spreadsheet
-program instead of Excel to edit your file, as it supports UTF-8 easily,
-and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum
-post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
-for more information.
+إذا كان هناك حروف غير لاتينية في ملفاتك (مثل الحركات، الحروف اليابانية وما إلى ذلك)،
+يتوقع أنكي أن تكون الملفات محفوظة بصيغة UTF-8. أسهل طريقة لتحقيق هذا هي باستخدام
+برنامج جدولة البيانات المجاني LibreOffice بدلًا من Excel لتحرير الملف،
+لأنه يدعم UTF-8 بسهولة، ويصدّر المحتوى متعدد السطور بشكل صحيح، عكس Excel.
+إذا كنت تريد الاستمرار باستخدام Excel،
+انظر [هذا المنشور](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+لمزيد من المعلومات.
 
-To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
-accepting the default options, LibreOffice will save the file and you
-can then import the saved file into Anki.
+لحفظ جدول البيانات إلى ملف يستطيع أنكي قراءته، اذهب إلى ملف&lt;حفظ كـ، ثم اختر CSV
+كنوع الملف. بعد قبول الخيارات الافتراضية، سيحفظ LibreOffice الملف وستستطيع عندها
+استيراده إلى أنكي.
 
 ### HTML
 
-Anki can treat text imported from text files as HTML (the language used
-for web pages). This means that text with bold, italics and other
-formatting can be exported to a text file and imported again. If you
-want to include HTML formatting, you can check the "allow HTML in
-fields" checkbox when importing. You may wish to turn this off if you’re
-trying to import cards whose content contains angle brackets or other
-HTML syntax.
+يمكن لأنكي أن يعالج النص المستورد من الملفات النصية كـ HTML (اللغة المستخدمة لصفحات الويب).
+يعني هذا أن النص الغامق، والمائل، والتنسيقات الأخرى يمكن تصديرها إلى ملف نصي واستيرادها مجددًا.
+إذا كنت تريد تضمين تنسيق HTML، تستطيع تفعيل خيار «اسمح بـ HTML في الحقول» عند الاستيراد.
+قد ترغب في إلغاء تفعيل هذا الخيار إذا كنت تستورد بطاقات تحتوي
+على أقواس مثلثة &lt;&gt; أو صيغ HTML أخرى.
 
-If you wish to use HTML for formatting your file but also wish to
-include angle brackets, you may write them differently:
+إذا كنت تريد استخدام HTML لتنسيق ملفك وتريد تضمين أقواس مثلثة، فيمكنك كتابتها
+بشكل مختلف:
 
--   For "&lt;", use "&lt;"
+-   بدلًا من <span dir="ltr">"&lt;"</span>، استخدم <span dir="ltr">"&amp;lt;"</span>
 
--   For "&gt;", use "&gt;"
+-   بدلًا من <span dir="ltr">"&gt;"</span>، استخدم <span dir="ltr">"&amp;gt;"</span>
 
-### Importing Media
+### استيراد الوسائط
 
-If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](files.md). **Do not put
-subdirectories in the media folder, or some features will not work.**
+إذا كنت تريد تضمين ملفات صوتية وصور من ملف نصي، انسخ الملفات إلى
+[مجلد collection.media](files.md). **لا تنشئ مجلدات فرعية في مجلد الوسائط،
+وإلا لن تعمل بعض الميزات.**
 
-After you’ve copied the files, change one of the fields in your text
-file as follows.
+بعد نسخ الملفات، عدل حقلًا من الحقول في الملف النصي كالتالي:
+
+<div dir="ltr">
 
     <img src="myimage.jpg">
+</div>
 
-or
+أو
+
+<div dir="ltr">
 
     [sound:myaudio.mp3]
+</div>
 
-Alternatively, you can use the [find and replace](browsing.md) feature
-in the browse screen to update all the fields at once. If each field
-contains text like "myaudio", and you wish to make it play a sound,
-you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-'regular expressions' option enabled.
+كبديل، قد ترغب في استخدام ميزة [البحث والاستبدال](browsing.md) في نافذة المتصفح
+لتحديث كل الحقول في الوقت نفسه. إذا كان كل حقل يحتوي على نص مثل "myaudio"،
+وتريد جعله يشغل ملفًا صوتيًا، فستبحث عن (.\*) وتستبدله بـ "\[sound:\\1.mp3\]"
+مع تفعيل خيار التعابير النمطية.
 
-When importing a text file with these references, you must make sure to
-enable the "Allow HTML" option.
+عند استيراد ملف نصي يحتوي على هذه المراجع، لا تنسَ تفعيل خيار السماح بـ HTML.
 
-You might be tempted to do this in a template, like:
+قد تُجذب إلى فعل شيء كهذا في قالب:
 
-    <img src="{{field name}}">
+<div dir="ltr">
 
-Anki doesn’t support this for two reasons: searching for used media is
-expensive, as each card has to be rendered, and such functionality isn’t
-obvious to shared deck users. Please use the find & replace technique
-instead.
+    <img src="{{اسم الحقل}}">
+</div>
 
-### Bulk Media
+لا يدعم أنكي هذا لسببين: إن البحث عن الوسائط المستخدمة عملية مكلفة، حيث يجب معالجة
+كل بطاقة، وميزة كهذه ليست واضحة لمستخدمي الرزم المشتركة. الرجاء استخدام
+ميزة البحث والاستبدال بدلًا من ذلك.
 
-Another option for importing large amounts of media at once is to use
-the [media import add-on](https://ankiweb.net/shared/info/1531997860).
-This add-on will automatically create notes for all files in a folder
-you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say 'apple') and
-the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note
-type](browsing.md) of the created cards afterwards.
+### وسائط بالجملة
 
-### Adding Tags
+خيار آخر لاستيراد عدد كبير من الوسائط هو استخدام
+[إضافة استيراد الوسائط](https://ankiweb.net/shared/info/1531997860).
+تنشئ هذه الإضافة ملحوظات تلقائيًا لكل الملفات في مجلد تحدده، بأسماء الملفات في الجانب الأمامي
+(ما عدا لاحقة الملف، لذلك إذا كان لديك ملف باسم تفاحة.jpg، فسيحتوي الجانب الأمامي على «تفاحة»)
+والصور أو الملفات الصوتية في الجانب الخلفي. إذا كنت تريد ترتيبًا مختلفًا للوسائط وأسماء الملفات،
+تستطيع [تغيير نوع ملحوظة](browsing.md) البطاقات بعد إنشائها.
 
-If you want to add 'tag1' and 'tag2' to every line you’re importing, add
-the following to the top of the text file:
+### إضافة السمات
+
+إذا كنت تريد إضافة سمات «سمة 1» و «سمة 2» لكل سطر تستورده، أضف التالي أعلى الملف النصي:
+
+<div dir="ltr">
 
     tags:tag1 tag2
+</div>
 
-### Duplicates and Updating
+### الملحوظات المكررة والتحديث
 
-When importing text files, Anki uses the first field to determine if a
-note is unique. By default, if the file you are importing has a first
-field that matches one of the existing notes in your collection and that
-existing note is the same type as the type you’re importing, the
-existing note’s other fields will be updated based on content of the
-imported file. A drop-down box in the import screen allows you to change
-this behaviour, to either ignore duplicates completely, or import them
-as new notes instead of updating existing ones.
+عند استيراد الملفات النصية، يستخدم أنكي الحقل الأول للتحقق مما إذا كانت الملحوظة فريدة.
+بشكل افتراضي، إذا كان للملف الذي تستورده حقل أول يطابق ملحوظة من الملحوظات الموجودة
+في مجموعتك ولتلك الملحوظة النوع نفسه الذي تستورده، فسيتم تحديث حقول هذه الملحوظة
+بناءً على محتوى الملف المستورد. يسمح لك صندوق منسدل في نافذة الاستيراد بتغيير هذ السلوك،
+لتجاهل الملحوظات المكررة تمامًا، أو استيرادها كملحوظات جديدة بدلًا من تحديث الملحوظات الموجودة.
 
-The duplicate check is done for your 'entire collection', not just in
-the current deck. If Anki is indicating that notes have not changed when
-you expected them to be imported, please check that the notes are not
-already in your collection somewhere.
+يُجرى فحص الملحوظات المكررة في كل مجموعتك، وليس فقط في الرزمة الحالية.
+إذا أشار أنكي إلى أن البطاقات لم تتغير بينما كنت تتوقع أن يتم استيرادها، تحقق من
+أن الملحوظات ليست موجودة من قبل في مجموعتك في مكان ما.
 
-If you have updating turned on and older versions of the notes you’re
-importing are already in your collection, they will be updated in place
-(in their current decks) rather than being moved to the deck you have
-set in the import dialog. If notes are updated in place, the existing
-scheduling information on all their cards will be preserved.
+إذا كان خيار تحديث الملحوظات مفعلًا وهناك نسخ قديمة من الملحوظات التي تستوردها
+في مجموعتك، فسيتم تحديثها في مكانها (في رزمها الحالية) بدلًا من نقلها إلى الرزمة
+التي حددتها في نافذة الاستيراد. إذا حُدِّثت الملحوظات في مكانها، ستُحفَظ معلومات الجدولة
+لكل بطاقات هذه الملحوظات.
 
-For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](exporting.md) section below.
+لمعلومات حول كيفية معالجة الملحوظات المكررة في ملفات <span dir="ltr">.apkg</span>،
+انظر قسم [حزم الرزم](exporting.md).

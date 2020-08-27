@@ -14,7 +14,7 @@
 - [التصفح](browsing.md)
 - [الرزم المفلترة](filtered-decks.md)
 - [البحث](searching.md)
-- [Importing](importing.md)
+- [الاستيراد](importing.md)
 - [Exporting](exporting.md)
 - [Managing Files](files.md)
 - [Statistics](stats.md)
