@@ -15,7 +15,7 @@
 - [الرزم المفلترة](filtered-decks.md)
 - [البحث](searching.md)
 - [الاستيراد](importing.md)
-- [Exporting](exporting.md)
+- [التصدير](exporting.md)
 - [Managing Files](files.md)
 - [Statistics](stats.md)
 - [Media](media.md)

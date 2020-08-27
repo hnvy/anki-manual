@@ -1,65 +1,53 @@
-# Exporting
+# التصدير
 
-Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose 'Export'.
+يسمح لك التصدير بحفظ قسم من مجموعتك كملف نصي أو حزمة رزمة أنكي.
+للتصدير، اضغط قائمة ملف واختر «تصدير».
 
-## Text Files
+## الملفات النصية
 
-If you choose "Notes in Plain Text", Anki will write the contents of the
-notes into a text file. Each field is separated by a tab. If you edit
-the resulting file and don’t modify the first field, you can later
-import that file back into Anki and Anki will update your notes based on
-your edits, provided you import back into the same note type.
+إذا  اخترت «ملحوظات بصيغة نصية»، سيكتب أنكي محتويات ملحوظاتك في ملف نصي.
+يُفصل كل حقل برمز tab. إذا عدلت الملف الناتج ولم تعدل الحقل الأول، تستطيع استيراد
+ذلك الملف إلى أنكي لاحقًا ليتم تحديث ملحوظاتك بناءً على تعديلاتك، بشرط أن تستورد الملحوظات
+بنوع الملحوظة نفسه.
 
-If you find yourself needing to edit the first field as well, you’ll
-need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install the "Add note id"
-plugin to make this easier.)
+إذا كان هناك حاجة إلى تعديل الحقل الأول أيضًا، فسيتوجب عليك تغيير صيغة نوع الملحوظة
+بحيث يكون الحقل الأول رقمًا معرفًا (ID) بدلًا من نص الملحوظة الفعلي. (تستطيع تنصيب
+إضافة "Add note id" لتسهيل هذا).
 
-In order for formatting to be preserved when you import text back in,
-the text is exported with all the HTML formatting embedded in it.
+يُصدَّر النص مع كل تنسيقات HTML المضمنة فيه لتسهيل استيراده مجددًا.
 
-## Packaged Decks
+## حزم الرزم
 
-A 'packaged deck' consists of cards, notes, note types and any sounds or
-images bundled up into a file ending with .apkg or .colpkg. You can use
-packaged decks to transfer cards between people, or for backing up parts
-of your collection.
+تتكون «حزم الرزم» من بطاقات، وملحوظات، وأنواع ملحوظات، وملفات صوتية، وصور،
+مضمنة في ملف له اللاحقة <span dir="ltr">.apkg</span> أو <span dir="ltr">.colpkg</span>.
+تستطيع استخدام حزم الرزم لتداول البطاقات بين مجموعة من الناس، أو لنسخ قسم من مجموعتك احتياطيًا.
 
-There are two different kinds of packaged decks.
+هناك نوعان من حزم الرزم.
 
-### Collection (.colpkg)
+### مجموعة <span dir="ltr">(.colpkg)</span>
 
-When you export all decks with scheduling included, this is called a
-'collection package'. Anki will copy your entire collection into a file
-ending in .colpkg, and place it on your desktop. A collection package is
-used to back up your collection, or copy it to another device.
+عند تصدير كل رزمك مع تضمين معلومات الجدولة، يدعى الملف الناتج «حزمة مجموعة».
+ينسخ أنكي كل مجموعتك إلى ملف له اللاحقة <span dir="ltr">.colpkg</span>.
+تُستخدم حزمة المجموعة لنسخ مجموعتك احتياطيًا، أو لنسخها إلى جهاز آخر.
 
-Collection packages created with previous versions of Anki were called
-collection.apkg.
+تدعى حزم المجموعات المنشأة بإصدارات أنكي القديمة مجموعة.apkg.
 
-When this file is later imported, Anki will delete all the current cards
-in the collection, and replace the collection with the items in the
-file. This is useful for copying your collection back and forth between
-devices.
+عند استيراد هذا الملف لاحقًا، يحذف أنكي كل البطاقات الحالية في مجموعتك، ويستبدلها
+بالبطاقات الموجودة في الملف. هذا مفيد لنسخ مجموعتك بين الأجهزة.
 
-Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use Tools&gt;Check Media.
+لا تُحذف الوسائط الموجودة في مجموعتك عند استيراد حزمة مجموعة.
+لحذف الوسائط غير المستخدمة، استخدم أدوات&gt;فحص الوسائط.
 
-### Deck (.apkg)
+### رزمة <span dir="ltr">(.apkg)</span>
 
-Deck packages contain a single deck (and any child decks it may have).
-They have a filename ending with .apkg, but a filename other than
-collection.apkg. When you import a deck package, Anki will add the
-contents into your collection, rather than overwriting your collection.
+تحتوي حزم الرزم رزمة واحدة (وكل رزمها الفرعية). لهذه الحزم ملفات
+لها اللاحقة <span dir="ltr">.apkg</span>، لكن باسم مختلف عن مجموعة.apkg.
+عند استيراد حزمة رزمة، يضيف أنكي المحتوى إلى مجموعتك، بدلًا من استبدال المجموعة كلها.
 
-If some notes in the deck package have previously been imported, Anki
-will keep the version with the most recent modification time. So if you
-download an updated deck, the edits that have been made in the updated
-version will be made in your collection as well, but if you re-import an
-unchanged deck after making edits in your collection, the changes in
-your collection will be kept.
+إذا استوردت بعض الملحوظات الموجودة في الحزمة من قبل، سيُبقي أنكي على الإصدار المعدّل مؤخرًا.
+لذلك إذا نزلت رزمة محدثة، ستُكتب التعديلات في الرزمة المحدثة إلى مجموعتك أيضًا،
+لكن إذا استوردت رزمة لم تتغير مجددًا بعد إجراء تعديلات في مجموعتك، فسيُحتفظ بالتعديلات
+الموجودة في مجموعتك.
 
-If you choose not to include scheduling information, Anki will assume
-that you are sharing the deck with other people, and will remove marked
-and leech tags so that they will have a clean copy of it.
+إذا اخترت عدم تضمين معلومات الجدولة، يفترض أنكي أنك تريد مشاركة الرزمة مع أناس آخرين،
+ويحذف سمات "marked" (مُعلَّم) و "leech" (مُستعصي) لكي يحصلوا على نسخة نظيفة.
