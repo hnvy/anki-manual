@@ -21,7 +21,7 @@
 - [Media](media.md)
 - [Math & Symbols](math.md)
 - [Leeches](leeches.md)
-- [Add-ons](addons.md)
+- [إضافات](addons.md)
 - [Miscellaneous](misc.md)
 - [Contributing](contrib.md)
 - [أسئلة متكررة](faqs.md)

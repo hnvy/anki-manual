@@ -1,19 +1,14 @@
-# Add-ons
+# إضافات
 
-Anki’s capabilities can be extended with add-ons. Add-ons can provide
-features like extra support for specific languages, extra control over
-scheduling, and so on.
+يمكن تعزيز قدرات أنكي بالإضافات، عن طريق توفيرها دعمًا إضافيًا للغات محددة،
+أو تحكمًا أكبر بالجدولة، وما إلى ذلك.
 
-To browse the list of available add-ons, select the Tools>Add-ons
-menu item, then click on Get Add-ons.
+لتصفح قائمة الإضافات المتوفرة، اختر عنصر القائمة أدوات>إضافات، ثم اضغط على «تنزيل إضافات».
 
-Many add-on authors include their email address in the add-on, so if you
-need to get in touch with the author, editing the add-on and looking at
-the top of the file may help.
+يضمن عديد من مؤلفي الإضافات عناوينهم الإلكترونية مع إضافاتهم، لذلك إذا أدرت التواصل مع المؤلف،
+فتحرير الإضافة والنظر إلى أعلى ملفاتها قد يساعد في ذلك.
 
-If you have downloaded an add-on that is not working properly, or if you
-accidentally made a mistake when editing an add-on, you can use the
-"Delete" option in the menu to remove it.
+إذا نزلت إضافة لا تعمل بشكل صحيح، أو إذا ارتكتب خطأً عند تعديلها، تستطيع
+استخدام خيار «حذف» في القائمة لحذفها.
 
-To learn how to write your own add-ons, please see the [add-on writing
-guide](https://addon-docs.ankiweb.net).
+لتعلم كيفية كتابة الإضافات، انظر [دليل كتابة الإضافات](https://addon-docs.ankiweb.net).
