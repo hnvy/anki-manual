@@ -20,7 +20,7 @@
 - [Statistics](stats.md)
 - [Media](media.md)
 - [Math & Symbols](math.md)
-- [Leeches](leeches.md)
+- [البطاقات المستعصية](leeches.md)
 - [إضافات](addons.md)
 - [منوع](misc.md)
 - [Contributing](contrib.md)

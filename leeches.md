@@ -1,45 +1,36 @@
-# Leeches
+# البطاقات المستعصية
 
-Leeches are cards that you keep on forgetting. Because they require so
-many reviews, they take up a lot more of your time than other cards.
+البطاقات المستعصية هي البطاقات التي تنساها كل مرة. لأنها تتطلب كثيرًا من المراجعات،
+فإنها تأخذ وقتًا أكثر من البطاقات الأخرى.
 
-Anki can help you identify leeches. Each time a review card 'lapses' (is
-failed while it is review mode), a counter is increased. When that
-counter reaches 8, the note is tagged as a leech, and the card is
-suspended. The threshold, and whether to suspend or not, can be adjusted
-in the [deck options](deck-options.md).
+يستطيع أنكي مساعدته على التعرف على البطاقات المستعصية. في كل مرة «تسقط» فيها
+بطاقة مراجعة (تفشل في تذكرها عندما تكون في طور المراجعة)، يتم رفع عداد.
+عندما يصل العداد إلى 8، توضع سمة «مستعصي» على الملحوظة، وتُعلَّق البطاقة.
+يمكن ضبط الحد وخيار تعليق البطاقة من خلال [خيارات الرزمة](deck-options.md).
 
-Anki will continue to issue leech warnings periodically for a difficult
-card. The warning interval is half the initial leech threshold. That is,
-if you have Anki configured to warn at 8 lapses, future warnings will
-happen every 4 lapses. (12, 16, etc)
+يستمر أنكي بإصدار إنذارات حول البطاقات الصعبة دوريًا. فاصل الإنذار هو نصف الفاصل الأولي
+الذي تعتبر عنده البطاقة مستعصية. لذلك إذا ضبطت أنكي ليعتبر البطاقات مستعصية بعد 8 سقطات،
+فستظهر الإنذارات بعد كل 4 سقطات في المستقبل. (12، 16، إلخ)
 
-Once a leech is found, there are a number of ways you can handle it.
+بعد إيجاد بطاقة مستعصية، هناك عدة طرق للتعامل معها.
 
-## Waiting
+## الانتظار
 
-Some leeches are caused by 'interference'. For example, an English
-learner may have recently learnt the words "disappoint" and "disappear".
-As they look similar, the learner may find themselves confusing the two
-when trying to answer. In these situations, it’s often productive to
-concentrate on just one idea. When that idea is firmly ingrained in your
-mind, you can then return to learning the other idea. So in these
-situations, you may want to leave one of the words suspended until you
-have learnt the other one well, and then unsuspend it in the browser.
+يُعزى استعصاء بعض البطاقات إلى «التشوش». على سبيل المثال، قد يكون متعلم
+للغة الإنكليزية تعلم مؤخرًا الكلمات "disappoint" و "disappear".
+لأنها تبدو متشابهة، قد يجد المتعلم نفسه يخلط بين الكلمتين عن إجابتها. في هذه الأحوال،
+من الأكثر فعالية أن يركز المرء على فكرة واحدة. بعد أن يتم استيعاب هذه الفكرة جيدًا، يمكن
+الرجوع لتعلم الفكرة الأخرى. لذلك في هذه الحالة، قد ترغب في تعليق كلمة حتى تتعلم
+الكلمة الأخرى جيدًا، ثم تفعّل تلك الكلمة من خلال المتصفح.
 
-## Deleting
+## الحذف
 
-Another way to manage leeches is to delete them. Consider if the
-material you’re struggling with is important enough to make it worth
-your while. By selectively deleting difficult and obscure items, you can
-dedicate more time to learning other material, and studying becomes a
-lot more fun.
+طريقة أخرى للتعامل من البطاقات المستعصية هي حذفها. فكر مليًا ما إذا كانت المواد
+التي تستصعبها مهمة بشكل كافي لكي تستحق وقتك. عن طريق حذف العناصر الصعبة والغامضة،
+تستطيع تخصيص مزيد من الوقت لتعلم المواد الأخرى، وتصبح الدراسة أكثر متعة.
 
-## Editing
+## التحرير
 
-Another approach is to change the way the information is presented.
-Perhaps the cards you have created have too much information on them, or
-perhaps you’re trying to memorize something without fully understanding
-it. Sometimes spending some time changing the way the card is phrased
-can help. It’s also a good time to think about making a mnemonic to help
-you remember.
+طريقة أخرى هي تغيير أسلوب عرض المعلومات. ربما هناك كم كبير من المعلومات في البطاقات،
+أو قد تكون تحاول حفظ شيء لا تفهمه كليًا. أحيانًا قد يكون من المفيد إعادة صياغة البطاقات.
+كما أن هذا وقت مناسب للتفكير بصنع بعض مساعدات الذاكرة (mnemonics).
