@@ -1,68 +1,55 @@
-# Contributing
+# مساهمة
 
-## Sharing Decks Publicly
+## مشاركة الرزم علنًا
 
-To share decks with the general public, [synchronize](syncing.md) them
-with AnkiWeb, then log into AnkiWeb and click on "Share" from the menu
-next to the deck you wish to share.
+لمشاركة الرزم على الملأ، [زامنها](syncing.md) مع أنكي ويب، ثم سجل الدخول إلى أنكي ويب
+واضغط زر "Share" من القائمة بجانب الرزمة التي تريد مشاركتها.
 
-If you shared a deck previously (including with previous versions of
-Anki), you can update it by clicking "Share" as above. Updating a shared
-deck will not reset the download counts or ratings. You can delete a
-shared deck that you have uploaded using the Delete button on the shared
-deck’s page.
+إذا شاركت رزمة من قبل (حتى ولو مع إصدارات قديمة من أنكي)، تستطيع تحديثها بالضغط
+على "Share" أيضًا. تحديث رزمة مشتركة لا يصفّر عدادات التنزيل ولا التقييمات.
+تستطيع حذف رزمة مشتركة رفعتها من خلال زر Delete في صفحة هذه الرزمة.
 
-When updating a deck, AnkiWeb expects the deck to be at the same
-location as before. If you shared a deck when it was called "Korean
-Verbs" for example, and then renamed it to "Korean::Korean Verbs",
-resharing will not be able to update the existing copy. If you’ve
-forgotten the original name, please contact support.
+عند تحديث رزمة، يتوقع أنكي ويب أن للرزمة الموقع السابق نفسه. إذا شاركت رزمة كانت
+تدعى «أفعال كورية» مثلًا، ثم أعد تسميتها إلى «كورية::أفعال كورية»، إعادة مشاركتها
+لن تؤدي إلى تحديث النسخة الموجودة. إذا نسيت الاسم الأصلي، تواصل معنا.
 
-When you update a shared deck, users who downloaded the deck previously
-will not automatically receive updates. If they download the deck again
-and re-import it, newly added material will be imported without altering
-their existing study progress, provided neither you nor the user has
-altered the note type since the first import.
+عند تحديث رزمة مشتركة، لن يتلقى المستخدمون الذين نزلوا الرزمة سابقًا تحديثات تلقائيًا.
+إذا نزلوا الرزمة مجددًا واستوردوها، ستستورد المواد المضافة حديثًا بدون تغيير
+تقدم الدراسة الموجود، بشرط أنك -أو المستخدم- لم تغير نوع الملحوظة منذ الاستيراد الأول.
 
-## Sharing Decks Privately
+## مشاركة الرزم بشكل خاص
 
-If you’d like to share decks with a limited group of people (such as a
-study group or class) rather than the general public, you can do so by
-sharing them outside of AnkiWeb.
+إذا أدرت مشاركة رزم مع مجموعة محدودة من الناس (مثل مجموعة دراسة أو صف) بدلًا من
+العلن، تستطيع فعل هذا خارج أنكي ويب.
 
-To share a deck privately, go to the File menu and choose Export. Select
-a single deck (not "All Decks"), and turn off "include scheduling
-information". This will produce an .apkg file which you can share with
-others.
+لمشاركة رزمة بهذه الطريقة، اذهب إلى قائمة ملف واختر تصدير. اختر رزمة واحدة (وليس «كل الرزم»)،
+وألغ تفعيل خيار «اشمل معلومات الجدولة». سينشئ هذا ملف <span dir="ltr">.apkg</span>
+تستطيع مشاركته مع الآخرين.
 
-You can share the .apkg file by emailing it to people, placing it on a
-website or shared folder, or using a free file sharing service like
-Dropbox or Google Drive and sending people a link.
+تستطيع مشاركة الملف بإرساله عبر البريد الإلكتروني، أو وضعه في موقع إلكتروني
+أو مجلد مشترك، أو باستخدام خدمة مشاركة ملفات مجانية مثل دروبوكس أو غوغل درايف
+وإرسال رابط إلى الآخرين.
 
-Both the computer version and mobile clients make it easy to import from
-an apkg file simply by clicking or tapping on it. AnkiWeb does not have
-the ability to import apkg files however, so the recipients of your deck
-will need to have the computer version or Anki on their mobile device.
+كل من إصدار الحاسوب والأجهزة المحمولة يجعل من السهل الاستيراد من ملف apkg بالضغط
+أو النقر عليه. لكن ليس لأنكي ويب ميزة استيراد ملفات apkg، لذلك فسيحتاج متلقي رزمتك إلى
+إصدار الحاسوب أو المحمول.
 
-When a user imports an .apkg file, cards that already exist in their
-collection will be ignored and any new cards will be added. As long as
-they use the same note type, modified cards will also be updated. To
-prevent data loss, cards that have been deleted in the new apkg file
-will not be deleted in the user’s collection, so if you need to delete
-cards from users' decks for whatever reason, you will need to contact
-them about it.
+عندما يستورد مستخدم ملف <span dir="ltr">.apkg</span>، يتم تجاهل
+أي بطاقات موجودة مسبقًا في مجموعته وتضاف البطاقات الجديدة. يتم تحديث البطاقات المعدلة
+طالما تستخدم نوع الملحوظة نفسه. لمنع فقدان البيانات، البطاقات التي حُذِفت من ملف apkg الجديد
+لن تُحذف من مجموعة المستخدم، لذلك إذا أردت حذف بطاقات من رزم المستخدمين لأي سبب كان،
+فعليك التواصل معهم بخصوص ذلك.
 
-## Sharing Add-ons
+## مشاركة الإضافات
 
-Please see https://addon-docs.ankiweb.net/#/sharing
+انظر https://addon-docs.ankiweb.net/#/sharing
 
-## Translating Anki
+## ترجمة أنكي
 
-Please see https://translating.ankiweb.net
+انظر https://translating.ankiweb.net
 
-## Contributing Code
+## مساهمة برمجية
 
-Anki’s source code is available at <https://github.com/ankitects/anki>
+المصدر البرمجي لأنكي متوفر في <https://github.com/ankitects/anki>.
 
-Before contributing, please see the README.contributing file in that
-repo.
+الرجاء الاطلاع على ملف README.contributing قبل المساهمة.

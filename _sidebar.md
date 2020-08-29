@@ -23,6 +23,6 @@
 - [البطاقات المستعصية](leeches.md)
 - [إضافات](addons.md)
 - [منوع](misc.md)
-- [Contributing](contrib.md)
+- [مساهمة](contrib.md)
 - [أسئلة متكررة](faqs.md)
 - [مصادر](resources.md)
