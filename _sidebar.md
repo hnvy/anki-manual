@@ -16,7 +16,7 @@
 - [البحث](searching.md)
 - [الاستيراد](importing.md)
 - [التصدير](exporting.md)
-- [Managing Files](files.md)
+- [إدارة الملفات](files.md)
 - [Statistics](stats.md)
 - [Media](media.md)
 - [Math & Symbols](math.md)

@@ -1,325 +1,311 @@
-# Managing Files and Your Collection
+# إدارة الملفات ومجموعتك
 
-## Checking Your Collection
+## فحص مجموعتك
 
-It’s a good idea to occasionally check your collection file for
-problems. You can do this via the Tools&gt;Check Database menu item.
-Checking the database ensures the file is not corrupted, rebuilds some
-internal structures, and optimizes the file.
+يُنصح بفحص ملف مجموعتك من وقت لآخر للبحث عن مشاكل. تستطيع تحقيق هذا باستخدام
+عنصر القائمة أدوات&gt;فحص قاعدة البيانات. يتأكد فحص قاعدة البيانات من أن الملف
+غير تالف، ويعيد بناء بعض البنى الداخلية، ويعزز الملف.
 
-When you check the database, your tag list is also rebuilt. When you
-delete individual decks or cards, Anki does not update the list of used
-tags, as it’s inefficient to do so. If you want to clear old tags out
-from the list that are no longer in use, checking your database is the
-way to do it.
+يعاد بناء قائمة السمات أيضًا عند فحص قاعدة البيانات. عند حذف رزم أو بطاقات،
+لا يحدث أنكي قائمة السمات المستخدمة لعدم فعالية ذلك. إذا أدرت حذف السمات القديمة
+غير المستخدمة من قائمة السمات، فميزة فحص قاعدة البيانات هي طريقة تحقيق ذلك.
 
-Please note that Anki will automatically optimize your collection once
-every 2 weeks. This optimization ensures the collection performs well,
-but it does not check for errors or rebuild the tag list when
-automatically optimizing.
+لاحظ أن أنكي يعزز مجموعتك تلقائيًا مرة كل أسبوعين. يتأكد هذا التعزيز من أن المجموعة
+تعمل جيدًا، لكنه لا يتحقق من عدم وجود أخطاء ولا يعيد بناء قائمة السمات.
 
-## File Locations
+## مواقع الملفات
 
-On **Windows**, the latest Anki versions store your Anki files in your
-appdata folder. You can access it by opening the file manager, and
-typing `%APPDATA%\Anki2` in the location field. Older versions of Anki
-stored your Anki files in a folder called `Anki` in your `Documents`
-folder.
+في **ويندوز**، تخزن إصدارات أنكي الأخيرة ملفات أنكي الخاصة بك في مجلد appdata.
+تستطيع الوصول إلى هذا المجلد بفتح مدير الملفات، وإدخال <span dir="ltr">`%APPDATA%\Anki2`</span>
+في حقل الموقع. تخزن إصدارات أنكي القديمة ملفات أنكي الخاصة بك في مجلد باسم `Anki` في مجلد `مستندات`.
 
-On **Mac** computers, recent Anki versions store all their files in the
-`~/Library/Application Support/Anki2` folder. The Library folder is
-hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. If you’re on an older Anki
-version, your Anki files will be in your `Documents/Anki` folder.
+في حواسيب **ماك**، تخزن إصدارات أنكي الأخيرة كل ملفاتك في
+مجلد <span dir="ltr">`~/Library/Application Support/Anki2`</span>.
+مجلد `Library` مخفي بشكل افتراضي، لكن يمكن إظهاره في برنامج Finder بالضغط على زر option
+مع الضغط على قائمة ذهاب. تخزن الإصدارات القديمة ملفاتك في مجلد `Documents/Anki`.
 
-On **Linux**, recent Anki versions store your data in
-`~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
-custom data path. Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`.
+في **لينكس**، تخزن إصدارات أنكي الأخيرة بياناتك في مجلد <span dir="ltr">`~/.local/share/Anki2`</span>،
+أو <span dir="ltr">`$XDG_DATA_HOME/Anki2`</span> إذا ضبطت مجلد بيانات مخصصًا.
+تخزن الإصدارات القديمة ملفاتك في مجلد <span dir="ltr">`~/Documents/Anki`</span>
+أو <span dir="ltr">`~/Anki`</span>.
 
-Within the Anki folder, the program-level and profile-level preferences
-are stored in a file called prefs.db.
+في مجلد أنكي، تخزن تفضيلات البرنامج والملف الشخصي في ملف باسم prefs.db.
 
-There is also a separate folder for each profile. The folder contains:
+هناك أيضًا مجلد منفصل لكل ملف شخصي. يحتوي المجلد التالي:
 
-- Your notes, decks, cards and so on in a file called collection.anki2
+- ملحوظاتك، ورزمك، وبطاقاتك، وما شابه في ملف باسم collection.anki2.
 
-- Your audio and images in a collection.media folder
+- الملفات الصوتية والصور في مجلد collection.media.
 
-- A backups folder
+- مجلد نسخ احتياطية.
 
-- Some system files
+- بعض ملفات النظام
 
-You should never copy or move your collection while Anki is open. Doing
-so could cause your collection to become corrupted. Please don’t move or
-modify the other files in the folder either.
+يجب ألا تنسخ مجموعتك أو تنقلها بينما يعمل أنكي. قد يسبب هذا تلف مجموعتك.
+الرجاء عدم نقل الملفات الأخرى في المجلد أو تعديلها أيضًا.
 
-## Startup Options
+## خيارات البدء
 
-If you have made a destructive change on one computer and have an
-undamaged copy on another computer, you may wish to start Anki without
-syncing in order to use the full sync option without first downloading
-the changes. Similarly, if you are experiencing problems with Anki, you
-might want to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. You can do both of these things
-by holding down the Shift key while starting Anki.
+إذا أجريت تعديلًا تدميريًا في جهاز وكان لديك نسخة غير معدلة في جهاز آخر، فقد ترغب
+في بدء أنكي بدون مزامنة لكي تستخدم خيار المزامنة الكاملة بدون تنزيل التغييرات أولًا.
+بشكل مشابه، إذا كنت تواجه مشاكل مع أنكي، فقد تريد (أو تُوجَّه إلى) إيقاف الإضافات
+مؤقتًا لكي ترى إذا كانت إضافة ما تسبب المشكلة. تستطيع تحقيق كلا الأمرين عن طريق
+الضغط على زر Shift عند بدء أنكي.
 
-It is possible to specify a custom folder location during startup. This
-is an advanced feature that is primarily intended to be used with
-portable installations, and we recommend you use the default location in
-most circumstances.
+من الممكن تخصيص مكان مجلد مخصص عند بدء تشغيل أنكي. هذه الميزة متقدمة مخصصة
+بشكل رئيسي لتُستخدم للتنصيب المحمول. يُنصح باستخدام الموقع الافتراضي في معظم الأحوال.
 
-The syntax to specify an alternate folder is as follows:
+الصيغة المستخدمة لضبط مجلد بديل هي كالتالي:
 
-    anki -b /path/to/anki/folder
+<div dir="ltr">
 
-- If you have multiple profiles, you can pass -p &lt;name&gt; to load
-  a specific profile.
+    anki -b /مسار/مجلد/أنكي
+</div>
 
-- To change the interface language, use -l &lt;iso 639-1 language
-  code&gt;, such as "-l ja" for Japanese.
+- إذا كان لديك عدة ملفات شخصية، تستطيع استخدام <span dir="ltr">-p &lt;اسم&gt;</span>
+  لتشغيل ملف محدد.
 
-If you always want to use a custom folder location, you can modify your
-shortcut to Anki. On Windows, right-click on the shortcut, choose
-Properties, select the Shortcut tab, and add "-b
-\\path\\to\\data\\folder" after the path to the program, which should
-leave you with something like
+- لتغيير لغة الواجهة، استخدم <span dir="ltr">-l &lt;iso 639-1 رمز لغة&gt;</span>،
+  مثل <span dir="ltr">"-l ja"</span> لاختيار اللغة اليابانية.
+
+إذا أردت استخدام موقع مجلد مخصص دائمًا، تستطيع تعديل اختصار أنكي. في ويندوز،
+اضغط بزر الفأرة الأيمن على الاختصار، واختر خصائص، واذهب إلى تبويبة اختصار، وأضف
+<span dir="ltr">"-b \\مسار\\مجلد\\البيانات"</span> بعد مسار البرنامج،
+لينتج نص كالتالي:
+
+<div dir="ltr">
 
     "C:\Program Files\Anki\anki.exe" -b "C:\AnkiDataFolder"
+</div>
 
-You can also use this technique with the -l option to easily use Anki in
-different languages.
+تستطيع أيضًا استخدام هذه التقنية مع خيار <span dir="ltr">-l</span>
+لاستخدام أنكي بلغات مختلفة بسهولة.
 
-On Windows, you should use a backslash (\\) not a forward slash (/).
+في ويندوز، يجب استخدام  رمز (\\) بدلًا من (/).
 
-On a Mac there is no easy way to alter the behaviour when clicking on
-the Anki icon, but it is possibile to start Anki with a custom base
-folder from a terminal:
+في ماك، ليس هناك طريقة سهلة لتغيير السلوك عند الضغط على أيقونة أنكي، لكن من الممكن
+بدء أنكي في مجلد مخصص من الطرفية:
+
+<div dir="ltr">
 
     open /Applications/Anki.app --args -b ~/myankifolder
+</div>
 
-Alternatively, you can define the environment variable "ANKI_BASE".
-On Windows, you can define the environment variable with:
+كبديل، تستطيع تعريف متغير البيئة "ANKI_BASE". في ويندوز، تستطيع تعريفه كما يلي:
 
-    set "ANKI_BASE=C:/path/to/AnkiDataFolder"
+<div dir="ltr">
 
-On Linux and Mac OS, you can use:
+    set "ANKI_BASE=C:/مسار/مجلد/أنكي"
+</div>
 
-    export ANKI_BASE="/path/to/AnkiDataFolder"
+وفي لينكس وماك أو إس:
 
-## DropBox and File Syncing
+<div dir="ltr">
 
-We do not recommend you sync your Anki folder directly with a
-third-party synchronization service, as it can lead to database
-corruption when files are synced while in use.
+    export ANKI_BASE="/مسار/مجلد/أنكي"
+</div>
 
-If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see
-<http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders> for more
-info.
+## دروبوكس ومزامنة الملفات
 
-If you wish to keep your collection in sync as well, it is strongly
-recommended that you create a script that copies your files from your
-synced folder to a local folder, launches Anki, and then copies the
-files back when Anki is closed. This will ensure that the files are
-never synchronized while they are open.
+لا ينصح بمزامنة مجلد أنكي الخاص بك مع خدمة مزامنة، لأن ذلك قد يؤدي إلى تلف
+قاعدة البيانات عندما تكون الملفات المزامنة قيد الاستخدام.
 
-## Network Filesystems
+إذا أردت مزامنة وسائطك فقط، تستطيع ربط الملفات الخارجية مع خدمات مثل دروبوكس.
+انظر <http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders>
+لمزيد من المعلومات.
 
-We strongly recommend you have Anki store your files on a local hard
-disk, as network filesystems can lead to database corruption. If a
-network filesystem is your only option, regular use of Tools&gt;Check
-Database to detect corruption is recommended.
+إذا كنت تريد مزامنة مجموعتك أيضًا، ينصح بقوة أن تنشئ سكربت ينسخ ملفاتك من المجلد المزامن
+إلى مجلد محلي، ويشغل أنكي، ثم ينسخ الملفات مجددًا عند إغلاق أنكي. يضمن هذا أن الملفات
+لا تزامن أبدًا عندما يعمل أنكي.
 
-## Running from a Flash Drive
+## أنظمة ملفات الشبكة
 
-On Windows, Anki can be installed on a USB / flash drive and run as a
-portable application. The following example assumes your USB drive is
-drive G.
+ننصح بقوة أن تخزن ملفات أنكي الخاصة بك على قرص صلب محلي، لأن أنظمة ملفات الشبكة
+قد تؤدي إلى تلف قاعدة البيانات. إذا كان نظام ملفات الشبكة خيارك الوحيد، فينصح
+باستخدام ميزة فحص قاعدة البيانات بانتظام للكشف عن الأعطال.
 
-- Copy the \\Program Files\\Anki folder to the flash drive, so you
-  have a folder like G:\\Anki.
+## التشغيل من محرك أقراص فلاش
 
-- Create a text file called G:\\anki.bat with the following text:
+في ويندوز، يمكن تنصيب أنكي على محرك أقراص فلاش وتشغيله كتطبيق محمول.
+يفترض المثال التالي أن محرك أقراص الفلاش هو محرك G.
 
-<!-- -->
+- انسخ مجلد <span dir="ltr">\\Program Files\\Anki</span> إلى محرك أقراص الفلاش،
+  ليصبح لديك مجلد مثل <span dir="ltr">G:\\Anki</span>.
+
+- أنشئ ملفًا نصيًا باسم <span dir="ltr">G:\\anki.bat</span> يحوي النص التالي:
+
+<div dir="ltr">
 
     g:\anki\anki.exe -b g:\ankidata
+</div>
 
-If you would like to prevent the black command prompt window from
-remaining open, you can instead use:
+إذا أردت منع نافذة الأوامر السوداء من البقاء مفتوحة، تستطيع استخدام التالي كبديل:
+
+<div dir="ltr">
 
     start /b g:\anki\anki.exe -b g:\ankidata
+</div>
 
-- Double-clicking on anki.bat should start Anki with the user data
-  stored in G:\\ankidata.
+- النقر نقرًا مزدوجًا على anki.bat يجب أن يبدأ أنكي بملفات المستخدم المخزنة في
+  <span dir="ltr">G:\\ankidata</span>.
 
-The full path including drive letter is required - if you try using
-`\anki\anki.exe` instead you will find syncing stops working.
+إن المسار الكامل، بما في ذلك حرف المحرك، مطلوب - إذا جربت استخدام
+<span dir="ltr">`\anki\anki.exe`</span>، ستجد أن المزامنة تتوقف عن العمل.
 
-Media syncing with AnkiWeb may not work if your flash drive is formatted
-as FAT32. Please format the drive as NTFS to ensure media syncs
-correctly.
+قد لا تعمل مزامنة الوسائط مع أنكي ويب إذا كان محرك أقراص الفلاش الخاص بك بصيغة FAT32.
+الرجاء تهيئة القرص بصيغة NTFS لضمان مزامنة الوسائط بشكل صحيح.
 
-## Backups
+## النسخ الاحتياطية
 
-Each time your collection is closed (when closing Anki, switching
-profiles, or synchronizing your deck), Anki exports your collection into
-the backups folder. By default Anki will store up to 30 backups; you can
-adjust this in the [preferences](preferences.md).
+في كل مرة تُغلق فيها مجموعتك (عند إغلاق أنكي، أو تبديل الملفات الشخصية، أو مزامنة رزمتك)،
+يصدّر أنكي مجموعتك إلى مجلد النسخ الاحتياطية. يخزن أنكي 30 نسخة احتياطية كحد أقصى بشكل افتراضي؛
+تستطيع ضبط هذا في [التفضيلات](preferences.md).
 
-Automatic backups do not protect against disk or computer failure, and
-do not extend to your media. To keep your collections safe, please
-consider making manual backups too.
+لا تحمي النسخ الاحتياطية التلقائية من فشل القرص أو الحاسوب، ولا تشمل الوسائط.
+لإبقاء مجموعاتك آمنة، يُنصح بأخذ نسخ احتياطية يدويًا أيضًا.
 
-The easiest way to make a manual backup is to use the File&gt;Export
-menu item to export all decks with scheduling and media information
-included, which will save your data to a .colpkg file.
+أسهل طريقة لإجراء نسخ احتياطي يدويًا هي باستخدام عنصر القائمة ملف&gt;تصدير لتصدير
+كل رزمك مع معلومات الجدولة والوسائط، ما يحفظ كل بياناتك في ملف <span dir="ltr">.colpkg</span>.
 
-If you want to back up multiple profiles and your add-ons as well, you
-can make a complete copy of your [Anki folder](files.md). Please make sure
-you close Anki first, as backups may be corrupt if run while Anki is
-open.
+إذا أردت نسخ عدة ملفات شخصية وإضافاتك أيضًا، تستطيع نسخ كل
+[مجلد أنكي](files.md#مواقع-الملفات) الخاص بك. تأكد من إغلاق أنكي أولًا،
+لأن النسخ الاحتياطي قد تتلف إذا أنشئت عندما يكون أنكي مفتوحًا.
 
-To restore from an automatic backup:
+للاسترجاع من نسخة احتياطية:
 
-1.  From the File menu, select Switch Profile to show the Profiles
-    window.
+1.   من قائمة ملف، اختر «تبديل الملف الشخصي» لإظهار نافذة الملفات الشخصية.
 
-2.  Select the profile you wish to restore on the left.
+2.  اختر الملف الشخصي الذي تريد استرجاعه على اليسار.
 
-3.  Click the Open Backup…​ button.
+3.  اضغظ زر «فتح نسخة احتياطية...».
 
-4.  Choose Yes and the available backups will appear.
+4.  اختر نعم لتظهر النسخ الاحتياطية المتوفرة.
 
-5.  Open a backup based on the date you wish to restore to.
+5.  افتح نسخة احتياطية بناءً على التاريخ الذي تريد الاسترجاع منه.
 
-6.  Check that that the backup that was restored was the one you
-    intended. If you wish to try a different backup, return to step 1.
+6.  تحقق من أن النسخة الاحتياطية المسترجعة هي ما تريد. إذا أدرت تجربة نسخة مختلفة،
+ارجع إلى الخطوة 1.
 
-7.  Anki has disabled automatic syncing and backups while you check the
-    backup. When you’re happy with the backup you’ve selected, quit Anki
-    and start it again to return to the normal behaviour.
+7.  أوقف أنكي المزامنة التلقائية والنسخ الاحتياطي عندما كنت تتحقق من النسخة التي اخترتها.
+    بعد أن تتحق من النسخة، أغلق أنكي وافتحه مجددًا للعودة إلى السلوك الطبيعي.
 
-Anki also logs deleted notes to a text file called deleted.txt in your
-profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you’ll need to split the file into separate files
-for each note type first.
+يخزن أنكي أيضًا الملحوظات المحذوفة في ملف يدعى deleted.txt في مجلد ملفك الشخصي.
+هذه المحلوظات بصيغة نصية يمكن أن تعالج بخيار ملف&gt;استيراد، لكن لاحظ أن ميزة الاستيراد
+تدعم نوع ملحوظة واحدًا فقط في المرة الواحدة، لذلك إذا حذفت ملحوظات لها أنواع ملحوظة مختلفة،
+فعليك فصل الملف إلى عدة ملفات لكل نوع ملحوظة أولًا.
 
-## Inaccessible Harddisk
+## قرص صالب لا يمكن الوصول إليه
 
-If Anki can’t write to files in the [Anki folder](files.md), a message
-will be displayed on startup saying that Anki can’t write to the
-harddisk, and Anki will close. If you’re unsure how to fix the
-permissions, please contact someone near you who is knowledgable about
-computers and can help you out.
+إذا لم يكن أنكي قادرًا على الكتابة إلى الملفات في [مجلد أنكي](files.md#مواقع-الملفات)
+ستظهر رسالة عند البدء تخبرك بذلك، وسيُغلق أنكي. إذا لم تكن متأكدًا من كيفية
+إصلاح الأذونات، الرجاء التواصل مع أحد ما بقربك لديه خبرة في الحواسيب ويمكنه مساعدتك.
 
-## Permissions of Temp Folder
+## أذونات المجلد المؤقت
 
-Anki uses the system’s temporary folder to store temporary data. If the
-permissions of this folder have been changed from the default settings
-by a rogue app or buggy antivirus app, Anki will not function properly.
+يستخدم أنكي المجلد المؤقت الخاص بالنظام لتخزين البيانات المؤقتة. إذا غُيِّرت أذونات
+هذه المجلد إلى إعدادات غير الإعدادات الافتراضية من قبل برنامج ضار أو مكافح فيروسات فيه أعطال،
+لن يعمل أنكي بشكل صحيح.
 
-If you’re on a Windows 7 machine, the general steps to fix the problem
-are listed below. As this is somewhat complicated, please ask someone
-knowledgeable about Windows if you are not sure.
+إذا كنت تعمل على نظام ويندوز 7، في الأسفل خطوات عامة لإصلاح المشكلة.
+لأن هذا معقد بعض الشيء، الرجاء طلب المساعدة من أحد ما خبير في ويندوز إذا لم تكن متأكدًا.
 
-1.  Click on the start bar, and type in %temp% (including the percents),
-    then hit enter.
+1.  اضغط على قائمة ابدأ، أدخل %temp% (مع علامات النسبة المئوية)، واضغط زر enter.
 
-2.  Go up one folder, and locate the temp folder. Right click on it, and
-    choose Properties.
+2.  ابحث عن مجلد temp في الأعلى، اضغط عليه بزر الفأرة الأيمن، واختر خصائص.
 
-3.  In the security tab, click on Advanced.
+3.  اضغط على «متقدم» في تبويبة الأمان.
 
-4.  Click on the Owner tab. If you’re not listed as the owner, click the
-    button to take ownership.
+4.  اضغط على تبويبة المالك. إذا لم تظهر كمالك، اضغط على الزر لأخذ الملكية.
 
-5.  On the permissions tab, ensure that you have full control. On a
-    default W7 install the control will actually be inherited from
-    c:\\users\\your-username.
+5.  في تبويبة الأذونات، تأكد من أن لديك تحكمًا كاملًا. في تنصيب ويندوز 7 الافتراضي
+    يتم توريث إعدادات التحكم من <span dir="ltr">c:\\users\\اسم-المستخدم</span>.
 
-## Corrupt Collections
+## مجموعات تالفة
 
-Anki uses a file format that is robust against program and computer
-crashes, but it’s still possible for your collection to become corrupt
-if the files are modified while Anki is open, stored on a network drive,
-or corrupted by a bug.
+يستخدم أنكي صيغة ملفات متينة ضد أعطاب البرامج والحاسوب، لكن يظل من الممكن أن تصبح
+مجموعتك تالفة إذا عُدِّلت الملفات عندما يكون أنكي مفتوحًا، أو كانت المجموعة مخزنة
+على قرص على الشبكة، أو بسبب عطل برمجي.
 
-When you run Tools&gt;Check Database, you will receive a message if Anki
-detects the file has been corrupted. **The best way to recover from this
-is to restore from the most recent [automatic backup](preferences.md)**, but
-if your backup is too old, then you can attempt to repair the corruption
-instead.
+عند تشغيل أدوات&gt;فحص قاعدة البيانات، ستستلم رسالة إذا اكتشف أنكي أن الملف تالف.
+**أفضل طريقة لحل هذه المشكلة هي استرجاع آخر** [نسخة احتياطية](files.md#النسخ-الاحتياطية)،
+لكن إذا كانت هذه النسخة قديمة جدًا، فقد تجرب إصلاح التلف بدلًا من ذلك.
 
-On Linux, make sure sqlite3 is installed. On a Mac, it should be
-installed already. On Windows, download
-<http://www.sqlite.org/sqlite-3_6_23.zip>.
+في لينكس، تأكد من أن sqlite3 منصب. في ماك، يجب أن يكون منصبًا بشكل افتراضي.
+في ويندوز، نزّل <http://www.sqlite.org/sqlite-3_6_23.zip>.
 
-Next, create a backup of your collection.anki2 file, in case something
-goes wrong with the steps below.
+بعد ذلك، أنشئ نسخة احتياطية لملف collection.anki2، في حال حدث خطأ عند إجراء
+الخطوات في الأسفل.
 
-**Linux/OSX**
+**لينكس/أو إس إكس**
 
-Open a terminal, change to the folder your collection is located in, and
-type:
+افتح الطرفية، اذهب إلى مجلد مجموعتك، وأدخل التالي:
+
+<div dir="ltr">
 
     sqlite3 collection.anki2 .dump > dump.txt
+</div>
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+افتح ملف dump.txt الناتج في محرر نص، وانظر إلى السطر الأخير. إذا كان يحوي
+<span dir="ltr">"rollback;"</span>،
+غيّره إلى <span dir="ltr">"commit;"</span>.
 
-Then run the following in a terminal:
+ثم نفّذ الأمر التالي في الطرفية:
+
+<div dir="ltr">
 
     cat dump.txt | sqlite3 temp.file
+</div>
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
-step.
+تأكد من أنك تستخدم ملف temp.file - لا تضع collection.anki2 على اليمين، لأن ذلك
+يفرغ الملف. انتقل إلى الخطوة الأخيرة عند الانتهاء.
 
-**Windows**
+**ويندوز**
 
-Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
-**Start&gt;Run** and type in `cmd.exe`.
+انسخ برنامج `sqlite3.exe` ورزمتك إلى سطح المكتب. ثم اذهب إلى **ابدأ&gt;تشغيل**
+وأدخل `cmd.exe`.
 
-If you’re on a recent Windows, the command prompt may not start on your
-desktop. If you don’t see desktop displayed in the command prompt, type
-something like the following, replacing 'administrator' with your login
-name.
+إذا كنت تعمل على إصدار حديث من ويندوز، قد لا يبدأ سطر الأوامر في سطح المكتب.
+إذا لم ترى كلمة desktop في سطر الأوامر، أدخل أمرًا كالتالي، مستبدلًا «مسؤول» باسم
+المستخدم الخاص بك.
 
-    cd C:\Users\Administrator\Desktop
+<div dir="ltr">
 
-Then type:
+    cd C:\Users\مسؤول\Desktop
+</div>
+
+ثم أدخل:
+
+<div dir="ltr">
 
     sqlite3 collection.anki2 .dump > dump.txt
+</div>
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+افتح ملف dump.txt الناتج في محرر نص، وانظر إلى السطر الأخير. إذا كان يحوي
+<span dir="ltr">"rollback;"</span>،
+غيّره إلى <span dir="ltr">"commit;"</span>.
 
-Then run the following in a terminal:
+ثم نفّذ الأمر التالي في الطرفية:
+
+<div dir="ltr">
 
     type dump.txt | sqlite3 temp.file
+</div>
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
-step.
+تأكد من أنك تستخدم ملف temp.file - لا تضع collection.anki2 على اليمين، لأن ذلك
+يفرغ الملف. انتقل إلى الخطوة الأخيرة عند الانتهاء.
 
-**Final Step**
+**الخطوة الأخيرة**
 
-Check that you didn’t get an error message, and that temp.file is not
-empty. The procedure optimizes the collection in the process, so it’s
-normal for the new file to be somewhat smaller than the old one.
+تحقق من أنك لم تحصل على رسالة خطأ، وأن ملف temp.file غير فارغ.
+يعزز هذا الإجراء المجموعة أيضًا، لذلك من الطبيعي أن يكون الملف الجديد أصغر بقليل
+من الملف القديم.
 
-When you’ve confirmed the file is not empty:
+بعد التأكد من أن الملف غير فارغ:
 
-- rename the original collection.anki2 file to something else
+- أعد تسمية ملف collection.anki2 الأصلي إلى اسم آخر.
 
-- rename temp.file to collection.anki2
+- أعد تسمية temp.file إلى collection.anki2.
 
-- move collection.anki2 back into your collection folder, overwriting
-  the old version
+- انقل collection.anki2 إلى مجلد مجموعتك، مستبدلًا الإصدار القديم.
 
-- start Anki and go to Tools&gt;Check Database to make sure the
-  collection has been successfully restored.
+- ابدأ أنكي واذهب إلى أدوات&gt; فحص قاعدة البيانات للتحقق من أن المجموعة اُسترجعت بنجاح.
