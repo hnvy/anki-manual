@@ -22,7 +22,7 @@
 - [Math & Symbols](math.md)
 - [Leeches](leeches.md)
 - [إضافات](addons.md)
-- [Miscellaneous](misc.md)
+- [منوع](misc.md)
 - [Contributing](contrib.md)
 - [أسئلة متكررة](faqs.md)
 - [مصادر](resources.md)
