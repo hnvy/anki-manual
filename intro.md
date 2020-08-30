@@ -6,6 +6,8 @@
 
 ## ترجمات
 
+هذه ترجمة لدليل أنكي. يمكن الوصول إلى النسخة الإنكليزية من [هنا](https://docs.ankiweb.net/).
+
 ساهم متطوعون بترجمات لهذا الدليل. قد لا تكون هذه الترجمات على وفاق مع آخر إصدار.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
@@ -22,7 +24,7 @@
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
-- [العربية](https://anh25.github.io/anki-manual/)
+- [العربية](https://anh25.github.io/anki-manual/) (هذه النسخة)
 
 - [فارسى](http://ankidroid.ir/anki.pdf)
 
