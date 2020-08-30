@@ -19,7 +19,7 @@
 - [إدارة الملفات](files.md)
 - [إحصائيات](stats.md)
 - [وسائط](media.md)
-- [Math & Symbols](math.md)
+- [الرياضيات والرموز](math.md)
 - [البطاقات المستعصية](leeches.md)
 - [إضافات](addons.md)
 - [منوع](misc.md)

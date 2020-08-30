@@ -1,164 +1,177 @@
-# Math and Symbols
+# الرياضيات والرموز
 
 ## MathJax
 
-[MathJax](https://www.mathjax.org) is a modern, browser-based
-typesetting system, useful for mathematical and chemical equations. It
-does not require the installation of any extra software, so it is easy
-to use, and it is recommended for most users.
+[MathJax](https://www.mathjax.org) هو نظام صف حروف حديث، يعمل في متصفحات الويب،
+ويستخدم للمعادلات الرياضية والكيميائية. لا يتطلب تنصيب أي برامج إضافية،
+لذلك فإنه سهل الاستخدام وينصح به لمعظم المستخدمين.
 
-MathJax is supported out of the box on Anki 2.1+, AnkiMobile, and
-AnkiDroid 2.9+.
+يُدعَم MathJax بدون إعداد يدوي في أنكي 2.1+، أنكي موبيل، وأنكي درويد 2.9+.
 
-To try it out:
+لتجربته:
 
-1.  Type the following in a field:
+1.  أدخل التالي في حقل:
+
+<div dir="ltr">
 
         \sqrt{x}
+</div>
 
-2.  Select the text you just typed.
+2.  حدد النص الذي أدخلته.
 
-3.  Click the rightmost button in the editor, and choose "MathJax
-    inline" from the menu. Anki will change the text so it reads:
+3.  اضغط الزر في أقصى اليمين في المحرر، واختر «MathJax مضمَّن» من القائمة.
+    سيحول أنكي النص إلى التالي:
+
+<div dir="ltr">
 
         \(\sqrt{x}\)
+</div>
 
-4.  If you click the Cards…​ button, you’ll see a preview of how the
-    equation will appear when the card is reviewed.
+4.  إذا ضغطت زر «بطاقات...»، سترى معاينة لما ستبدو عليه المعادلة عندما تراجع البطاقة.
 
-Anki’s MathJax support expects content in TeX format. If you’re not
-familiar with TeX formatting, please see [this
-cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 2 does not apply in Anki - Anki uses `\(` and
-`\)` for inline equations, and `\[` and `\]` for display equations.
+يتوقع MathJax في أنكي أن يكون المحتوى بصيغة TeX. إذا لم تكن صياغة TeX مألوفة لك،
+انظر [هذا المرجع](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+لاحظ أن النقطة 2 لا تنطبق على أنكي، لأنه يستخدم `\(` و `\)` للمعادلات المضمنة،
+و `\[` و `\]` لمعادلات العرض.
 
-If you want to use newlines in a MathJax expression, please use
-Shift+Enter instead of just Enter, as a normal newline will prevent
-MathJax from working correctly.
+إذا أردت استخدام رموز نهاية السطر في عبارة MathJax، استخدم Shift+Enter بدلًا من Enter،
+لأن رمز نهاية السطر العادي يعيق MathJax من العمل بشكل صحيح.
 
-Anki includes built in support for mhchem for rendering chemical
-equations. Please see the 'chemical equations' section and the following
-sections for more information:
-<https://mhchem.github.io/MathJax-mhchem/>
+يتضمن أنكي دعمًا جاهزًا لـ mhchem لمعالجة المعادلات الكيميائية. انظر
+<https://mhchem.github.io/MathJax-mhchem/> لمزيد من المعلومات.
 
 ## LaTeX
 
-LaTeX is a powerful typesetting system, useful for entering mathematical
-formulas, chemical formulas, musical notation and so on. Anki provides
-some support for LaTeX, allowing you to enter LaTeX code in your notes.
-When you review a card, Anki will call LaTeX and display the generated
-image instead.
+LaTeX هو نظام صف حروف فعال، يستخدم للمعادلات الرياضية والكيميائية، والرموز الموسيقية
+وما إلى ذلك. يوفر أنكي بعض الدعم لـ LaTeX، حيث يسمح بإدخال أكواد LaTeX في ملحوظاتك.
+عندما تراجع بطاقة، يستدعي أنكي LaTeX لتوليد صورة ويظهر الصورة المولًّدة.
 
-LaTeX is more work to set up, and images can only be generated with the
-computer version of Anki - though once generated, the images can be
-displayed by mobile clients. Because of the extra complexity LaTeX
-brings, it is only recommended for users that need more features than
-MathJax provides.
+يحتاج LaTeX بعض العمل لضبطه، ويمكن توليد الصور في نسخة الحاسوب من أنكي فقط -
+لكن بعد أن تولّد، يمكن أن تعرض الصور من قبل تطبيقات المحمول. بسبب التعقيد الإضافي الذي
+يضيفه LaTeX، فهو مفضل فقط للمستخدمين الذي يريدون ميزات أكثر مما يوفره MathJax.
 
-### Assumed Knowledge
+### معرفة مفترضة
 
-Anki’s LaTeX support is not turn-key: it is assumed that you know how to
-use LaTeX already, and that you have it installed. If you have no
-experience with LaTeX, please consult one of the many guides available
-on the internet. If you are having trouble with markup, please ask on a
-LaTeX forum.
+لا يأتي دعم LaTeX في أنكي جاهزًا: يُفترض أنك تعرف كيف تستخدم LaTeX بالفعل،
+وأنك نصبته من قبل. إذا لم تكن لديك خبرة مع LaTeX، اطلع على واحد من الدلائل الكثيرة
+المتوفرة على الإنترنت. إذا كانت لديك مشكلة مع بعض أكواد LaTeX، الرجاء السؤال في منتدى لـ LaTeX.
 
-To install LaTeX, on Windows use MiKTeX; on OSX use MacTex, and on Linux
-use your distro’s package manager. Dvipng must also be installed.
+لتنصيب LaTeX، في ويندوز استخدم MiKTeX؛ في أو إس إكس استخدم MacTex، وفي لينكس
+استخدم مدير الحزمات الخاص بتوزيعتك. يجب تنصيب Dvipng أيضًا.
 
-On Windows, go to Settings in MikTek’s maintenance window, and make sure
-"Install missing packages on the fly" is set to "No", not to "Ask me
-first". If you continue to have difficulties, one user reported that
-running Anki as an administrator until all the packages were fetched
-helped.
+في ويندوز، اذهب إلى قائمة صيانة MikTek، وتأكد من أن خيار "Install missing packages on the fly"
+مضبوط لـ "No"، وليس "Ask me first". إذا ما زلت تواجه مشاكل، فقد أبلغ مستخدم أن
+تشغيل أنكي كمسؤول حتى تُنزَّل كل الحزم ساعد على حل المشكلة.
 
-On OSX, LaTeX has only been tested with MacTex and BasicTex. If you use
-BasicTex, you need to install dvipng separately, with the following
-command:
+في أو إس إكس، تم اختبار LaTeX مع MacTex و BasicTex فقط. إذا كنت تستخدم BasicTex،
+فعليك تنصيب dvipng بشكل منفصل باستخدام الأمر التالي:
+
+<div dir="ltr">
 
     sudo tlmgr update --self; sudo tlmgr install dvipng
+</div>
 
-The command may not be on the path, so you may need to provide the full
-path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
+قد لا يكون الأمر في المسار، لذلك فقد تحتاج إلى توفير المسار كاملًا، مثل
+<span dir="ltr">/usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr</span>.
 
-If you are not using the above LaTeX packages, you will need to use the
-"edit LaTeX" add-on to specify the full path to latex and dvipng.
+إذا لم تكن تستخدم حزم LaTeX المذكورة في الأعلى، فسيتوجب عليك استخدام إضافة
+[edit LaTeX](https://ankiweb.net/shared/info/937148547)
+لتحديد المسار الكامل إلى LaTeX و dvipng.
 
-### Web/Mobile
+### الويب/المحمول
 
-When you review a card with LaTeX on it, Anki will generate an image for
-that LaTeX and place the image in your collection’s media folder for
-future use. The web & mobile clients will display these images if they
-already exist, but can not generate the images on their own.
+عندما تراجع بطاقة تحتوي كود LaTeX، يولد أنكي صورة لذلك الكود ويضعها في مجلد الوسائط
+للاستخدام في المستقبل. تطبيقات الويب والمحمول ستظهر هذه الصور إذا كانت موجودة،
+لكنها لا تستطيع توليد الصور بنفسها.
 
-To avoid having to review all your cards at least once before you can
-study on the other clients, Anki can generate the images in bulk for
-you. To generate all the images, please go to Tools&gt;Check Media.
-After that, syncing should upload the generated media to AnkiWeb and the
-other clients.
+لتجنب الحاجة إلى مراجعة كل بطاقاتك مرة على الأقل قبل أن تستطيع دراستها في التطبيقات الأخرى،
+يستطيع أنكي توليد الصور دفعة واحدة. لتوليد كل الصور، استخدم أدوات&gt;فحص الوسائط.
+بعد ذلك، يجب أن ترفع المزامنة الوسائط المولدة إلى أنكي ويب والتطبيقات الأخرى.
 
-### Example
+### مثال
 
-The most general way to input LaTeX content is to surround it with
-\[latex\]\[/latex\] tags. There’s a shortcut button for this documented
-in the [editor](editing.md) section.
+الطريقة الأعم لإدخال محتوى LaTeX هي بإحاطته بـ <span dir="ltr">\[latex\]\[/latex\]</span>.
+هناك زر لهذا موثق في قسم [المحرر](editing.md).
 
-\[latex\] tags must be used inside a field - placing them in the card
-template will [cause problems](templates/fields.md).
+يجب أن تستخدم علامات <span dir="ltr">\[latex\]</span> داخل حقل - وضعها في قالب البطاقة
+[يسبب مشاكل](templates/fields.md).
 
-For example, entering the following on the front of an Anki flashcard:
+مثلًا، إدخال التالي في مقدمة بطاقة:
+
+<div dir="ltr">
 
     Does [latex]\begin{math}\sum_{k = 1}^{\infty}\frac{1}{k}\end{math}[/latex] converge?
+</div>
 
-will produce this when the flashcard is viewed:
+سينتج التالي عندما تظهر البطاقة:
 
 ![convergence question](math/convergence_question.png)
 
-The formula in the example above is called a 'text formula', because it
-is displayed right within the non-mathematical text. In contrast, the
-following example shows a 'displayed formula':
+تدعى الصيغة في هذا المثال «صيغة نص»، لأنها تظهر داخل النص غير الرياضي.
+على العكس من ذلك، يظهر المثال التالي «صيغة معروضة»:
 
-    Does the sum below converge?
+<div dir="ltr">
+
+	Does the sum below converge?
 
     [latex]\begin{displaymath}\sum_{k = 1}^{\infty}\frac{1}{k}\end{displaymath}[/latex]
+</div>
 
 ![convergence question 2](math/convergence_question_2.png)
 
-'Text formulas' and 'display formulas' are the most common type of LaTeX
-expressions, so Anki provides abbreviated versions of them. Expressions
-of the form:
+«صيغ النص» و«صيغ العرض» هي الأنواع الأكثر شيوعًا لعبارات LaTeX، لذلك يوفر أنكي
+صيغ مختصرة لها. الصيغ بالشكل:
+
+<div dir="ltr">
 
     [latex]\begin{math}...\end{math}[/latex]
+</div>
 
-can be shortened to
+يمكن اختصارها إلى
+
+<div dir="ltr">
 
     [$]...[/$]
+</div>
 
-and expressions of the form
+والصيغ بالشكل
+
+<div dir="ltr">
 
     [latex]\begin{displaymath}...\end{displaymath}[/latex]
+</div>
 
-can be shortened to
+يمكن اختصارها إلى
+
+<div dir="ltr">
 
     [$$]...[/$$]
+</div>
 
-For example, the two LaTeX snippets shown before are equivalent to
+مثلًا، مقتطفتا LaTeX التان عُرضِتا سابقًا تكافئان
+
+<div dir="ltr">
 
     Does [$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$] converge?
+</div>
 
-and
+و
+
+<div dir="ltr">
 
     Does the sum below converge?
 
     [$$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$$]
+</div>
 
-respectively.
+بهذا الترتيب.
 
-### Packages
+### الحزم
 
-Anki allows you to customize the LaTeX preamble so you can import custom
-packages for chemistry, music and so on. For example, imagine you find
-an example file for chemtex on the internet:
+يسمح لك أنكي بتخصيص مقدمة LaTeX بحيث تستطيع استيراد حزم مخصصة للكيمياء، والموسيقا،
+وما إلى ذلك. مثلًا، لنقل أنك وجدت ملفًا نموذجيًا لـ chemtex على الإنترنت:
+
+<div dir="ltr">
 
     \documentclass[a4paper,12pt]{report}
     \usepackage{chemtex}
@@ -178,16 +191,18 @@ an example file for chemtex on the internet:
 
     \end{document}
 
-Firstly, follow the documentation of the package and MiKTeX/MacTex in
-order to install the package. To check the package is working, you’ll
-want to put code like the above into a .latex file and test you can
-compile it from the command line. Once you’ve confirmed that the package
-is available and working, we can integrate it with Anki.
+</div>
 
-To use the package with Anki, click "Add" in the main window, then click
-the note type selection button. Click the "Manage" button, then select
-the note type you plan to use and click "Options". The LaTeX header and
-footer are shown. The header will look something like:
+أولًا، اتبع تعليمات التوثيق للحزمة و MiKTeX/MacTex لتنصيب الحزمة.
+للتحقق من عمل الحزمة، فسترغب في وضع كود مثل الأعلى في ملف <span dir="ltr">.latex</span>
+وتجربة ما إذا كان يمكنك بناؤه من سطر الأوامر. بعد التأكد من أن الحزمة متوفرة وتعمل،
+تستطيع تضمينها في أنكي.
+
+لاستخدام الحزمة مع أنكي، اضغط «إضافة» في النافذة الرئيسية، ثم اضغط زر تحديد نوع الملحوظة.
+اضغط زر «إدارة»، ثم اختر نوع الملحوظة الذي ترغب في استخدامه واضغط «خيارات».
+تُعرض مقدمة LaTeX وهامشه. ستبدو المقدمة كالتالي:
+
+<div dir="ltr">
 
     \documentclass[12pt]{article}
     \special{papersize=3in,5in}
@@ -195,9 +210,11 @@ footer are shown. The header will look something like:
     \pagestyle{empty}
     \setlength{\parindent}{0in}
     \begin{document}
+</div>
 
-To use chemtex, you’d add the usepackage line in the earlier example, so
-it looks like:
+لاستخدام chemtex، ستضيف سطر usepackage في المثال السابق، لتبدو المقدمة كالتالي:
+
+<div dir="ltr">
 
     \documentclass[12pt]{article}
     \special{papersize=3in,5in}
@@ -206,72 +223,87 @@ it looks like:
     \pagestyle{empty}
     \setlength{\parindent}{0in}
     \begin{document}
+</div>
 
-After that, you should be able to include lines like the following in
-your Anki cards:
+بعد ذلك، يجب أن تصبح قادرًا على تضمين سطور مثل التالي في بطاقاتك:
+
+<div dir="ltr">
 
     [latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
+</div>
 
-### Template Conflicts
+### تعارضات القوالب
 
-As of Anki 2.1.20 / AnkiMobile 2.0.56, this workaround is no longer
-required, as `{{field}}` text inside fields no longer causes problems.
-If you need to support AnkiDroid or older Anki versions and want to keep
-using this syntax, please make sure you place the `{{=<% %>=}}` string
-at the very top of your front and back template, as recent Anki versions
-will not recognize it anywhere but the start.
+ابتداءً من أنكي 2.1.20 / أنكي موبيل 2.0.56، ليس هذا الحل ضروريًا بعد الآن،
+لأن نص `{{field}}` داخل الحقول لم يعد يسبب مشاكل. إذا أردت دعم أنكي درويد أو
+إصدارات قديمة من أنكي وتريد الاستمرار باستخدام هذه الصيغة، تأكد من وضع نص
+`{{=<% %>=}}` في أعلى القالبين الأمامي والخلفي، لأن إصدارات أنكي الحديثة لن تتعرف
+عليه إلا في البداية.
 
-For older versions:
+للإصدارات القديمة:
 
-It’s not uncommon for {{ and }} to pop up in LaTeX code when writing
-mathematical equations. To ensure that your LaTeX equations don’t
-conflict with Anki’s field replacements, it’s possible to change the
-separator to something else.
+من الشائع ظهور {{ and }} في أكواد LaTeX عند كتابة المعادلات الرياضية.
+للتأكد من أن معادلات LaTeX لا تتعارض مع استبدالات الحقول في أنكي، من الممكن تغيير
+الرمز الفاصل إلى رمز آخر.
 
-For example, if you have a template:
+على سبيل المثال، إذا كان لديك قالب كالتالي:
+
+<div dir="ltr">
 
     {{latex field}}
+</div>
 
-Changing it to the following will make it unlikely that the LaTeX will
-conflict:
+فتغييره إلى التالي سيجعل من غير المرجح تعارضه مع LaTeX:
+
+<div dir="ltr">
 
     {{=<% %>=}}
     <%latex field%>
+</div>
 
-### Cloze Conflicts
+### تعارضات عبارات ملء الفراغات
 
-Cloze deletions are terminated with `}}`, which can conflict with a `}}`
-appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
-cloze marker, you can put a space between any double closing braces that do not
-indicate the end of the cloze, so
+تُنهى عبارات ملء الفراغات بـ <span dir="ltr">`}}`</span>،
+والذي قد يتعارض مع <span dir="ltr">`}}`</span> المستخدم في أكواد LaTeX.
+لمنع كود LaTeX من أن يُؤوَّل كعلامة إغلاق عبارة ملء الفراغات، تستطيع وضع مسافة بين
+أي أقواس إغلاق مزدوجة لا تشير إلى نهاية عبارة ملء فراغات. لذلك:
+
+<div dir="ltr">
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}}[/$] blah blah blah.}}
+</div>
 
-will not work, but
+لن يعمل، لكن
+
+<div dir="ltr">
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz} }[/$] blah blah blah.}}
+</div>
 
-will (and LaTeX ignores spaces in math mode, so your equation will
-render the same). If you want to avoid adding the extra space into the
-rendered text (for example, when you are making Cloze cards for learning
-programming languages), another option is to use a HTML comment when
-editing the card in HTML mode:
+سيعمل (ويتجاهل LaTeX المسافات في وضع الرياضيات، لذلك ستُعالج معادلتك بالطريقة نفسها).
+إذا كنت تريد تجنب إضافة مسافة إضافية في النص المعالج (مثلًا، عندما تصنع
+عبارات ملء فراغات لتعلم لغات برمجة)، كخيار آخر، تستطيع استخدام تعليق HTML عند تحرير
+البطاقة في وضع HTML:
+
+<div dir="ltr">
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}<!-- -->}[/$] blah blah blah.}}
+</div>
 
-You may use either workaround if you need to use the `::` character
-sequence within the Cloze-deleted text. The first card generated for the
-following note text will read `[type] in C++ is a type-safe union`:
+تستطيع استخدام أي من هذه الحلول إذا أردت استخدام سلسلة حروف `::` في النص المحذوف
+في عبارة ملء الفراغات. البطاقة الأولى المولدة لنص الملحوظة التالية سيكون
+<span dir="ltr">`[type] in C++ is a type-safe union`</span>:
+
+<div dir="ltr">
 
     {{c1::std:<!-- -->:variant::~type~}} in C++ is a {{c2::type-safe union}}
+</div>
 
-### Unsafe commands
+### أوامر غير آمنة
 
-Anki prohibits certain commands like \\input or \\def from being used on
-cards or in templates, because allowing them could allow malicious
-shared decks to damage your system. (To be on the safe side, these
-commands are prohibited even in comments, so if you’re getting this
-error but don’t think you’ve used one, please double-check any comments
-you have in your headers, templates, and cards.) If you need to use
-these commands, please add them to a system package and import that
-package as described in the previous section.
+يمنع أنكي بعض الأوامر مثل <span dir="ltr">\\input</span> أو <span dir="ltr">\\def</span>
+من أن تستخدم في البطاقات أو القوالب، لأن السماح بها قد يؤدي إلى أن تلحق الرزم المشتركة الخبيثة
+الضرر إلى نظامك. (لتكون بأمان أكثر، هذه الأوامر ممنوعة حتى في التعليقات، لذلك
+فإذا كنت تواجه هذا الخطأ لكنك لا تعتقد أنك تستخدم أمرًا من هذه الأوامر، الرجاء
+التحقق من أي تعليقات في مقدماتك، والقوالب، والبطاقات). إذا كنت تحتاج إلى استخدام
+هذه الأوامر، الرجاء إضافتها إلى حزمة واستيراد هذه الحزمة كما شرحنا في القسم السابق.
