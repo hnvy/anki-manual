@@ -17,7 +17,7 @@
 - [الاستيراد](importing.md)
 - [التصدير](exporting.md)
 - [إدارة الملفات](files.md)
-- [Statistics](stats.md)
+- [إحصائيات](stats.md)
 - [Media](media.md)
 - [Math & Symbols](math.md)
 - [البطاقات المستعصية](leeches.md)

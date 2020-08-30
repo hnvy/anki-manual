@@ -1,231 +1,190 @@
-# Graphs and Statistics
+# المخططات البيانية والإحصائيات
 
-## Card Info
+## معلومات البطاقة
 
-You can display information about a card by clicking the Info button in
-the toolbar while browsing. Most of the displayed information should be
-self-explanatory. A few notes:
+تستطيع عرض معلومات عن بطاقة بالضغط على بطاقات>معلومات، أو بالضغط
+بزر الفأرة الأيمن على بطاقة ثم اختيار «معلومات». معظم المعلومات المعروضة لا تحتاج
+شرحًا. بعض الملاحظات:
 
-**Position**  
-Only shown when the card is new, it shows the order the card will appear
-in relative to other new cards. The position can be changed in the
-browser.
+**الموضع**  
+يظهر فقط عندما تكون البطاقة جديدة. يظهر الترتيب الذي ستظهر فيه البطاقة نسبة إلى
+البطاقات الجديدة الأخرى. يمكن تغيير الموضع من المتصفح.
 
-**Interval**  
-The delay from one review to the next. Times are abbreviated; "0s, 1m,
-3h, 4d, 5mo, 6y" refers to seconds, minutes, hours, days, months and
-years respectively.
+**الفاصل الزمني**  
+الفاصل بين مراجعة والمراجعة التالية. الأوقات مكتوبة بصيغة مختصرة؛ " 0ث، 1د، 3س،
+4ي، 5ش، 6ع" تشير إلى الثواني، والدقائق، والساعات، والشهور، والأعوام بهذا الترتيب.
 
-**Ease**  
-The approximate amount the interval will grow when you answer a review
-card with the "Good" button.
+**السهولة**  
+نسبة نمو الفاصل الزمني عندما تجيب عن بطاقة مراجعة بزر «جيد».
 
-## Statistics
+## إحصائيات
 
-The statistics window is accessed by clicking on the graphs icon in the
-top right of the main window, or by pressing T. The statistics
-window will show statistics from the currently selected deck and any
-subdecks. If you click on "collection" on the bottom left, statistics
-will be shown for your entire collection instead. On 2.1.28+, aditionaly,
-you can display graphs for arbitrary searches by adding filters in the
-search box.
+يمكن الوصول إلى نافذة إحصائيات بالضغط على زر «إحصائيات» أعلى يمين النافذة الرئيسية،
+أو بالضغط على مفتاح T. تظهر هذه النافذة إحصائيات الرزمة المحددة حاليًا ورزمها الفرعية.
+إذا ضغطت على «مجموعة» في الأعلى، ستظهر إحصائيات عن كامل مجموعتك.
+في أنكي 2.1.28+، تستطيع عرض مخططات بيانية عن عبارات بحث اعتباطية بإضافة فلاتر
+في حقل البحث.
 
-Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
-accessible with a shift+click on the Stats button.
+يأتي أنكي 2.1.28+ بمخططات بتصميم جديد. ما زال بالإمكان الوصول إلى المخططات القديمة بـ shift+نقرة
+على زر الإحصائيات.
 
-For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
-You can change this to all history scope or deck life scope at the top. (The
-"today" section at the top is of course unaffected by this selection.)
+ابتداءً من أنكي 2.1.28، تظهر إحصائيات آخر سنة بشكل افتراضي. تستطيع تغيير هذا
+إلى كل التاريخ أو مدى حياة الرزمة في الأعلى.
+(لا يتأثر قسم «اليوم» في الأعلى بهذا الخيار طبعًا.)
 
-For older versions of Anki, by default Anki will show you statistics for
-the previous month. You can change this to a year scope or deck life scope
-at the bottom. (The “today” section at the top is of course unaffected
-by this selection.)
+في الإصدارات القديمة من أنكي، تظهر إحصائيات آخر شهر بشكل افتراضي. تستطيع تغيير هذا
+لنطاق سنة أو مدى حياة الرزمة في الأسفل. (لا يتأثر قسم «اليوم» في الأعلى بهذا الخيار طبعًا.)
 
-Clicking on "Save PDF" will save an PDF document of the statistics to a file
-on your desktop to make it easy to share your statistics with others.
+الضغط على «حفظ كـ PDF» ينشئ وثيقة PDF من الإحصائيات ويحفظها إلى ملف لتسهيل
+مشاركتها مع الآخرين.
 
-When you delete notes, their review history is maintained in Anki. It
-will not be included when looking at statistics for a specific deck (as
-Anki has no way of knowing which deck the deleted cards belonged to),
-but will be included when you look at statistics for the whole
-collection.
+عند حذف ملحوظات، يبقى سجل مراجعتها في أنكي. لكنها لن تُضمَّن في إحصائيات رزمة معينة
+(لأن أنكي لا يستطيع معرفة إلى أين تنتمي البطاقات المحذوفة)، لكنها تُضمَّن عند مطالعة
+إحصائيات كل المجموعة.
 
-## Types of Cards
+## أنواع البطاقات
 
-The stats window uses some terms that you may not be familiar with:
+تستخدم نافذة الإحصائيات بعض المصطلحات التي قد لا تكون مألوفة لك:
 
-**Mature**  
-A mature card is one that has an interval of 21 days or greater.
+**ناضجة**   
+البطاقة الناضجة هي بطاقة لها فاصل زمني مكون من 21 يوم أو أكثر.
 
-**Young**  
-A young card is one that has an interval of less than 21 days, but is
-not in learning.
 
-**Learn**  
-A learning card is one that is still in learning mode (using whatever
-steps may be defined in the deck’s options).
+**يافعة**  
+البطاقة اليافعة هي بطاقة لها فاصل مكون من أقل من 21 يوم، لكنها ليست في طور التعلم.
 
-**Relearn**  
-A relearning card is a card that you have failed in review mode, thus
-returning it to learning mode to be relearned.
+**في طور التعلم**  
+بطاقة التعلم هي بطاقة ما زالت في طور التعلم (بناءً على الخطوات المعرفة في خيارات الرزمة).
 
-**Unseen**  
-An unseen card is one that has been added to your collection but has not
-yet entered learning mode. Unseen cards are sometimes referred to as
-"new" cards, especially when they are in the "new" queue to be shown for
-the first time.
+**في طور إعادة التعلم**  
+بطاقة إعادة التعلم هي بطاقة فشلت في تذكرها في طور المراجعة، لذلك أُعيدت إلى
+طور التعلم لتتعلمها مجددًا.
 
-## Today
+**غير مُشاهدة**  
+البطاقة غير المُشاهدة هي بطاقة أُضيفت إلى مجموعتك لكنها لم تدخل طور التعلم بعد.
+تدعى البطاقات غير المشاهدة بطاقات «جديدة» أحيانًا، خصوصًا عندما تكون في صف البطاقات
+الجديدة لتظهر للمرة الأولى.
 
-At the top of the statistics window is a brief list of textual
-statistics about the reviews that you have completed today. A “review”
-in this context is 'one answering of a card', so a card might count as
-multiple reviews if it needed to be seen multiple times, and a learning
-card answered also counts as a “review.” A couple of the stats whose
-meaning may not be immediately obvious:
+## اليوم
 
-**Again count**  
-This is the number of reviews that you have failed (i.e., pressed Again
-on). The correct percentage listed afterwards is the number of cards you
-did 'not' fail divided by the total number of cards you studied.
+في أعلى نافذة الإحصائيات هناك قائمة قصيرة من الإحصائيات النصية عن المراجعات التي
+أكملتها اليوم. «مراجعة» في هذا السياق تعني مراجعة واحدة لبطاقة، لذلك قد تعد بطاقة
+عدة مراجعات إذا توجب رؤيتها عدة مرات، وتعد بطاقة تعلم مجابة كـ «مراجعة» أيضًا.
+بعض الإحصائيات التي قد لا يكون معناها واضحًا:
 
-**Learn, Review, Relearn, Filtered**  
-The number of reviews that were learning cards, review cards, relearning
-cards, or studied in a filtered deck when not due.
+**عدد البطاقات المجابة بـ «مجددًا»**  
+عدد المراجعات التي فشلت فيها (ضغطت على «مجددًا» فيها مثلًا). نسبة الصحيح المعروضة بعدها
+هي عدد البطاقات التي **لم** تفشل فيها مقسومًا على العدد الإجمالي للبطاقات التي درستها.
 
-The stats for the current day are not a good overall indicator of your
-learning progress; everyone has bad days and good days, and seeing that
-you got a lower percentage correct on a particular day should not be
-cause for concern. The remainder of the stats, which take longer periods
-of time into account, will give more useful information if you wish to
-try to change your study habits or scheduling settings based on your
-performance.
+**تعلم، مراجعة، إعادة تعلم، مفلتر**  
+عدد المراجعات التي كانت بطاقات في طور التعلم، أو المراجعة، أو إعادة التعلم، أو دُرسِت
+في رزمة مفلترة عندما لم تكن مستحقة.
 
-The “today” statistics are unaffected by the time period selected at the
-bottom of the window.
+إحصائيات اليوم الحالي ليست مؤشرًا جيدًا لأدائك عمومًا؛ لكل مرء أيام جيدة وسيئة،
+ولا يجب أن تكون رؤية نسبة صحيح منخفضة في يوم معين سببًا للقلق. باقي الإحصائيات،
+والتي تأخذ فترات أطول في عين الاعتبار، تعطي معلومات مفيدة أكثر إذا كنت
+تريد تغيير عادات دراستك أو إعدادات المزامنة بناءً على أدائك.
 
-# The Graphs
+لا تتأثر إحصائيات «اليوم» بالفترة الزمنية المحددة في أسفل النافذة.
 
-**Forecast**  
-This graph shows an estimated number of reviews that will be due on a
-given day in the future if you learn no new cards and fail no cards. The
-bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the line and the right axis show the
-number of cards due on that day if you don’t study at all until then.
-Note that the forecast graph does not count reviews that are currently
-overdue, so if you have a large backlog, the overdue cards will not be
-displayed.
+## المخططات البيانية
 
-**Review Count**  
-This graph counts the number of card reviews you have done. The bars may
-correspond to days, weeks, or months, depending on the time period
-you’ve selected at the bottom of the screen. The differently colored
-blocks show how many of the cards you answered on each day were
-[mature](stats.md#types-of-cards), young, relearning, or learning cards.
-There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The line and the right axis shows the
-cumulative total for each type of review as time progresses across the
-graph (so at 0 days, it would display the number for the entire time
-period displayed on the graph).
+**توقعات**  
+يظهر هذا المخطط العدد المقدر للمراجعات التي سوف تكون مستحقة في يوم معطى في المستقبل
+إذا لم تدرس أي بطاقة جديدة ولم تفشل في تذكر أي بطاقة. تظهر الأشرطة والمحور الأيسر
+عدد البطاقات المستحقة في كل يوم إذا درست كل البطاقات كل يوم، بينما يظهر الخط
+والمحور الأيمن عدد البطاقات المستحقة في ذلك اليوم إذا لم تدرس أبدًا حتى ذلك الحين.
+لاحظ أن مخطط التوقعات البياني لا يحصي المراجعات التي مضى وقت استحقاقها، لذلك إذا
+كان لديك كمية بطاقات متراكمة كبيرة، فلن تظهر هذه البطاقات المتراكمة.
 
-**Review Time**  
-This graph works exactly like Review Count, except that it deals with
-the amount of time you spent on each card rather than the number of
-cards answered.
+**عدد المراجعات**  
+يظهر هذا المخطط عدد مراجعات البطاقات التي أنجزتها. قد تشير الأشرطة إلى الأيام،
+أو الشهور، اعتمادًا على الفترة المحددة في أسفل الشاشة. تظهر الأقسام الملونة بألوان
+مختلفة عدد البطاقات التي أجبت عنها في كل يوم والتي هي بطاقات
+[ناضجة](stats.md#أنواع-البطاقات)، أو يافعة، أو في طور إعادة التعلم، أو التعلم.
+هناك أيضًا مجموعة منفصلة للبطاقات المجابة في رزمة مفلترة بينما لم تكن مستحقة.
+يظهر الخط والمحور الأيمن المجموع التراكمي لكل نوع مراجعة مع تقدم الوقت خلال المخطط
+(لذلك في يوم 0، سيظهر العدد الخاص بكامل فترة الزمن المعروضة على المخطط).
 
-**Intervals**  
-This graph displays the number of cards that have a given interval (the
-delay between two reviews). The line and the right axis tell you what
-percentage of your cards have an interval of less than or equal to the
-time below that point. The time scope has a different effect on this
-graph than other graphs: rather than changing which cards or period of
-studying is included, it limits how far out the intervals are displayed
-to (so 14-month intervals are not displayed at all on a 1-year graph).
+**مدة المراجعة**  
+يعمل هذا المخطط تمامًا مثل مخطط عدد المراجعات، إلا أنه يتعلق بالفترة التي استغرقتها
+على كل بطاقة بدلًا من عدد البطاقات المجابة.
 
-**Hourly Breakdown**  
-This graph shows what percentage of total reviews you have passed (i.e.,
-not pressed Again on) during given hours. The larger, darker bars and
-left axis show the success rate; the thinner, lighter bars and right
-axis show the number of reviews you’ve made at that hour (so you know
-how significant the results are).
+**الفواصل الزمنية**  
+يظهر هذا المخطط عدد البطاقات التي لها فاصل محدد (الفترة بين المراجعتين).
+يشير الخط والمحور الأيمن إلى نسبة البطاقات التي لها فاصل أصغر أو يساوي الوقت في
+أسفل تلك النقطة. لخيار نطاق الزمن تأثير مختلف على هذا المخطط من المخططات الأخرى:
+بدلًا من تغيير البطاقات أو فترة الدراسة المضمنة، فإنه يحد مدى الفواصل المعروضة
+(فواصل 14 شهر لن تُعرض أبدًا في مخطط سنة واحدة).
 
-**Answer Buttons**  
-This graph shows how many times you’ve chosen the Again, Hard, Good, or
-Easy button while studying learning/new, young, and
-[mature](stats.md#types-of-cards) cards. Anki also displays the percentage
-of correct reviews for each type of card.
+**التفصيل ساعة بساعة**  
+يظهر هذا المخطط نسبة إجمالي المراجعات التي نجحت فيها (لم تضغط على زر «مجددًا») خلال
+الساعات المعطاة. تظهر الأشرطة الأكبر والأغمق والمحور الأيسر معدل النجاح؛ بينما
+تظهر الأشرطة الأفتح والمحور الأيمن عدد المراجعات التي أنهيتها في تلك الساعة
+(لتعلم مدى دلالة النتائج).
 
-**Cards Types**  
-This pie chart shows what percentage of your deck or collection consists
-of mature, unseen, young/learn, and suspended cards. If you wish to
-calculate a more precise percentage, the key shows the exact number of
-cards in each section, and the total number of cards is displayed to the
-side.
+**أزرار الإجابة**  
+يظهر هذا المخطط عدد مرات اختيارك أزرار مجددًا، وصعب، وجيد، وسهل عند دراسة البطاقات
+الجديدة/في طور التعلم، واليافعة، و[الناضجة](stats.md#أنواع-البطاقات).
+يظهر أنكي أيضًا نسبة المراجعات الصحيحة لكل نوع من البطاقات.
 
-## Manual Analysis
+**أنواع البطاقات**  
+يظهر مخطط الدائرة المجزأة هذا نسبة البطاقات الناضجة، وغير المشاهدة، واليافعة/في طور التعلم،
+والمعلقة في رزمتك أو مجموعتك. إذا كنت تريد حساب نسبة أكثر دقة، يظهر
+النص التوضيحي أعلى المخطط عدد بطاقات كل قسم، ويعرض الرقم الإجمالي للبطاقات في جانب.
 
-If you’re interested in getting information from your statistics other
-than what Anki provides, it is possible to access the data directly.
-Because of the complexity involved, this is not something we can provide
-any support for.
+## تحليل يدوي
 
-One option is to [write an add-on](addons.md) that adds another graph or
-more details to the statistics window. There are several add-ons of this
-sort on AnkiWeb already, which you can look at to get an idea of how it
-works.
+إذا كنت مهتمًا في الحصول على معلومات من الإحصائيات غير المعلومات التي يوفرها أنكي،
+من الممكن الوصول إلى البيانات مباشرة. بسبب تعقيد هذا، فلا نستطيع تقديم أي دعم هنا.
 
-A more powerful and more complex option is to extract the review log
-information directly from Anki’s database and analyze it in an external
-program. Anki uses a database format called SQLite. There are many tools
-available for working with SQLite databases; one of the easiest to start
-with is called [SQLite Browser](http://sqlitebrowser.org/), which will
-allow you to look around the database as well as export a CSV version of
-tables for import into another program.
+تستطيع [كتابة إضافة](addons.md) تضيف مخططًا آخر أو تفاصيل أكثر إلى نافذة الإحصائيات.
+هناك عدة إضافات من هذا النوع في أنكي ويب بالفعل. قد ترغب في الاطلاع عليها لأخذ فكرة
+عن كيفية عمل هذا.
 
-The most important table for statistics is the 'revlog' table, which
-stores an entry for each review that you conduct. The columns are as
-follows:
+خيار آخر أقوى وأكثر تعقيدًا هو استخراج معلومات سجل المراجعة مباشرة من
+قاعدة بيانات أنكي وتحليلها في برنامج خارجي. يستخدم أنكي صيغة قاعدة بيانات تدعى SQLite.
+هناك عدة أدوات متوفرة للعمل بقواعد بيانات SQLite؛
+واحدة من الأبسط تدعى [SQLite Browser](http://sqlitebrowser.org/)،
+والتي تسمح لك بالاطلاع على قاعدة البيانات، بالإضافة إلى تصدير نسخة CSV من الجداول
+لاستيرادها إلى برنامج آخر.
+
+أهم جدول للإحصائيات هو جدول 'revlog'، والذي يخزن مدخلة لكل مراجعة تجريها.
+العمودات هي كالتالي:
 
 **id**  
-The time at which the review was conducted, as the number of
-milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as 'Unix epoch time', especially when in
-straight seconds instead of milliseconds.)
+وقت إجراء المراجعة، كعدد الميللي ثانية التي مرت منذ منتصف الليل بتوقيت UTC
+في 1 كانون الثاني سنة 1970. (يدعى هذا أحيانًا «وقت يونكس»، خصوصًا عندما يكون بصيغة
+الثواني بدلًا من الميللي ثانية).
 
 **cid**  
-The ID of the card that was reviewed. You can look up this value in the
-id field of the 'cards' table to get more information about the card,
-although note that the card could have changed between when the revlog
-entry was recorded and when you are looking it up. It is also the
-millisecond timestamp of the card’s creation time.
+معرف البطاقة التي تمت مراجعتها. تستطيع معرفة هذه القيمة من حقل id في جدول 'cards'
+للحصول على مزيد من المعلومات عن البطاقة، لكن لاحظ أن البطاقة قد تكون قد تغيرت بين
+الوقت التي سُجلت فيها مدخلة revlog والوقت التي اطلعت فيه على البطاقة.
+إنه أيضًا وقت إنشاء البطاقة بالميللي ثانية.
 
 **usn**  
-This column is used to keep track of the sync state of reviews and
-provides no useful information for analysis.
+يُستخدَم هذا العمود لتعقب حالة مزامنة المراجعات ولا يوفر معلومات مفيدة للتحليل.
 
 **ease**  
-Which button you pressed at the end of the review (1 for Again, 4 for
-Easy).
+الزر الذي ضغطت عليه في نهاية المراجعة (1 لـ«مجددًا»، 4 لـ«سهل»).
 
 **ivl**  
-The new interval that the card was pushed to after the review. Positive
-values are in days; negative values are in seconds (for learning cards).
+الفاصل الزمني الجديد للبطاقة بعد المراجعة. إن القيم الموجبة بوحدة الأيام؛ بينما
+القيم السالبة بوحدة الثواني (للبطاقات في طور التعلم).
 
 **lastIvl**  
-The interval the card had before the review. Cards introduced for the
-first time have a last interval equal to the Again delay.
+الفاصل الزمني للبطاقة قبل المراجعة. البطاقات التي تُعرض للمرة الأولى لها فاصل أخير
+يساوي فاصل «مجددًا».
 
 **factor**  
-The new ease factor of the card in permille (parts per thousand). If the
-ease factor is 2500, the card’s interval will be multiplied by 2.5 the
-next time you press Good.
+عامل السهولة الجديد للبطاقة بأجزاء من الألف. إذا كان عامل السهولة 2500،
+فسيُضرب فاصل البطاقة بـ 2.5 عندما تضغط زر «جيد» في المرة القادمة.
 
 **time**  
-The amount of time (in milliseconds) you spent on the question and
-answer sides of the card before selecting an ease button.
+الوقت (بوحدة الميللي ثانية) الذي استغرقته في جانبي السؤال والجواب من البطاقة قبل
+اختيار زر سهولة.
 
 **type**  
-This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
-and 3 for early "cram" cards (cards being studied in a filtered deck when they
-are not due).
+يساوي 0 لبطاقات التعلم، و1 لبطاقات المراجعة، و2 لبطاقات إعادة التعلم، 3 لبطاقات
+«الدراسة المكثفة» (البطاقات المدروسة في رزمة مفلترة بدون أن تكون مستحقة).
