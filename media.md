@@ -1,26 +1,20 @@
-# Media
+# وسائط
 
-Anki stores the sounds and images used in your notes in a folder next to
-the collection. For more on the folder location, please see the [file
-locations](files.md) section. When you add media within Anki, either by
-using the paperclip icon in the [editor](editing.md) or by pasting it into
-a field, Anki will copy it from its original location into the media
-folder. This makes it easy to back up your collection’s media or move it
-to another computer.
+يخزن أنكي الملفات الصوتية والصور المستخدمة في ملحوظاتك في مجلد إلى جانب المجموعة.
+لمزيد من المعلومات حول موقع المجلد، انظر قسم [مواقع الملفات](files.md).
+عندما تضيف وسائط من خلال أنكي، إما باستخدام أيقونة مشبك الورق [المحرر](editing.md)
+أو بلصقها في حقل، ينسخ أنكي هذه الوسائط من مجلدها الأصلي إلى مجلد الوسائط.
+يجعل هذا من السهل نسخ وسائط مجموعتك احتياطيًا أو نقلها إلى حاسوب آخر.
 
-You can use the Tools&gt;Check Media menu option to scan your notes and
-media folder. It will generate a report of files in the media folder
-that are not used by any notes, and media referenced in notes but
-missing from your media folder. It does not scan question or answer
-templates, which is why you can’t place media references to fields in
-the template. If you need a static image or sound on every card, name it
-with a leading \_ (e.g., '\_dog.jpg') to tell Anki to ignore it when
-checking for media. If you delete media using the unused media check,
-Anki will move it into your operating system’s trash folder, so you can
-recover if you accidentally delete media that shouldn’t have been
-deleted.
+تستطيع استخدام خيار أدوات&gt;فحص الوسائط لفحص الملحوظات ومجلد الوسائط.
+سيولد هذا تقريرًا بالملفات في مجلد الوسائط غير المستخدمة من قبل أي ملحوظة، وبالوسائط
+المشار إليها في الملحوظات لكنها ليست موجودة في مجلد الوسائط. لا يفحص هذا
+القالبين الأمامي والخلفي، وهذا هو سبب عدم مقدرتك وضع مراجع وسائط للحقول في القوالب.
+إذا أردت وضع صورة ثابتة أو صوت في كل بطاقة، سم الملف بحرف \_ ابتدائي (مثلًا، '\_كلب.jpg')
+لإخبار أنكي بتجاهله عند فحص الوسائط. إذا حذفت وسائط باستخدام ميزة التحقق من
+الوسائط غير المستخدمة، سينقل أنكي هذه الوسائط إلى مجلد المهملات الخاص بنظامك، لكي تستطيع
+استعادها إذا حذفتها بدون قصد.
 
-Anki uses a program called mplayer in order to support sounds and
-videos. A wide variety of file formats are supported, but not all of
-these formats will work on AnkiWeb and the mobile clients. MP3 audio and
-MP4 video seems to be the most universally supported.
+يستخدم أنكي برنامج mpv لدعم الأصوات والفيديوهات (ويستخدم mplayer في حال عدم توفره).
+تشكيلة منوعة من صيغ الملفات مدعومة، لكن لن تعمل كل هذه الصيغ في أنكي ويب وتطبيقات المحمول.
+صوت MP3 وفيديو MP4 يبدوان الصيغ ذات الدعم الأكبر عمومًا.

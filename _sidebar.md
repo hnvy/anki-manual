@@ -18,7 +18,7 @@
 - [التصدير](exporting.md)
 - [إدارة الملفات](files.md)
 - [إحصائيات](stats.md)
-- [Media](media.md)
+- [وسائط](media.md)
 - [Math & Symbols](math.md)
 - [البطاقات المستعصية](leeches.md)
 - [إضافات](addons.md)
