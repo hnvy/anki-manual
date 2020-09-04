@@ -24,7 +24,7 @@
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
-- [العربية](https://anh25.github.io/anki-manual/) (هذه النسخة)
+- [العربية](https://abdnh.github.io/anki-manual/) (هذه النسخة)
 
 - [فارسى](http://ankidroid.ir/anki.pdf)
 

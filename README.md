@@ -2,7 +2,7 @@
 
 ترجمة عربية لدليل أنكي.
 
-لقراءة الدليل: https://anh25.github.io/anki-manual/
+لقراءة الدليل: https://abdnh.github.io/anki-manual/
 
 الدليل مرخص تحت رخصة CC BY-SA 4:
 
