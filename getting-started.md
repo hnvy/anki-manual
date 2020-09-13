@@ -10,6 +10,8 @@
 
 - [الرزم المشتركة وأساسيات المراجعة](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
+- [المزامنة](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+
 - [تغيير ترتيب البطاقات](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
 - [تنسيق البطاقات](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
