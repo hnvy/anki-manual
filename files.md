@@ -111,8 +111,9 @@
 قاعدة البيانات عندما تكون الملفات المزامنة قيد الاستخدام.
 
 إذا أردت مزامنة وسائطك فقط، تستطيع ربط الملفات الخارجية مع خدمات مثل دروبوكس.
-انظر <http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders>
-لمزيد من المعلومات.
+انظر (archive.org)][dropboxwiki-sync-other] لمزيد من المعلومات.
+
+[dropboxwiki-sync-other]: http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders
 
 إذا كنت تريد مزامنة مجموعتك أيضًا، ينصح بقوة أن تنشئ سكربت ينسخ ملفاتك من المجلد المزامن
 إلى مجلد محلي، ويشغل أنكي، ثم ينسخ الملفات مجددًا عند إغلاق أنكي. يضمن هذا أن الملفات
