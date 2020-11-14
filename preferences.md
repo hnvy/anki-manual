@@ -18,7 +18,7 @@
 أنكي 2.1.21beta3 أو أحدث، أو تنصيب الإصدار البديل بدلًا من العادي.
 
 **مُجدوِل أنكي 2.1** موثق هنا:
-<https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21>
+<https://faqs.ankiweb.net/the-anki-2.1-scheduler.html>
 
 تتحكم القائمة المنسدلة الأولى بتفاعل أنواع الملحوظات والرزم.
 الخيار الافتراضي المعرف بـ«عامل الرزمة الحالية كرزمة افتراضية عند إضافة بطاقات»
