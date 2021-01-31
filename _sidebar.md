@@ -1,4 +1,4 @@
-- [مقدمة](/)
+- [مقدمة](intro.md)
 - [خلفية](background.md)
 - [البدء](getting-started.md)
 - [دراسة](studying.md)
