@@ -14,7 +14,7 @@ renderer = ["html"]
 
 [output.html]
 git-repository-url = "https://github.com/abdnh/anki-manual"
-additional-css = ["src/kbd.css", "src/rtl.css"]
+additional-css = ["css/kbd.css", "css/rtl.css"]
 
 #[output.linkcheck]
 #optional = true
