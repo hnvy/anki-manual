@@ -261,16 +261,13 @@
 إذا كنت تريد تضمين تنسيق HTML، تستطيع تفعيل خيار «اسمح بـ HTML في الحقول» عند الاستيراد.
 قد ترغب في إلغاء تفعيل هذا الخيار إذا كنت تستورد بطاقات تحتوي
 على أقواس مثلثة &lt;&gt; أو صيغ HTML أخرى.</p>
-<p>إذا كنت تريد استخدام HTML لتنسيق ملفك وتريد تضمين أقواس مثلثة، فيمكنك كتابتها
-بشكل مختلف:</p>
-<ul>
-<li>
-<p>بدلًا من <span dir="ltr">&quot;&lt;&quot;</span>، استخدم <span dir="ltr">&quot;&lt;&quot;</span></p>
-</li>
-<li>
-<p>بدلًا من <span dir="ltr">&quot;&gt;&quot;</span>، استخدم <span dir="ltr">&quot;&gt;&quot;</span></p>
-</li>
-</ul>
+<p>إذا كنت تريد استخدام HTML لتنسيق ملفك وتريد تضمين أقواس مثلثة أو واو العطف اللاتينية،
+فيمكنك كتابتها بشكل مختلف:</p>
+<table><thead><tr><th>الحرف</th><th>البديل</th></tr></thead><tbody>
+<tr><td>&lt;</td><td><code>&amp;lt;</code></td></tr>
+<tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
+<tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
+</tbody></table>
 <h3><a class="header" href="#استيراد-الوسائط" id="استيراد-الوسائط">استيراد الوسائط</a></h3>
 <p>إذا كنت تريد تضمين ملفات صوتية وصور من ملف نصي، انسخ الملفات إلى
 <a href="files.html">مجلد collection.media</a>. <strong>لا تنشئ مجلدات فرعية في مجلد الوسائط،
