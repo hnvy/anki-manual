@@ -1,0 +1,22 @@
+[book]
+authors = ["Ankitects Pty Ltd ومتطوعون"]
+language = "ar"
+multilingual = false
+src = "src"
+title = "دليل استخدام أنكي"
+
+[build]
+create-missing = true
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output.html]
+git-repository-url = "https://github.com/abdnh/anki-manual"
+additional-css = ["src/kbd.css", "src/rtl.css"]
+
+#[output.linkcheck]
+#optional = true
+#warning-policy = "warn"
+#follow-web-links = true

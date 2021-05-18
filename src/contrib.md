@@ -1,5 +1,7 @@
 # مساهمة
 
+<!-- toc -->
+
 ## مشاركة الرزم علنًا
 
 لمشاركة الرزم على الملأ، [زامنها](syncing.md) مع أنكي ويب، ثم سجل الدخول إلى أنكي ويب
@@ -42,11 +44,11 @@
 
 ## مشاركة الإضافات
 
-انظر https://addon-docs.ankiweb.net/#/sharing
+انظر <https://addon-docs.ankiweb.net/#/sharing>
 
 ## ترجمة أنكي
 
-انظر https://translating.ankiweb.net
+انظر <https://translating.ankiweb.net>
 
 ## مساهمة برمجية
 

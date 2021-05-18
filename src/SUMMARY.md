@@ -1,4 +1,7 @@
+# موجز
+
 - [مقدمة](intro.md)
+
 - [خلفية](background.md)
 - [البدء](getting-started.md)
 - [دراسة](studying.md)
@@ -23,6 +26,7 @@
 - [البطاقات المستعصية](leeches.md)
 - [إضافات](addons.md)
 - [منوع](misc.md)
+
 - [مساهمة](contrib.md)
 - [أسئلة متكررة](faqs.md)
 - [مصادر](resources.md)
