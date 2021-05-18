@@ -42,6 +42,8 @@
 يتضمن أنكي دعمًا جاهزًا لـ mhchem لمعالجة المعادلات الكيميائية. انظر
 <https://mhchem.github.io/MathJax-mhchem/> لمزيد من المعلومات.
 
+يمكن [تخصيص بعض الإعدادات](https://faqs.ankiweb.net/customizing-mathjax.html).
+
 ## LaTeX
 
 LaTeX هو نظام صف حروف فعال، يستخدم للمعادلات الرياضية والكيميائية، والرموز الموسيقية
