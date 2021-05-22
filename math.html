@@ -144,13 +144,15 @@
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
+                        
+
                     </div>
                 </div>
 
                 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -171,7 +173,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#الرياضيات-والرموز" id="الرياضيات-والرموز">الرياضيات والرموز</a></h1>
+                        <h1 id="الرياضيات-والرموز"><a class="header" href="#الرياضيات-والرموز">الرياضيات والرموز</a></h1>
 <ul>
 <li><a href="#mathjax">MathJax</a></li>
 <li><a href="#latex">LaTeX</a>
@@ -186,7 +188,7 @@
 </ul>
 </li>
 </ul>
-<h2><a class="header" href="#mathjax" id="mathjax">MathJax</a></h2>
+<h2 id="mathjax"><a class="header" href="#mathjax">MathJax</a></h2>
 <p><a href="https://www.mathjax.org">MathJax</a> هو نظام صف حروف حديث، يعمل في متصفحات الويب،
 ويستخدم للمعادلات الرياضية والكيميائية. لا يتطلب تنصيب أي برامج إضافية،
 لذلك فإنه سهل الاستخدام وينصح به لمعظم المستخدمين.</p>
@@ -224,14 +226,14 @@
 <p>يتضمن أنكي دعمًا جاهزًا لـ mhchem لمعالجة المعادلات الكيميائية. انظر
 <a href="https://mhchem.github.io/MathJax-mhchem/">https://mhchem.github.io/MathJax-mhchem/</a> لمزيد من المعلومات.</p>
 <p>يمكن <a href="https://faqs.ankiweb.net/customizing-mathjax.html">تخصيص بعض الإعدادات</a>.</p>
-<h2><a class="header" href="#latex" id="latex">LaTeX</a></h2>
+<h2 id="latex"><a class="header" href="#latex">LaTeX</a></h2>
 <p>LaTeX هو نظام صف حروف فعال، يستخدم للمعادلات الرياضية والكيميائية، والرموز الموسيقية
 وما إلى ذلك. يوفر أنكي بعض الدعم لـ LaTeX، حيث يسمح بإدخال أكواد LaTeX في ملحوظاتك.
 عندما تراجع بطاقة، يستدعي أنكي LaTeX لتوليد صورة ويظهر الصورة المولًّدة.</p>
 <p>يحتاج LaTeX بعض العمل لضبطه، ويمكن توليد الصور في نسخة الحاسوب من أنكي فقط -
 لكن بعد أن تولّد، يمكن أن تعرض الصور من قبل تطبيقات المحمول. بسبب التعقيد الإضافي الذي
 يضيفه LaTeX، فهو مفضل فقط للمستخدمين الذي يريدون ميزات أكثر مما يوفره MathJax.</p>
-<h3><a class="header" href="#معرفة-مفترضة" id="معرفة-مفترضة">معرفة مفترضة</a></h3>
+<h3 id="معرفة-مفترضة"><a class="header" href="#معرفة-مفترضة">معرفة مفترضة</a></h3>
 <p>لا يأتي دعم LaTeX في أنكي جاهزًا: يُفترض أنك تعرف كيف تستخدم LaTeX بالفعل،
 وأنك نصبته من قبل. إذا لم تكن لديك خبرة مع LaTeX، اطلع على واحد من الدلائل الكثيرة
 المتوفرة على الإنترنت. إذا كانت لديك مشكلة مع بعض أكواد LaTeX، الرجاء السؤال في منتدى لـ LaTeX.</p>
@@ -251,14 +253,14 @@
 <p>إذا لم تكن تستخدم حزم LaTeX المذكورة في الأعلى، فسيتوجب عليك استخدام إضافة
 <a href="https://ankiweb.net/shared/info/937148547">edit LaTeX</a>
 لتحديد المسار الكامل إلى LaTeX و dvipng.</p>
-<h3><a class="header" href="#الويبالمحمول" id="الويبالمحمول">الويب/المحمول</a></h3>
+<h3 id="الويبالمحمول"><a class="header" href="#الويبالمحمول">الويب/المحمول</a></h3>
 <p>عندما تراجع بطاقة تحتوي كود LaTeX، يولد أنكي صورة لذلك الكود ويضعها في مجلد الوسائط
 للاستخدام في المستقبل. تطبيقات الويب والمحمول ستظهر هذه الصور إذا كانت موجودة،
 لكنها لا تستطيع توليد الصور بنفسها.</p>
 <p>لتجنب الحاجة إلى مراجعة كل بطاقاتك مرة على الأقل قبل أن تستطيع دراستها في التطبيقات الأخرى،
 يستطيع أنكي توليد الصور دفعة واحدة. لتوليد كل الصور، استخدم أدوات&gt;فحص الوسائط.
 بعد ذلك، يجب أن ترفع المزامنة الوسائط المولدة إلى أنكي ويب والتطبيقات الأخرى.</p>
-<h3><a class="header" href="#مثال" id="مثال">مثال</a></h3>
+<h3 id="مثال"><a class="header" href="#مثال">مثال</a></h3>
 <p>الطريقة الأعم لإدخال محتوى LaTeX هي بإحاطته بـ <span dir="ltr">[latex][/latex]</span>.
 هناك زر لهذا موثق في قسم <a href="editing.html">المحرر</a>.</p>
 <p>يجب أن تستخدم علامات <span dir="ltr">[latex]</span> داخل حقل - وضعها في قالب البطاقة
@@ -313,7 +315,7 @@
 </code></pre>
 </div>
 <p>بهذا الترتيب.</p>
-<h3><a class="header" href="#الحزم" id="الحزم">الحزم</a></h3>
+<h3 id="الحزم"><a class="header" href="#الحزم">الحزم</a></h3>
 <p>يسمح لك أنكي بتخصيص مقدمة LaTeX بحيث تستطيع استيراد حزم مخصصة للكيمياء، والموسيقا،
 وما إلى ذلك. مثلًا، لنقل أنك وجدت ملفًا نموذجيًا لـ chemtex على الإنترنت:</p>
 <div dir="ltr">
@@ -368,7 +370,7 @@
 <pre><code>[latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
 </code></pre>
 </div>
-<h3><a class="header" href="#تعارضات-القوالب" id="تعارضات-القوالب">تعارضات القوالب</a></h3>
+<h3 id="تعارضات-القوالب"><a class="header" href="#تعارضات-القوالب">تعارضات القوالب</a></h3>
 <p>ابتداءً من أنكي 2.1.20 / أنكي موبيل 2.0.56 / أنكيدرويد 2.13، ليس هذا الحل ضروريًا بعد الآن،
 لأن نص <code>{{field}}</code> داخل الحقول لم يعد يسبب مشاكل. إذا أردت دعم أنكي درويد أو
 إصدارات قديمة من أنكي وتريد الاستمرار باستخدام هذه الصيغة، تأكد من وضع نص
@@ -389,7 +391,7 @@
 &lt;%latex field%&gt;
 </code></pre>
 </div>
-<h3><a class="header" href="#تعارضات-عبارات-ملء-الفراغات" id="تعارضات-عبارات-ملء-الفراغات">تعارضات عبارات ملء الفراغات</a></h3>
+<h3 id="تعارضات-عبارات-ملء-الفراغات"><a class="header" href="#تعارضات-عبارات-ملء-الفراغات">تعارضات عبارات ملء الفراغات</a></h3>
 <p>تُنهى عبارات ملء الفراغات بـ <span dir="ltr">
 <code>}}</code></span>،
 والذي قد يتعارض مع <span dir="ltr">
@@ -421,7 +423,7 @@
 <pre><code>{{c1::std:&lt;!-- --&gt;:variant::~type~}} in C++ is a {{c2::type-safe union}}
 </code></pre>
 </div>
-<h3><a class="header" href="#أوامر-غير-آمنة" id="أوامر-غير-آمنة">أوامر غير آمنة</a></h3>
+<h3 id="أوامر-غير-آمنة"><a class="header" href="#أوامر-غير-آمنة">أوامر غير آمنة</a></h3>
 <p>يمنع أنكي بعض الأوامر مثل <span dir="ltr">\input</span> أو <span dir="ltr">\def</span></p>
 <p>من أن تستخدم في البطاقات أو القوالب، لأن السماح بها قد يؤدي إلى أن تلحق الرزم المشتركة الخبيثة
 الضرر إلى نظامك. (لتكون بأمان أكثر، هذه الأوامر ممنوعة حتى في التعليقات، لذلك
@@ -482,6 +484,7 @@
 
         
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="lunr.ar.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
         
