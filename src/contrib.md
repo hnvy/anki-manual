@@ -44,7 +44,7 @@
 
 ## مشاركة الإضافات
 
-انظر <https://addon-docs.ankiweb.net/#/sharing>
+انظر <https://addon-docs.ankiweb.net/sharing.html>
 
 ## ترجمة أنكي
 

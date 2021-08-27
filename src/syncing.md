@@ -145,7 +145,7 @@
     http://user:pass@proxy.company.com:8080
 </div>
 
-إذا كان اسم المستخدم أو كلمة المرور يحويان رمز @ (<user@workdomain.com> مثلًا)،
+إذا كان اسم المستخدم أو كلمة المرور يحويان رمز @ (`user@workdomain.com` مثلًا)،
 فستحتاج إلى تغييره إلى <span dir="ltr">%40</span>، كالتالي:
 
 <div dir="ltr">
