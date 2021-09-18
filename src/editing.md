@@ -299,7 +299,7 @@
 ما يمكن إدخال هذه الحركات بلوحة عامة «دولية». يعمل هذا بإدخال الحركة،
 ثم الحرف الذي تريد تحريكه - مثلًا، فاصلة عليا (') ثم الحرف (a) يعطي á.
 
-لإضافة اللوحة الدولية في أجهزة ويندوز، انظر <https://support.microsoft.com/en-au/kb/306560>
+لإضافة اللوحة الدولية في أجهزة ويندوز، انظر <http://www.techlanguage.com/tips/us_international.html>
 
 لإضافتها في أجهزة ماك، انظر <http://www.macworld.com/article/1147039/os-x/accentinput.html>
 
