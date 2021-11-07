@@ -4,7 +4,11 @@
 
 ## التنصيب والتحديث
 
-انظر [موقع التحميل](https://apps.ankiweb.net) لتعليمات التنصيب والتحديث.
+انظر التعمليات التابعة لمنصتك:
+
+- [ويندوز](./platform/windows/installing.md)
+- [ماك](./platform/mac/installing.md)
+- [لينكس](./platform/linux/installing.md)
 
 ## فيديوهات
 

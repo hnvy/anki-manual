@@ -21,3 +21,7 @@ optional = true
 warning-policy = "warn"
 follow-web-links = true
 exclude = [ 'microsoft.com' ]
+
+[output.html.fold]
+enable = true
+level = 0
