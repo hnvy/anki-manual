@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - main
       - test
 
 jobs:
@@ -12,19 +12,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup mdBook
-        run: |
-          curl -L -o mdbook.tgz https://github.com/abdnh/mdBook/releases/download/v0.4.9/mdbook-v0.4.9-x86_64-unknown-linux-gnu.tar.gz
-          tar xzf mdbook.tgz -C ~/.cargo/bin
-
-      - name: Setup mdbook-toc
-        run: |
-          curl -L -o mdbook-toc.tgz https://github.com/badboy/mdbook-toc/releases/download/0.6.3/mdbook-toc-0.6.3-x86_64-unknown-linux-gnu.tar.gz
-          tar xzf mdbook-toc.tgz -C ~/.cargo/bin
-      - run: ~/.cargo/bin/mdbook build
+      - name: Build
+        run: .github/workflows/build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          publish_dir: ./book/html
+
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: CHECK=1 .github/workflows/build.sh
