@@ -11,6 +11,7 @@ create-missing = true
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
+marker = "<!-- toc -->"
 
 [output.html]
 git-repository-url = "https://github.com/abdnh/anki-manual"
