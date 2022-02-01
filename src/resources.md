@@ -8,3 +8,6 @@
 كما كتب سلسة تويتات [مختصرة للمقالة](https://twitter.com/michael_nielsen/status/957763229454774272).
 
 تعاون بعض طلاب الطب لإنشاء دليل مدفوع يركز على استخدام أنكي لدراسة الطب: <https://courses.ankipalace.com/>
+
+كتب سورن بيورنستد [سلسلة مقالات شاملة](https://controlaltbackspace.org/categories/memory/)
+حول الذاكرة، والتكرار المتباعد وكيفية استخدام أنكي بشكل فعال.
