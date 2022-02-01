@@ -27,8 +27,8 @@ sudo apt install libxcb-xinerama0
 
 
 ```shell
-tar xjf Downloads/anki-2.1.48-linux.tar.bz2
-cd anki-2.1.48-linux
+tar xjf Downloads/anki-2.1.XX-linux.tar.bz2
+cd anki-2.1.XX-linux
 sudo ./install.sh
 ```
 
