@@ -1,4 +1,4 @@
-# أنكي لا يستخدم ثيم GTK في Gnome/Linux
+# أنكي لا يستخدم ثيم GTK في Gnome/Linux {#anki-not-picking-up-gtk-theme-on-gnomelinux}
 
 تستطيع حل هذه المشكلة بإخبار أنكي عن ثيم GTK. نفذ الأوامر التالية في سطر الأوامر:
 
