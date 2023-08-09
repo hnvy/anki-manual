@@ -6,11 +6,11 @@
 
 عند بدء أنكي، قد ترى رسالة مثل التالي:
 
-- *Error loading Python DLL*
-- *The program can't start because api-ms-win.... is missing*
-- *Failed to execute script runanki*
-- *Failed to execute script pyi_rth_multiprocessing*
-- *Failed to execute script pyi_rth_win32comgenpy*
+- _Error loading Python DLL_
+- _The program can't start because api-ms-win.... is missing_
+- _Failed to execute script runanki_
+- _Failed to execute script pyi_rth_multiprocessing_
+- _Failed to execute script pyi_rth_win32comgenpy_
 
 يكون سبب هذه الأخطاء عادةً تحديثات ويندوز أو مكتبة ويندوز ناقصة.
 
@@ -32,7 +32,7 @@
 
 ## شاشات متعددة {#multiple-displays}
 
-إذا واجهت رسالة خطأ *LoadLibrary failed with error 126*، فقد يكون هذا بسبب أن
+إذا واجهت رسالة خطأ _LoadLibrary failed with error 126_، فقد يكون هذا بسبب أن
 مكتبة الواجهات التي بني عليها أنكي فيها مشاكل متعلقة
 [بالشاشات المتعددة](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967).
 

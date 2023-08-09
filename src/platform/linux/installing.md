@@ -25,7 +25,6 @@ sudo apt install libxcb-xinerama0
 1. نزل أنكي من <https://apps.ankiweb.net> إلى مجلد التنزيلات.
 2. افتح الطرفية ونفذ الأوامر التالية، مع استبدال رقم الإصدار كما هو مناسب.
 
-
 ```shell
 tar xjf Downloads/anki-2.1.XX-linux.tar.bz2
 cd anki-2.1.XX-linux
@@ -33,7 +32,7 @@ sudo ./install.sh
 ```
 
 3. تستطيع من ثم تشغيل أنكي بكتابة 'anki' وضغط مفتاح إنتر. إذا واجهت أي مشاكل،
-انظر الروابط على اليسار.
+   انظر الروابط على اليسار.
 
 ## التحديث {#upgrading}
 
