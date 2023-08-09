@@ -350,7 +350,7 @@
 ما يمكن إدخال هذه الحركات بلوحة عامة «دولية». يعمل هذا بإدخال الحركة،
 ثم الحرف الذي تريد تحريكه - مثلًا، فاصلة عليا (') ثم الحرف (a) يعطي á.
 
-لإضافة اللوحة الدولية في أجهزة ويندوز، انظر <http://www.techlanguage.com/tips/us_international.html>
+لإضافة اللوحة الدولية في أجهزة ويندوز، انظر <https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
 
 لإضافتها في أجهزة ماك، انظر <http://www.macworld.com/article/1147039/os-x/accentinput.html>
 
