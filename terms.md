@@ -84,4 +84,6 @@
 
 **Relative overdueness**: التأخر النسبي
 
+**interval**: فاصل زمني
+
 </div>
