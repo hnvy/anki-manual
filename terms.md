@@ -86,4 +86,6 @@
 
 **interval**: فاصل زمني
 
+**deck preset** / **preset**: مجموعات الخيارات
+
 </div>
