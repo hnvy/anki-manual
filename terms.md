@@ -4,86 +4,64 @@
 
 الهدف من هذه القائمة هو أن تكون مرجعًا لترجمات موحدة مناسبة لمصطلحات أنكي.
 
-**spaced repetition**: تكرار متباعد
-
-**card**: بطاقة
-
-**note**: ملحوظة
-
-**collection**: مجموعة
-
-**deck**: رزمة
-
-**field**: حقل
-
-**tag**: وسم
-
-**flag**: مؤشر
-
-**template**: قالب
-
-**Front template**: القالب الأمامي
-
-**Back Template**: القالب الخلفي
-
-**profile**: ملف شخصي
-
-**filtered deck**: رزمة مفلترة
-
-**home deck**: رزمة أصلية
-
-**review**: مراجعة
-
-**due**: مستحقة
-
-**young card**: بطاقة يافعة
-
-**mature card**: بطاقة ناضجة
-
-**cloze deletion**: ملء فراغات / عبارة ملء فراغات / عبارة محذوفة
-
-**Set Due Date**: ضبط تاريخ الاستحقاق
-
-**Unbury**: نكش
-
-**Unsuspend**: تفعيل
-
-**Forget Card**: نسيان بطاقة
-
-**Ease**: سهولة
-
-**Studied**: دُرِست اليوم
-
-**Relearn**: في طور إعادة التعلم
-
-**duplicate**: مكرر
-
-**Find and Replace**: البحث والاستبدال
-
-**Reschedule**: إعادة جدولة
-
-**recall**: استحضار
-
-**leech**: بطاقة مستعصية
-
-**lapse**: سقطة
-
-**Notetype**: نوع الملحوظة
-
-**Card Type**: نوع البطاقة
-
-**Learning stage**: طور التعلم
-
-**Custom Study**: دراسة مخصصة
-
-**Reposition**: تغيير الموضع
-
-**Suspend Card**: تعليق البطاقة
-
-**Build** (as in, build the deck): إنشاء
-
-**Relative overdueness**: التأخر النسبي
-
-**interval**: فاصل زمني
+- **Advanced**: متقدم
+- **Back Template**: القالب الخلفي
+- **Browsing**: التصفح
+- **Build** (as in, build the deck): إنشاء
+- **Card Stability**: استقرار البطاقة
+- **Card Type**: نوع البطاقة
+- **card**: بطاقة
+- **cloze deletion**: ملء فراغات / عبارة ملء فراغات / عبارة محذوفة
+- **collection**: مجموعة
+- **collection**: مجموعة
+- **Custom Study**: دراسة مخصصة
+- **deck preset** / **preset**: مجموعات الخيارات
+- **deck**: رزمة
+- **due**: مستحقة
+- **duplicate**: مكرر
+- **Ease**: سهولة
+- **field**: حقل
+- **filtered deck**: رزمة مفلترة
+- **Find and Replace**: البحث والاستبدال
+- **flag**: مؤشر
+- **Forget Card**: نسيان بطاقة
+- **Forget**: نسيان
+- **Form**: نموذج
+- **Front template**: القالب الأمامي
+- **History**: السجل
+- **home deck**: رزمة أصلية
+- **interval**: فاصل زمني
+- **lapse**: سقطة
+- **Learning stage**: طور التعلم
+- **leech**: بطاقة مستعصية
+- **Marked**: مُعلَّمة
+- **mature card**: بطاقة ناضجة
+- **Mature**: ناضجة
+- **Media**: وسائط
+- **note**: ملحوظة
+- **Notetype**: نوع الملحوظة
+- **Overdue**: متأخر
+- **profile**: ملف شخصي
+- **recall**: استحضار
+- **Relative overdueness**: التأخر النسبي
+- **Relearn**: في طور إعادة التعلم
+- **Reposition**: تغيير الموضع
+- **Reschedule**: إعادة جدولة
+- **Revert**: استرجاع
+- **review**: مراجعة
+- **Scheduler**: المجدول
+- **Scheduling**: جدولة
+- **Set Due Date**: ضبط تاريخ الاستحقاق
+- **Skipped**: مُتخطَّى
+- **spaced repetition**: تكرار متباعد
+- **Stability**: استقرار
+- **Studied**: دُرِست اليوم
+- **Suspend Card**: تعليق البطاقة
+- **tag**: وسم
+- **Template**: القالب
+- **template**: قالب
+- **Unbury**: نكش
+- **Unsuspend**: تفعيل
+- **young card**: بطاقة يافعة
 
 </div>
