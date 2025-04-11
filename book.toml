@@ -1,7 +1,6 @@
 [book]
 authors = ["شركة Ankitects المملوكة المحدودة ومتطوعون"]
 language = "ar"
-multilingual = false
 src = "src"
 title = "دليل استخدام أنكي"
 
