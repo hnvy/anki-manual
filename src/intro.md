@@ -10,10 +10,10 @@
 
 ساهم متطوعون بترجمات لهذا الدليل. قد لا تكون هذه الترجمات على وفاق مع آخر إصدار.
 
-- [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
-- [Deutsch](http://www.dennisproksch.de/anki)
-- [Español](https://apps.ankiweb.net/docs/manual.es.html)
-- [Français](https://apps.ankiweb.net/docs/manual.fr.html)
+- [Bahasa Indonesia](https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html)
+- [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki)
+- [Español](https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html)
+- [Français](https://web.archive.org/web/20250209100830/https://apps.ankiweb.net/docs/manual.fr.html)
 - [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
 - [Polski](https://platynowy.github.io/anki-manual/)
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)

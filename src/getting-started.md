@@ -24,8 +24,6 @@
 
 - [إدخال الجواب](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-إذا لم يكن يوتيوب متوفرًا في بلدك، بإمكانك [تنزيل الفيديوهات](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/).
-
 ## مفاهيم أساسية {#key-concepts}
 
 ### البطاقات {#cards}
